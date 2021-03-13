@@ -1,3 +1,5 @@
+RMC Team Note: This is a fork of https://github.com/ros2/darknet_vendor, however it uses a different source repository for the Darknet. Instead of pulling the Darknet source from the [pjreddie Darknet repository](https://github.com/pjreddie/darknet), it instead uses a [fork from tiagoshibata](https://github.com/tiagoshibata/darknet).
+
 # darknet_vendor
 
 This is a CMake wrapper around [darknet](https://pjreddie.com/darknet), an open source neural network framework.
