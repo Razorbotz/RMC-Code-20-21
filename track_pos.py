@@ -21,6 +21,9 @@ err = zed.enable_positional_tracking(tracking_parameters)
 
 runtime_parameters = sl.RuntimeParameters()
 
+# Open File
+f = open("pos_data.txt", "a")
+
 for frame in range(6):
     zed_pose = sl.Pose()
     if zed.grab(runtime_parameters) == sl.ERROR_CODE.SUCCESS:
@@ -31,7 +34,8 @@ for frame in range(6):
         tx = round(zed_pose.get_translation(py_translation).get()[0], 3)
         ty = round(zed_pose.get_translation(py_translation).get()[1], 3)
         tz = round(zed_pose.get_translation(py_translation).get()[2], 3)
-        print("Translation: tx: {0}, ty:  {1}, tz:  {2}, timestamp: {3}\n".format(tx, ty, tz, zed_pose.timestamp))
+        
+        f.write("Translation: tx: {0}, ty:  {1}, tz:  {2}, timestamp: {3}\n".format(tx, ty, tz, zed_pose.timestamp))
     time.sleep(5)
 
 # Close the camera
