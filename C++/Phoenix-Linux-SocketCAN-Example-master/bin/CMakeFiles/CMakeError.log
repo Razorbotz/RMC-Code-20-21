@@ -1,0 +1,108 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aa2de/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aa2de.dir/build.make CMakeFiles/cmTC_aa2de.dir/build
+make[1]: Entering directory '/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa2de.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_aa2de.dir/CheckSymbolExists.c.o   -c /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_aa2de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa2de.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_aa2de.dir/CheckSymbolExists.c.o  -o cmTC_aa2de -rdynamic 
+CMakeFiles/cmTC_aa2de.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_aa2de.dir/build.make:97: recipe for target 'cmTC_aa2de' failed
+make[1]: *** [cmTC_aa2de] Error 1
+make[1]: Leaving directory '/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_aa2de/fast' failed
+make: *** [cmTC_aa2de/fast] Error 2
+
+File /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d339e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d339e.dir/build.make CMakeFiles/cmTC_d339e.dir/build
+make[1]: Entering directory '/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d339e.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d339e.dir/CheckSymbolExists.c.o   -c /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d339e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d339e.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d339e.dir/CheckSymbolExists.c.o  -o cmTC_d339e -rdynamic 
+CMakeFiles/cmTC_d339e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d339e.dir/build.make:97: recipe for target 'cmTC_d339e' failed
+make[1]: *** [cmTC_d339e] Error 1
+make[1]: Leaving directory '/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d339e/fast' failed
+make: *** [cmTC_d339e/fast] Error 2
+
+File /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b16af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b16af.dir/build.make CMakeFiles/cmTC_b16af.dir/build
+make[1]: Entering directory '/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b16af.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b16af.dir/CheckSymbolExists.c.o   -c /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b16af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b16af.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b16af.dir/CheckSymbolExists.c.o  -o cmTC_b16af -rdynamic 
+CMakeFiles/cmTC_b16af.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b16af.dir/build.make:97: recipe for target 'cmTC_b16af' failed
+make[1]: *** [cmTC_b16af] Error 1
+make[1]: Leaving directory '/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b16af/fast' failed
+make: *** [cmTC_b16af/fast] Error 2
+
+File /home/nvidia/Phoenix-Linux-SocketCAN-Example-master/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
