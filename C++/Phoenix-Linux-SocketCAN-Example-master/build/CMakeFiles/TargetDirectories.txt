@@ -1,3 +1,0 @@
-/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/build/CMakeFiles/rebuild_cache.dir
-/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/build/CMakeFiles/edit_cache.dir
-/home/nvidia/Phoenix-Linux-SocketCAN-Example-master/build/CMakeFiles/example.dir

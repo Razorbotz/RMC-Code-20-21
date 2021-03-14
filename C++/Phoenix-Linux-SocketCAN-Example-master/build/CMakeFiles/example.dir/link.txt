@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/example.dir/example.cpp.o  -o ../bin/example -rdynamic ../lib/tx2/libCTRE_Phoenix.a ../lib/tx2/libCTRE_PhoenixCCI.a ../lib/tx2/libCTRE_PhoenixPlatform_socketcan.a ../lib/tx2/libCTRE_PhoenixCanutils.a -Wl,-Bstatic -lSDL2 -lSDL2main -Wl,-Bdynamic -ldl -pthread 
