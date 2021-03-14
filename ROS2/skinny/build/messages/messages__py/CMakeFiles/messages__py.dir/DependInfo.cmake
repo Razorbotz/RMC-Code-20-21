@@ -25,6 +25,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/msg/_talon_out_s.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/msg/_victor_out.py" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/msg/_victor_out_s.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/msg/_zed_position.py" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/msg/_zed_position_s.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c"
   )
 
 

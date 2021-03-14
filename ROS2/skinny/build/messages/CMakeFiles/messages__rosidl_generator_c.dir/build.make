@@ -79,6 +79,7 @@ rosidl_generator_c/messages/msg/axis_state.h: rosidl_adapter/messages/msg/Button
 rosidl_generator_c/messages/msg/axis_state.h: rosidl_adapter/messages/msg/HatState.idl
 rosidl_generator_c/messages/msg/axis_state.h: rosidl_adapter/messages/msg/KeyState.idl
 rosidl_generator_c/messages/msg/axis_state.h: rosidl_adapter/messages/msg/TalonOut.idl
+rosidl_generator_c/messages/msg/axis_state.h: rosidl_adapter/messages/msg/ZedPosition.idl
 rosidl_generator_c/messages/msg/axis_state.h: /opt/ros/eloquent/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/messages/msg/axis_state.h: /opt/ros/eloquent/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
@@ -189,6 +190,18 @@ rosidl_generator_c/messages/msg/talon_out__struct.h: rosidl_generator_c/messages
 rosidl_generator_c/messages/msg/talon_out__type_support.h: rosidl_generator_c/messages/msg/axis_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/talon_out__type_support.h
 
+rosidl_generator_c/messages/msg/zed_position.h: rosidl_generator_c/messages/msg/axis_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/zed_position.h
+
+rosidl_generator_c/messages/msg/zed_position__functions.h: rosidl_generator_c/messages/msg/axis_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/zed_position__functions.h
+
+rosidl_generator_c/messages/msg/zed_position__struct.h: rosidl_generator_c/messages/msg/axis_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/zed_position__struct.h
+
+rosidl_generator_c/messages/msg/zed_position__type_support.h: rosidl_generator_c/messages/msg/axis_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/zed_position__type_support.h
+
 rosidl_generator_c/messages/msg/axis_state__functions.c: rosidl_generator_c/messages/msg/axis_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/axis_state__functions.c
 
@@ -215,6 +228,9 @@ rosidl_generator_c/messages/msg/key_state__functions.c: rosidl_generator_c/messa
 
 rosidl_generator_c/messages/msg/talon_out__functions.c: rosidl_generator_c/messages/msg/axis_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/talon_out__functions.c
+
+rosidl_generator_c/messages/msg/zed_position__functions.c: rosidl_generator_c/messages/msg/axis_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/messages/msg/zed_position__functions.c
 
 CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/axis_state__functions.c.o: CMakeFiles/messages__rosidl_generator_c.dir/flags.make
 CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/axis_state__functions.c.o: rosidl_generator_c/messages/msg/axis_state__functions.c
@@ -432,6 +448,30 @@ CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/talo
 CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/talon_out__functions.c.o.provides.build: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/talon_out__functions.c.o
 
 
+CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o: CMakeFiles/messages__rosidl_generator_c.dir/flags.make
+CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o: rosidl_generator_c/messages/msg/zed_position__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o   -c /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_c/messages/msg/zed_position__functions.c
+
+CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_c/messages/msg/zed_position__functions.c > CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.i
+
+CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_c/messages/msg/zed_position__functions.c -o CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.s
+
+CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.requires:
+
+.PHONY : CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.requires
+
+CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.provides: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.requires
+	$(MAKE) -f CMakeFiles/messages__rosidl_generator_c.dir/build.make CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.provides.build
+.PHONY : CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.provides
+
+CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.provides.build: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o
+
+
 # Object files for target messages__rosidl_generator_c
 messages__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/axis_state__functions.c.o" \
@@ -442,7 +482,8 @@ messages__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/button_state__functions.c.o" \
 "CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/hat_state__functions.c.o" \
 "CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/key_state__functions.c.o" \
-"CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/talon_out__functions.c.o"
+"CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/talon_out__functions.c.o" \
+"CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o"
 
 # External object files for target messages__rosidl_generator_c
 messages__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -456,6 +497,7 @@ libmessages__rosidl_generator_c.so: CMakeFiles/messages__rosidl_generator_c.dir/
 libmessages__rosidl_generator_c.so: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/hat_state__functions.c.o
 libmessages__rosidl_generator_c.so: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/key_state__functions.c.o
 libmessages__rosidl_generator_c.so: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/talon_out__functions.c.o
+libmessages__rosidl_generator_c.so: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o
 libmessages__rosidl_generator_c.so: CMakeFiles/messages__rosidl_generator_c.dir/build.make
 libmessages__rosidl_generator_c.so: /opt/ros/eloquent/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 libmessages__rosidl_generator_c.so: /opt/ros/eloquent/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
@@ -473,7 +515,7 @@ libmessages__rosidl_generator_c.so: /opt/ros/eloquent/lib/librosidl_generator_c.
 libmessages__rosidl_generator_c.so: /opt/ros/eloquent/lib/librosidl_typesupport_introspection_c.so
 libmessages__rosidl_generator_c.so: /opt/ros/eloquent/lib/librosidl_typesupport_introspection_cpp.so
 libmessages__rosidl_generator_c.so: CMakeFiles/messages__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C shared library libmessages__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C shared library libmessages__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/messages__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -490,6 +532,7 @@ CMakeFiles/messages__rosidl_generator_c.dir/requires: CMakeFiles/messages__rosid
 CMakeFiles/messages__rosidl_generator_c.dir/requires: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/hat_state__functions.c.o.requires
 CMakeFiles/messages__rosidl_generator_c.dir/requires: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/key_state__functions.c.o.requires
 CMakeFiles/messages__rosidl_generator_c.dir/requires: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/talon_out__functions.c.o.requires
+CMakeFiles/messages__rosidl_generator_c.dir/requires: CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/zed_position__functions.c.o.requires
 
 .PHONY : CMakeFiles/messages__rosidl_generator_c.dir/requires
 
@@ -533,6 +576,10 @@ CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/talon_out__functions.h
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/talon_out__struct.h
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/talon_out__type_support.h
+CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/zed_position.h
+CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/zed_position__functions.h
+CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/zed_position__struct.h
+CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/zed_position__type_support.h
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/axis_state__functions.c
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/camera__functions.c
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/joystick_command__functions.c
@@ -542,6 +589,7 @@ CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/hat_state__functions.c
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/key_state__functions.c
 CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/talon_out__functions.c
+CMakeFiles/messages__rosidl_generator_c.dir/depend: rosidl_generator_c/messages/msg/zed_position__functions.c
 	cd /home/team/SoftwareDevelopment/ROS2/skinny/build/messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/team/SoftwareDevelopment/ROS2/skinny/src/messages /home/team/SoftwareDevelopment/ROS2/skinny/src/messages /home/team/SoftwareDevelopment/ROS2/skinny/build/messages /home/team/SoftwareDevelopment/ROS2/skinny/build/messages /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/messages__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/messages__rosidl_generator_c.dir/depend
 

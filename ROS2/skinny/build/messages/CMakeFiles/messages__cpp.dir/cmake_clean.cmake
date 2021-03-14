@@ -27,6 +27,9 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/messages/msg/talon_out.hpp"
   "rosidl_generator_cpp/messages/msg/talon_out__struct.hpp"
   "rosidl_generator_cpp/messages/msg/talon_out__traits.hpp"
+  "rosidl_generator_cpp/messages/msg/zed_position.hpp"
+  "rosidl_generator_cpp/messages/msg/zed_position__struct.hpp"
+  "rosidl_generator_cpp/messages/msg/zed_position__traits.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

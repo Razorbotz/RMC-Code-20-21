@@ -31,6 +31,9 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/victor_out.hpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/axis_state.hpp"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/victor_out__struct.hpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/axis_state.hpp"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/victor_out__traits.hpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/axis_state.hpp"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/zed_position.hpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/axis_state.hpp"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/zed_position__struct.hpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/axis_state.hpp"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/zed_position__traits.hpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_cpp/messages/msg/axis_state.hpp"
   )
 
 

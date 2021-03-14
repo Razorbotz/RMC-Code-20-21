@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/power__type_support.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/power__type_support.c.o"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/talon_out__type_support.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/talon_out__type_support.c.o"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/victor_out__type_support.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/victor_out__type_support.c.o"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/zed_position__type_support.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/zed_position__type_support.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -42,6 +43,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/talon_out__type_support.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/axis_state__rosidl_typesupport_introspection_c.h"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/victor_out__rosidl_typesupport_introspection_c.h" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/axis_state__rosidl_typesupport_introspection_c.h"
   "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/victor_out__type_support.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/axis_state__rosidl_typesupport_introspection_c.h"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/zed_position__rosidl_typesupport_introspection_c.h" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/axis_state__rosidl_typesupport_introspection_c.h"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/zed_position__type_support.c" "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_introspection_c/messages/msg/axis_state__rosidl_typesupport_introspection_c.h"
   )
 
 

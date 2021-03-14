@@ -11,7 +11,8 @@
     "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/ButtonState.idl",
     "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/HatState.idl",
     "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/KeyState.idl",
-    "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/TalonOut.idl"
+    "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/TalonOut.idl",
+    "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/ZedPosition.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/eloquent/share/builtin_interfaces/msg/Duration.idl",
@@ -33,6 +34,7 @@
     "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages/msg/HatState.idl",
     "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages/msg/KeyState.idl",
     "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages/msg/TalonOut.idl",
+    "/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages/msg/ZedPosition.idl",
     "/opt/ros/eloquent/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/eloquent/share/builtin_interfaces/msg/Time.idl"
   ]

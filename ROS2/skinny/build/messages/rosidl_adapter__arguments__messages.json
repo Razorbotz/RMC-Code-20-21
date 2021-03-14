@@ -9,6 +9,7 @@
     "/home/team/SoftwareDevelopment/ROS2/skinny/src/messages:msg/ButtonState.msg",
     "/home/team/SoftwareDevelopment/ROS2/skinny/src/messages:msg/HatState.msg",
     "/home/team/SoftwareDevelopment/ROS2/skinny/src/messages:msg/KeyState.msg",
-    "/home/team/SoftwareDevelopment/ROS2/skinny/src/messages:msg/TalonOut.msg"
+    "/home/team/SoftwareDevelopment/ROS2/skinny/src/messages:msg/TalonOut.msg",
+    "/home/team/SoftwareDevelopment/ROS2/skinny/src/messages:msg/ZedPosition.msg"
   ]
 }

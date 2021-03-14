@@ -64,6 +64,7 @@ messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_button_s
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_hat_state.py
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_key_state.py
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_talon_out.py
+messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_zed_position.py
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/__init__.py
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_axis_state_s.c
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_camera_s.c
@@ -74,6 +75,7 @@ messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_button_s
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_hat_state_s.c
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_key_state_s.c
 messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_talon_out_s.c
+messages__py/CMakeFiles/messages__py: rosidl_generator_py/messages/msg/_zed_position_s.c
 
 
 rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: /opt/ros/eloquent/lib/rosidl_generator_py/rosidl_generator_py
@@ -98,6 +100,7 @@ rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: rosidl_adapt
 rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: rosidl_adapter/messages/msg/HatState.idl
 rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: rosidl_adapter/messages/msg/KeyState.idl
 rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: rosidl_adapter/messages/msg/TalonOut.idl
+rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: rosidl_adapter/messages/msg/ZedPosition.idl
 rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: /opt/ros/eloquent/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c: /opt/ros/eloquent/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
@@ -133,6 +136,9 @@ rosidl_generator_py/messages/msg/_key_state.py: rosidl_generator_py/messages/_me
 rosidl_generator_py/messages/msg/_talon_out.py: rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/messages/msg/_talon_out.py
 
+rosidl_generator_py/messages/msg/_zed_position.py: rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/messages/msg/_zed_position.py
+
 rosidl_generator_py/messages/msg/__init__.py: rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/messages/msg/__init__.py
 
@@ -163,6 +169,9 @@ rosidl_generator_py/messages/msg/_key_state_s.c: rosidl_generator_py/messages/_m
 rosidl_generator_py/messages/msg/_talon_out_s.c: rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/messages/msg/_talon_out_s.c
 
+rosidl_generator_py/messages/msg/_zed_position_s.c: rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/messages/msg/_zed_position_s.c
+
 messages__py: messages__py/CMakeFiles/messages__py
 messages__py: rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c
 messages__py: rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -175,6 +184,7 @@ messages__py: rosidl_generator_py/messages/msg/_button_state.py
 messages__py: rosidl_generator_py/messages/msg/_hat_state.py
 messages__py: rosidl_generator_py/messages/msg/_key_state.py
 messages__py: rosidl_generator_py/messages/msg/_talon_out.py
+messages__py: rosidl_generator_py/messages/msg/_zed_position.py
 messages__py: rosidl_generator_py/messages/msg/__init__.py
 messages__py: rosidl_generator_py/messages/msg/_axis_state_s.c
 messages__py: rosidl_generator_py/messages/msg/_camera_s.c
@@ -185,6 +195,7 @@ messages__py: rosidl_generator_py/messages/msg/_button_state_s.c
 messages__py: rosidl_generator_py/messages/msg/_hat_state_s.c
 messages__py: rosidl_generator_py/messages/msg/_key_state_s.c
 messages__py: rosidl_generator_py/messages/msg/_talon_out_s.c
+messages__py: rosidl_generator_py/messages/msg/_zed_position_s.c
 messages__py: messages__py/CMakeFiles/messages__py.dir/build.make
 
 .PHONY : messages__py

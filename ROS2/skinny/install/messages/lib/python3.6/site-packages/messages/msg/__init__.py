@@ -7,3 +7,4 @@ from messages.msg._key_state import KeyState  # noqa: F401
 from messages.msg._power import Power  # noqa: F401
 from messages.msg._talon_out import TalonOut  # noqa: F401
 from messages.msg._victor_out import VictorOut  # noqa: F401
+from messages.msg._zed_position import ZedPosition  # noqa: F401

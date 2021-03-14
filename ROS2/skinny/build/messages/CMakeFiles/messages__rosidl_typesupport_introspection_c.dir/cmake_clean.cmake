@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/messages/msg/hat_state__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/messages/msg/key_state__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/messages/msg/talon_out__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/messages/msg/zed_position__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/messages/msg/axis_state__type_support.c"
   "rosidl_typesupport_introspection_c/messages/msg/camera__type_support.c"
   "rosidl_typesupport_introspection_c/messages/msg/joystick_command__type_support.c"
@@ -17,6 +18,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/messages/msg/hat_state__type_support.c"
   "rosidl_typesupport_introspection_c/messages/msg/key_state__type_support.c"
   "rosidl_typesupport_introspection_c/messages/msg/talon_out__type_support.c"
+  "rosidl_typesupport_introspection_c/messages/msg/zed_position__type_support.c"
   "CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/axis_state__type_support.c.o"
   "CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/camera__type_support.c.o"
   "CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/joystick_command__type_support.c.o"
@@ -26,6 +28,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/hat_state__type_support.c.o"
   "CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/key_state__type_support.c.o"
   "CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/talon_out__type_support.c.o"
+  "CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/zed_position__type_support.c.o"
   "libmessages__rosidl_typesupport_introspection_c.pdb"
   "libmessages__rosidl_typesupport_introspection_c.so"
 )

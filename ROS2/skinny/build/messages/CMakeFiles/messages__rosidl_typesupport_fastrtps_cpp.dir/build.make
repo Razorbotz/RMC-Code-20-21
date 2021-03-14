@@ -74,6 +74,7 @@ rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_suppo
 rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp: rosidl_adapter/messages/msg/HatState.idl
 rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp: rosidl_adapter/messages/msg/KeyState.idl
 rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp: rosidl_adapter/messages/msg/TalonOut.idl
+rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp: rosidl_adapter/messages/msg/ZedPosition.idl
 rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp: /opt/ros/eloquent/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp: /opt/ros/eloquent/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support for eProsima Fast-RTPS"
@@ -129,6 +130,12 @@ rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_suppor
 
 rosidl_typesupport_fastrtps_cpp/messages/msg/talon_out__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/messages/msg/talon_out__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp: rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/messages/msg/zed_position__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/messages/msg/zed_position__rosidl_typesupport_fastrtps_cpp.hpp
 
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp.o: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp
@@ -346,6 +353,30 @@ CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fast
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_support.cpp.o.provides.build: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_support.cpp.o
 
 
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o -c /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp
+
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp > CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.i
+
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp -o CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.s
+
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.requires:
+
+.PHONY : CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.requires
+
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.provides: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.requires
+	$(MAKE) -f CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.provides.build
+.PHONY : CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.provides
+
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.provides.build: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o
+
+
 # Object files for target messages__rosidl_typesupport_fastrtps_cpp
 messages__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/axis_state__type_support.cpp.o" \
@@ -356,7 +387,8 @@ messages__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/button_state__type_support.cpp.o" \
 "CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/hat_state__type_support.cpp.o" \
 "CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/key_state__type_support.cpp.o" \
-"CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_support.cpp.o"
+"CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_support.cpp.o" \
+"CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o"
 
 # External object files for target messages__rosidl_typesupport_fastrtps_cpp
 messages__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
@@ -370,6 +402,7 @@ libmessages__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/messages__rosidl_typ
 libmessages__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/hat_state__type_support.cpp.o
 libmessages__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/key_state__type_support.cpp.o
 libmessages__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_support.cpp.o
+libmessages__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o
 libmessages__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libmessages__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/eloquent/lib/librcutils.so
 libmessages__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/eloquent/lib/librmw.so
@@ -406,7 +439,7 @@ libmessages__rosidl_typesupport_fastrtps_cpp.so: /usr/lib/aarch64-linux-gnu/libt
 libmessages__rosidl_typesupport_fastrtps_cpp.so: /usr/lib/aarch64-linux-gnu/libssl.so
 libmessages__rosidl_typesupport_fastrtps_cpp.so: /usr/lib/aarch64-linux-gnu/libcrypto.so
 libmessages__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libmessages__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libmessages__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -423,6 +456,7 @@ CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/requires: CMakeFiles/me
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/requires: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/hat_state__type_support.cpp.o.requires
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/requires: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/key_state__type_support.cpp.o.requires
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/requires: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_support.cpp.o.requires
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/requires: CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp.o.requires
 
 .PHONY : CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/requires
 
@@ -448,6 +482,8 @@ CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupp
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/messages/msg/key_state__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/talon_out__type_support.cpp
 CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/messages/msg/talon_out__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/messages/msg/dds_fastrtps/zed_position__type_support.cpp
+CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/messages/msg/zed_position__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/team/SoftwareDevelopment/ROS2/skinny/build/messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/team/SoftwareDevelopment/ROS2/skinny/src/messages /home/team/SoftwareDevelopment/ROS2/skinny/src/messages /home/team/SoftwareDevelopment/ROS2/skinny/build/messages /home/team/SoftwareDevelopment/ROS2/skinny/build/messages /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/depend
 

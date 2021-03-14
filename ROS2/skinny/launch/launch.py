@@ -12,7 +12,7 @@ def generate_launch_description():
             parameters=[
                 {"motor_number": 10},
                 {"invert_motor": True},
-                {"speed_topic": "drive_left_speed"},
+                {"speed_topic": "drive_right_speed"},
                 {"info_topic": "talon_10_info"},
                 {"use_velocity": False},
                 {"velocity_multiplier": 3000},
@@ -32,7 +32,7 @@ def generate_launch_description():
             node_executable='talon_node',
             parameters=[
                 {"motor_number": 11},
-                {"invert_motor": True},
+                {"invert_motor": False},
                 {"speed_topic": "drive_left_speed"},
                 {"info_topic": "talon_11_info"},
                 {"use_velocity": False},
@@ -53,7 +53,7 @@ def generate_launch_description():
             node_executable='talon_node',
             parameters=[
                 {"motor_number": 12},
-                {"invert_motor": False},
+                {"invert_motor": True},
                 {"speed_topic": "drive_right_speed"},
                 {"info_topic": "talon_12_info"},
                 {"use_velocity": False},
@@ -75,7 +75,7 @@ def generate_launch_description():
             parameters=[
                 {"motor_number": 13},
                 {"invert_motor": False},
-                {"speed_topic": "drive_right_speed"},
+                {"speed_topic": "drive_left_speed"},
                 {"info_topic": "talon_13_info"},
                 {"use_velocity": False},
                 {"velocity_multiplier": 3000},
@@ -112,6 +112,12 @@ def generate_launch_description():
             name='power_distribution_panel',
 #            executable='power_distribution_panel_node'
             node_executable='power_distribution_panel_node'
+        )
+        ,
+        Node(
+            package='zed_tracking',
+            name='zed_tracking',
+            node_executable='zed_tracking_node'
         )
     ]
 )

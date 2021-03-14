@@ -116,6 +116,18 @@ stdlib.h
 string.h
 -
 
+/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_c/messages/msg/zed_position__functions.c
+messages/msg/zed_position__functions.h
+/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_generator_c/messages/msg/messages/msg/zed_position__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
 /opt/ros/eloquent/include/rosidl_generator_c/primitives_sequence.h
 stdbool.h
 -
@@ -317,6 +329,26 @@ messages/msg/victor_out__struct.h
 rosidl_generator_c/messages/msg/messages/msg/victor_out__struct.h
 
 rosidl_generator_c/messages/msg/victor_out__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/messages/msg/zed_position__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_generator_c/visibility_control.h
+rosidl_generator_c/messages/msg/rosidl_generator_c/visibility_control.h
+messages/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/messages/msg/messages/msg/rosidl_generator_c__visibility_control.h
+messages/msg/zed_position__struct.h
+rosidl_generator_c/messages/msg/messages/msg/zed_position__struct.h
+
+rosidl_generator_c/messages/msg/zed_position__struct.h
 stdbool.h
 -
 stddef.h

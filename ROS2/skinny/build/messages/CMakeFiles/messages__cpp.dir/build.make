@@ -80,6 +80,9 @@ CMakeFiles/messages__cpp: rosidl_generator_cpp/messages/msg/key_state__traits.hp
 CMakeFiles/messages__cpp: rosidl_generator_cpp/messages/msg/talon_out.hpp
 CMakeFiles/messages__cpp: rosidl_generator_cpp/messages/msg/talon_out__struct.hpp
 CMakeFiles/messages__cpp: rosidl_generator_cpp/messages/msg/talon_out__traits.hpp
+CMakeFiles/messages__cpp: rosidl_generator_cpp/messages/msg/zed_position.hpp
+CMakeFiles/messages__cpp: rosidl_generator_cpp/messages/msg/zed_position__struct.hpp
+CMakeFiles/messages__cpp: rosidl_generator_cpp/messages/msg/zed_position__traits.hpp
 
 
 rosidl_generator_cpp/messages/msg/axis_state.hpp: /opt/ros/eloquent/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -102,6 +105,7 @@ rosidl_generator_cpp/messages/msg/axis_state.hpp: rosidl_adapter/messages/msg/Bu
 rosidl_generator_cpp/messages/msg/axis_state.hpp: rosidl_adapter/messages/msg/HatState.idl
 rosidl_generator_cpp/messages/msg/axis_state.hpp: rosidl_adapter/messages/msg/KeyState.idl
 rosidl_generator_cpp/messages/msg/axis_state.hpp: rosidl_adapter/messages/msg/TalonOut.idl
+rosidl_generator_cpp/messages/msg/axis_state.hpp: rosidl_adapter/messages/msg/ZedPosition.idl
 rosidl_generator_cpp/messages/msg/axis_state.hpp: /opt/ros/eloquent/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/messages/msg/axis_state.hpp: /opt/ros/eloquent/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
@@ -185,6 +189,15 @@ rosidl_generator_cpp/messages/msg/talon_out__struct.hpp: rosidl_generator_cpp/me
 rosidl_generator_cpp/messages/msg/talon_out__traits.hpp: rosidl_generator_cpp/messages/msg/axis_state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/messages/msg/talon_out__traits.hpp
 
+rosidl_generator_cpp/messages/msg/zed_position.hpp: rosidl_generator_cpp/messages/msg/axis_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/messages/msg/zed_position.hpp
+
+rosidl_generator_cpp/messages/msg/zed_position__struct.hpp: rosidl_generator_cpp/messages/msg/axis_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/messages/msg/zed_position__struct.hpp
+
+rosidl_generator_cpp/messages/msg/zed_position__traits.hpp: rosidl_generator_cpp/messages/msg/axis_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/messages/msg/zed_position__traits.hpp
+
 messages__cpp: CMakeFiles/messages__cpp
 messages__cpp: rosidl_generator_cpp/messages/msg/axis_state.hpp
 messages__cpp: rosidl_generator_cpp/messages/msg/axis_state__struct.hpp
@@ -213,6 +226,9 @@ messages__cpp: rosidl_generator_cpp/messages/msg/key_state__traits.hpp
 messages__cpp: rosidl_generator_cpp/messages/msg/talon_out.hpp
 messages__cpp: rosidl_generator_cpp/messages/msg/talon_out__struct.hpp
 messages__cpp: rosidl_generator_cpp/messages/msg/talon_out__traits.hpp
+messages__cpp: rosidl_generator_cpp/messages/msg/zed_position.hpp
+messages__cpp: rosidl_generator_cpp/messages/msg/zed_position__struct.hpp
+messages__cpp: rosidl_generator_cpp/messages/msg/zed_position__traits.hpp
 messages__cpp: CMakeFiles/messages__cpp.dir/build.make
 
 .PHONY : messages__cpp

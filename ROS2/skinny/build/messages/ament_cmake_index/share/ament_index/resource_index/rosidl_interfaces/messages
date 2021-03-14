@@ -16,3 +16,5 @@ msg/TalonOut.idl
 msg/TalonOut.msg
 msg/VictorOut.idl
 msg/VictorOut.msg
+msg/ZedPosition.idl
+msg/ZedPosition.msg

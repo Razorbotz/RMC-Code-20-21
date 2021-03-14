@@ -62,6 +62,7 @@ CMakeFiles/messages: /home/team/SoftwareDevelopment/ROS2/skinny/src/messages/msg
 CMakeFiles/messages: /home/team/SoftwareDevelopment/ROS2/skinny/src/messages/msg/HatState.msg
 CMakeFiles/messages: /home/team/SoftwareDevelopment/ROS2/skinny/src/messages/msg/KeyState.msg
 CMakeFiles/messages: /home/team/SoftwareDevelopment/ROS2/skinny/src/messages/msg/TalonOut.msg
+CMakeFiles/messages: /home/team/SoftwareDevelopment/ROS2/skinny/src/messages/msg/ZedPosition.msg
 CMakeFiles/messages: /opt/ros/eloquent/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/messages: /opt/ros/eloquent/share/builtin_interfaces/msg/Time.idl
 

@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/messages/msg/_hat_state.py"
   "../rosidl_generator_py/messages/msg/_key_state.py"
   "../rosidl_generator_py/messages/msg/_talon_out.py"
+  "../rosidl_generator_py/messages/msg/_zed_position.py"
   "../rosidl_generator_py/messages/msg/__init__.py"
   "../rosidl_generator_py/messages/msg/_axis_state_s.c"
   "../rosidl_generator_py/messages/msg/_camera_s.c"
@@ -21,6 +22,7 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/messages/msg/_hat_state_s.c"
   "../rosidl_generator_py/messages/msg/_key_state_s.c"
   "../rosidl_generator_py/messages/msg/_talon_out_s.c"
+  "../rosidl_generator_py/messages/msg/_zed_position_s.c"
 )
 
 # Per-language clean rules from dependency scanning.

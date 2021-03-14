@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_hat_state_s.c.o"
   "CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_key_state_s.c.o"
   "CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_talon_out_s.c.o"
+  "CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_zed_position_s.c.o"
   "rosidl_generator_py/messages/libmessages__python.pdb"
   "rosidl_generator_py/messages/libmessages__python.so"
 )

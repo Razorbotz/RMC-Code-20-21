@@ -7,3 +7,4 @@
 /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/HatState.idl
 /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/KeyState.idl
 /home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/TalonOut.idl
+/home/team/SoftwareDevelopment/ROS2/skinny/build/messages/rosidl_adapter/messages:msg/ZedPosition.idl
