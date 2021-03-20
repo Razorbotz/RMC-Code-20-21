@@ -23,6 +23,15 @@ class ZedImageNode(Node):
         timer_period    = 3  # seconds
         self.timer      = self.create_timer(TIME_INTERVAL, self.timer_callback)
 
+        # Set up ZED Camera subscriber (left rectified)
+        self.subscription = self.create_subscription(
+            Detection2DArray,
+            '/detector_node/detections', # TODO this isn't correct, work on it some
+            self.listener_callback,
+            10
+        )
+        self.subscription # Prevent unused variable warning
+
     def timer_callback(self):
         """Called every TIME_INTERVAL seconds,
         publishes an image from the ZED camera to
@@ -42,16 +51,14 @@ class ZedImageNode(Node):
 
         msg.encoding = 'rgb8' # Taken from include/sensor_msgs/image_encodings.h
 
-        msg.is_bigendian = False # IDK if it is, let's try this LOL
-        msg.step         = 3 * im.width # Full row length in bytes
+        msg.is_bigendian = False                  # Works with Darknet
+        msg.step         = 3 * im.width           # Full row length in bytes
         msg.data         = np.array(im).tobytes() # Flattened image data, size is (step * rows)
 
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing image from ZED...')
         self.get_logger().info('    Width : {} px'.format(im.width))
         self.get_logger().info('    Height: {} px'.format(im.height))
-
-
 
 
 
