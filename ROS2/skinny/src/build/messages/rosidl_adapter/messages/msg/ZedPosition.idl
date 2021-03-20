@@ -11,6 +11,12 @@ module messages {
       float y;
 
       float z;
+
+      float ax;
+
+      float ay;
+
+      float az;
     };
   };
 };

@@ -23,6 +23,9 @@ typedef struct messages__msg__ZedPosition
   float x;
   float y;
   float z;
+  float ax;
+  float ay;
+  float az;
 } messages__msg__ZedPosition;
 
 // Struct for a sequence of messages__msg__ZedPosition.

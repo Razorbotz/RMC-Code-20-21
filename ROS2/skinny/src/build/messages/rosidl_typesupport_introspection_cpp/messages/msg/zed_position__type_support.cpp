@@ -37,7 +37,7 @@ void ZedPosition_fini_function(void * message_memory)
   typed_message->~ZedPosition();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_message_member_array[6] = {
   {
     "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -82,13 +82,58 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_m
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "ax",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages::msg::ZedPosition, ax),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "ay",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages::msg::ZedPosition, ay),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "az",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages::msg::ZedPosition, az),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ZedPosition_message_members = {
   "messages::msg",  // message namespace
   "ZedPosition",  // message name
-  3,  // number of fields
+  6,  // number of fields
   sizeof(messages::msg::ZedPosition),
   ZedPosition_message_member_array,  // message members
   ZedPosition_init_function,  // function to initialize message memory (memory has to be allocated)

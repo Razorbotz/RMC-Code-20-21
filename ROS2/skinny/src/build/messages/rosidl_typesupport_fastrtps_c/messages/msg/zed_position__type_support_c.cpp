@@ -64,6 +64,21 @@ static bool _ZedPosition__cdr_serialize(
     cdr << ros_message->z;
   }
 
+  // Field name: ax
+  {
+    cdr << ros_message->ax;
+  }
+
+  // Field name: ay
+  {
+    cdr << ros_message->ay;
+  }
+
+  // Field name: az
+  {
+    cdr << ros_message->az;
+  }
+
   return true;
 }
 
@@ -89,6 +104,21 @@ static bool _ZedPosition__cdr_deserialize(
   // Field name: z
   {
     cdr >> ros_message->z;
+  }
+
+  // Field name: ax
+  {
+    cdr >> ros_message->ax;
+  }
+
+  // Field name: ay
+  {
+    cdr >> ros_message->ay;
+  }
+
+  // Field name: az
+  {
+    cdr >> ros_message->az;
   }
 
   return true;
@@ -123,6 +153,24 @@ size_t get_serialized_size_messages__msg__ZedPosition(
   // field.name z
   {
     size_t item_size = sizeof(ros_message->z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name ax
+  {
+    size_t item_size = sizeof(ros_message->ax);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name ay
+  {
+    size_t item_size = sizeof(ros_message->ay);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name az
+  {
+    size_t item_size = sizeof(ros_message->az);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -165,6 +213,27 @@ size_t max_serialized_size_messages__msg__ZedPosition(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: z
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: ax
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: ay
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: az
   {
     size_t array_size = 1;
 

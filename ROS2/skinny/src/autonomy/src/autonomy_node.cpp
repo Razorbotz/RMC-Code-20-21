@@ -9,11 +9,15 @@ std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> >
 void positionCallback(const messages::msg::ZedPosition::SharedPtr zedPosition){
 	std_msgs::msg::Float32 speedLeft;
 	std_msgs::msg::Float32 speedRight;
-	if(zedPosition->z > 2.5){
+	if(zedPosition->az > 1){
 		speedLeft.data = 0.2;
 		speedRight.data = 0.2;
 	}
-	else if(zedPosition->y == -1){
+	else if(zedPosition-> az < 2.5 && zedPosition->az > 0){
+		speedLeft.data = 0.0;
+		speedRight.data = 0.0;
+	}
+	else if(zedPosition->ax == -1){
 		speedLeft.data = 0.2;
 		speedRight.data = -0.2;
 	}
