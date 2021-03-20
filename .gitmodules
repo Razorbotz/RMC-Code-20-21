@@ -1,3 +1,12 @@
 [submodule "ROS2/skinny/src/openrobotics_darknet_ros"]
 	path = ROS2/skinny/src/openrobotics_darknet_ros
 	url = git@github.com:ros2/openrobotics_darknet_ros.git
+[submodule "ROS/bender/src/slam/src/ddynamic_reconfigure"]
+	path = ROS/bender/src/slam/src/ddynamic_reconfigure
+	url = git@github.com:pal-robotics/ddynamic_reconfigure.git
+[submodule "ROS/bender/src/slam/src/realsense-ros"]
+	path = ROS/bender/src/slam/src/realsense-ros
+	url = https://github.com/IntelRealSense/realsense-ros
+[submodule "orb_slam2/src/orb_slam_2_ros"]
+	path = orb_slam2/src/orb_slam_2_ros
+	url = https://github.com/appliedAI-Initiative/orb_slam_2_ros
