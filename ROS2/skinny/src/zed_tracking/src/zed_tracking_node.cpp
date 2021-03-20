@@ -125,9 +125,15 @@ int main(int argc, char **argv) {
 
                 aruco_position_txt = "Aruco x: " + std::to_string(pose.tx) + "; y: " + std::to_string(pose.ty) + "; z: " + std::to_string(pose.tz);
 
+		zedPosition.ax = pose.tx;
+		zedPosition.ay = pose.ty;
+		zedPosition.az = pose.tz;
             } else{
 		aruco_position_txt = "";    
                 can_reset = false;
+		zedPosition.ax = -1;
+		zedPosition.ay = -1;
+		zedPosition.az = -1;
 	    }
 
 	    zedX += deltaX;

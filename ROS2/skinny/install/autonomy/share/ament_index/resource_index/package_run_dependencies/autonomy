@@ -1,1 +1,1 @@
-ament_lint_auto;ament_lint_common
+messages;roscpp;std_msgs

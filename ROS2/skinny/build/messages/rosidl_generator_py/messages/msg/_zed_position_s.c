@@ -79,6 +79,33 @@ bool messages__msg__zed_position__convert_from_py(PyObject * _pymsg, void * _ros
     ros_message->z = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // ax
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ax");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ax = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // ay
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ay");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ay = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // az
+    PyObject * field = PyObject_GetAttrString(_pymsg, "az");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->az = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -128,6 +155,39 @@ PyObject * messages__msg__zed_position__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->z);
     {
       int rc = PyObject_SetAttrString(_pymessage, "z", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ax
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ax);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ax", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ay
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ay);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ay", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // az
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->az);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "az", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

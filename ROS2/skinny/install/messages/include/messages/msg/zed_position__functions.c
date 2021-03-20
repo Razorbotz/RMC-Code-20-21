@@ -18,6 +18,9 @@ messages__msg__ZedPosition__init(messages__msg__ZedPosition * msg)
   // x
   // y
   // z
+  // ax
+  // ay
+  // az
   return true;
 }
 
@@ -30,6 +33,9 @@ messages__msg__ZedPosition__fini(messages__msg__ZedPosition * msg)
   // x
   // y
   // z
+  // ax
+  // ay
+  // az
 }
 
 messages__msg__ZedPosition *

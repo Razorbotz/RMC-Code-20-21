@@ -41,7 +41,8 @@ using namespace ctre::phoenix::motorcontrol;
 using namespace ctre::phoenix::motorcontrol::can;
 
 
-bool GO=false;
+//bool GO=false;
+bool GO = true;
 void stopCallback(std_msgs::msg::Empty::SharedPtr empty){
 	std::cout << "STOP" << std::endl;
 	GO=false;

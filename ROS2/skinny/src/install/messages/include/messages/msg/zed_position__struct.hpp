@@ -40,6 +40,9 @@ struct ZedPosition_
       this->x = 0.0f;
       this->y = 0.0f;
       this->z = 0.0f;
+      this->ax = 0.0f;
+      this->ay = 0.0f;
+      this->az = 0.0f;
     }
   }
 
@@ -52,6 +55,9 @@ struct ZedPosition_
       this->x = 0.0f;
       this->y = 0.0f;
       this->z = 0.0f;
+      this->ax = 0.0f;
+      this->ay = 0.0f;
+      this->az = 0.0f;
     }
   }
 
@@ -65,6 +71,15 @@ struct ZedPosition_
   using _z_type =
     float;
   _z_type z;
+  using _ax_type =
+    float;
+  _ax_type ax;
+  using _ay_type =
+    float;
+  _ay_type ay;
+  using _az_type =
+    float;
+  _az_type az;
 
   // setters for named parameter idiom
   Type & set__x(
@@ -83,6 +98,24 @@ struct ZedPosition_
     const float & _arg)
   {
     this->z = _arg;
+    return *this;
+  }
+  Type & set__ax(
+    const float & _arg)
+  {
+    this->ax = _arg;
+    return *this;
+  }
+  Type & set__ay(
+    const float & _arg)
+  {
+    this->ay = _arg;
+    return *this;
+  }
+  Type & set__az(
+    const float & _arg)
+  {
+    this->az = _arg;
     return *this;
   }
 
@@ -135,6 +168,15 @@ struct ZedPosition_
       return false;
     }
     if (this->z != other.z) {
+      return false;
+    }
+    if (this->ax != other.ax) {
+      return false;
+    }
+    if (this->ay != other.ay) {
+      return false;
+    }
+    if (this->az != other.az) {
       return false;
     }
     return true;

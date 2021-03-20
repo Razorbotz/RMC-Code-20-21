@@ -213,6 +213,9 @@ PYTHON_VERSION:STRING=
 //Name of the computer/site where compile is being run
 SITE:STRING=robot-nano
 
+//Path to a library.
+_lib:FILEPATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_cpp.so
+
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/eloquent/share/ament_cmake/cmake
 
@@ -309,6 +312,81 @@ autonomy_BINARY_DIR:STATIC=/home/team/SoftwareDevelopment/ROS2/skinny/build/auto
 //Value Computed by CMake
 autonomy_SOURCE_DIR:STATIC=/home/team/SoftwareDevelopment/ROS2/skinny/src/autonomy
 
+//The directory containing a CMake configuration file for builtin_interfaces.
+builtin_interfaces_DIR:PATH=/opt/ros/eloquent/share/builtin_interfaces/cmake
+
+//The directory containing a CMake configuration file for messages.
+messages_DIR:PATH=/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/share/messages/cmake
+
+//The directory containing a CMake configuration file for rcl.
+rcl_DIR:PATH=/opt/ros/eloquent/share/rcl/cmake
+
+//The directory containing a CMake configuration file for rcl_interfaces.
+rcl_interfaces_DIR:PATH=/opt/ros/eloquent/share/rcl_interfaces/cmake
+
+//The directory containing a CMake configuration file for rcl_logging_spdlog.
+rcl_logging_spdlog_DIR:PATH=/opt/ros/eloquent/share/rcl_logging_spdlog/cmake
+
+//The directory containing a CMake configuration file for rcl_yaml_param_parser.
+rcl_yaml_param_parser_DIR:PATH=/opt/ros/eloquent/share/rcl_yaml_param_parser/cmake
+
+//The directory containing a CMake configuration file for rclcpp.
+rclcpp_DIR:PATH=/opt/ros/eloquent/share/rclcpp/cmake
+
+//The directory containing a CMake configuration file for rcpputils.
+rcpputils_DIR:PATH=/opt/ros/eloquent/share/rcpputils/cmake
+
+//The directory containing a CMake configuration file for rcutils.
+rcutils_DIR:PATH=/opt/ros/eloquent/share/rcutils/cmake
+
+//The directory containing a CMake configuration file for rmw.
+rmw_DIR:PATH=/opt/ros/eloquent/share/rmw/cmake
+
+//The directory containing a CMake configuration file for rmw_implementation.
+rmw_implementation_DIR:PATH=/opt/ros/eloquent/share/rmw_implementation/cmake
+
+//The directory containing a CMake configuration file for rmw_implementation_cmake.
+rmw_implementation_cmake_DIR:PATH=/opt/ros/eloquent/share/rmw_implementation_cmake/cmake
+
+//The directory containing a CMake configuration file for rosgraph_msgs.
+rosgraph_msgs_DIR:PATH=/opt/ros/eloquent/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for rosidl_adapter.
+rosidl_adapter_DIR:PATH=/opt/ros/eloquent/share/rosidl_adapter/cmake
+
+//The directory containing a CMake configuration file for rosidl_cmake.
+rosidl_cmake_DIR:PATH=/opt/ros/eloquent/share/rosidl_cmake/cmake
+
+//The directory containing a CMake configuration file for rosidl_default_runtime.
+rosidl_default_runtime_DIR:PATH=/opt/ros/eloquent/share/rosidl_default_runtime/cmake
+
+//The directory containing a CMake configuration file for rosidl_generator_c.
+rosidl_generator_c_DIR:PATH=/opt/ros/eloquent/share/rosidl_generator_c/cmake
+
+//The directory containing a CMake configuration file for rosidl_generator_cpp.
+rosidl_generator_cpp_DIR:PATH=/opt/ros/eloquent/share/rosidl_generator_cpp/cmake
+
+//The directory containing a CMake configuration file for rosidl_typesupport_c.
+rosidl_typesupport_c_DIR:PATH=/opt/ros/eloquent/share/rosidl_typesupport_c/cmake
+
+//The directory containing a CMake configuration file for rosidl_typesupport_cpp.
+rosidl_typesupport_cpp_DIR:PATH=/opt/ros/eloquent/share/rosidl_typesupport_cpp/cmake
+
+//The directory containing a CMake configuration file for rosidl_typesupport_interface.
+rosidl_typesupport_interface_DIR:PATH=/opt/ros/eloquent/share/rosidl_typesupport_interface/cmake
+
+//The directory containing a CMake configuration file for rosidl_typesupport_introspection_c.
+rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/eloquent/share/rosidl_typesupport_introspection_c/cmake
+
+//The directory containing a CMake configuration file for rosidl_typesupport_introspection_cpp.
+rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/cmake
+
+//The directory containing a CMake configuration file for std_msgs.
+std_msgs_DIR:PATH=/opt/ros/eloquent/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for tracetools.
+tracetools_DIR:PATH=/opt/ros/eloquent/share/tracetools/cmake
+
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
 
@@ -391,6 +469,14 @@ CMAKE_GENERATOR:INTERNAL=Unix Makefiles
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Have symbol pthread_create
+CMAKE_HAVE_LIBC_CREATE:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/team/SoftwareDevelopment/ROS2/skinny/src/autonomy
@@ -456,6 +542,8 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.6.9(3)]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 

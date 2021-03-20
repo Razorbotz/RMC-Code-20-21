@@ -87,14 +87,14 @@ def generate_launch_description():
             ]
         )
         ,
-        Node(
-            package='logic',
+#        Node(
+#            package='logic',
 #            namespace='',
-            name='logic',
+#            name='logic',
 #            executable='logic_node'
-            node_executable='logic_node'
-        )
-        ,
+#            node_executable='logic_node'
+#        )
+#        ,
         Node(
             package='communication',
 #            namespace='',
@@ -114,10 +114,21 @@ def generate_launch_description():
             node_executable='power_distribution_panel_node'
         )
         ,
-        Node(
-            package='excavation',
-            name='excavation',
-            node_executable='excavation_node'
-        )
+#        Node(
+#            package='excavation',
+#            name='excavation',
+#            node_executable='excavation_node'
+#        )
+         Node(
+             package='autonomy',
+             name='autonomy',
+             node_executable='autonomy_node'
+         )
+         ,
+         Node(
+             package='zed_tracking',
+             name='zed_tracking',
+             node_executable='zed_tracking_node'
+         )
     ]
 )

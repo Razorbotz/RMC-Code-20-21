@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/team/SoftwareDevelopment/ROS2/skinny/src/autonomy/include 
+CXX_INCLUDES = -I/home/team/SoftwareDevelopment/ROS2/skinny/src/autonomy/include -I/home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include -I/opt/ros/eloquent/include 
 

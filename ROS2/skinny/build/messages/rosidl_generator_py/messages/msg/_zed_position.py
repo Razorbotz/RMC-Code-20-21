@@ -56,15 +56,24 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
         '_x',
         '_y',
         '_z',
+        '_ax',
+        '_ay',
+        '_az',
     ]
 
     _fields_and_field_types = {
         'x': 'float',
         'y': 'float',
         'z': 'float',
+        'ax': 'float',
+        'ay': 'float',
+        'az': 'float',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -77,6 +86,9 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
         self.x = kwargs.get('x', float())
         self.y = kwargs.get('y', float())
         self.z = kwargs.get('z', float())
+        self.ax = kwargs.get('ax', float())
+        self.ay = kwargs.get('ay', float())
+        self.az = kwargs.get('az', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -112,6 +124,12 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
         if self.y != other.y:
             return False
         if self.z != other.z:
+            return False
+        if self.ax != other.ax:
+            return False
+        if self.ay != other.ay:
+            return False
+        if self.az != other.az:
             return False
         return True
 
@@ -158,3 +176,42 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
                 isinstance(value, float), \
                 "The 'z' field must be of type 'float'"
         self._z = value
+
+    @property
+    def ax(self):
+        """Message field 'ax'."""
+        return self._ax
+
+    @ax.setter
+    def ax(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ax' field must be of type 'float'"
+        self._ax = value
+
+    @property
+    def ay(self):
+        """Message field 'ay'."""
+        return self._ay
+
+    @ay.setter
+    def ay(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ay' field must be of type 'float'"
+        self._ay = value
+
+    @property
+    def az(self):
+        """Message field 'az'."""
+        return self._az
+
+    @az.setter
+    def az(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'az' field must be of type 'float'"
+        self._az = value

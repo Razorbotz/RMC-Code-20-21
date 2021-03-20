@@ -31,7 +31,7 @@ void ZedPosition__rosidl_typesupport_introspection_c__ZedPosition_fini_function(
   messages__msg__ZedPosition__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember ZedPosition__rosidl_typesupport_introspection_c__ZedPosition_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember ZedPosition__rosidl_typesupport_introspection_c__ZedPosition_message_member_array[6] = {
   {
     "x",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -76,13 +76,58 @@ static rosidl_typesupport_introspection_c__MessageMember ZedPosition__rosidl_typ
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "ax",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages__msg__ZedPosition, ax),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "ay",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages__msg__ZedPosition, ay),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "az",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages__msg__ZedPosition, az),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers ZedPosition__rosidl_typesupport_introspection_c__ZedPosition_message_members = {
   "messages__msg",  // message namespace
   "ZedPosition",  // message name
-  3,  // number of fields
+  6,  // number of fields
   sizeof(messages__msg__ZedPosition),
   ZedPosition__rosidl_typesupport_introspection_c__ZedPosition_message_member_array,  // message members
   ZedPosition__rosidl_typesupport_introspection_c__ZedPosition_init_function,  // function to initialize message memory (memory has to be allocated)
