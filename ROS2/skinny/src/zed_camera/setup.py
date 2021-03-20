@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'zed_image_node = zed_camera.zed_image_node.py:main'
         ],
     },
 )
