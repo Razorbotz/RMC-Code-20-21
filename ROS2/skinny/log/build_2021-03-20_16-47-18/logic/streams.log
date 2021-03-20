@@ -1,0 +1,23 @@
+[0.046s] Invoking command in '/root/skinny/build/logic': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/skinny/build/logic -- -j4 -l4
+[0.178s] [100%] Built target logic_node
+[0.205s] Invoked command in '/root/skinny/build/logic' returned '0': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/skinny/build/logic -- -j4 -l4
+[0.259s] Invoking command in '/root/skinny/build/logic': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/skinny/build/logic
+[0.276s] -- Install configuration: ""
+[0.278s] -- Installing: /root/skinny/install/logic/lib/logic/logic_node
+[0.289s] -- Set runtime path of "/root/skinny/install/logic/lib/logic/logic_node" to ""
+[0.290s] -- Installing: /root/skinny/install/logic/share/ament_index/resource_index/package_run_dependencies/logic
+[0.290s] -- Installing: /root/skinny/install/logic/share/ament_index/resource_index/parent_prefix_path/logic
+[0.290s] -- Installing: /root/skinny/install/logic/share/logic/environment/ament_prefix_path.sh
+[0.291s] -- Installing: /root/skinny/install/logic/share/logic/environment/ament_prefix_path.dsv
+[0.291s] -- Installing: /root/skinny/install/logic/share/logic/environment/path.sh
+[0.291s] -- Installing: /root/skinny/install/logic/share/logic/environment/path.dsv
+[0.292s] -- Installing: /root/skinny/install/logic/share/logic/local_setup.bash
+[0.292s] -- Installing: /root/skinny/install/logic/share/logic/local_setup.sh
+[0.292s] -- Installing: /root/skinny/install/logic/share/logic/local_setup.zsh
+[0.293s] -- Installing: /root/skinny/install/logic/share/logic/local_setup.dsv
+[0.294s] -- Installing: /root/skinny/install/logic/share/logic/package.dsv
+[0.294s] -- Installing: /root/skinny/install/logic/share/ament_index/resource_index/packages/logic
+[0.296s] -- Installing: /root/skinny/install/logic/share/logic/cmake/logicConfig.cmake
+[0.297s] -- Installing: /root/skinny/install/logic/share/logic/cmake/logicConfig-version.cmake
+[0.298s] -- Installing: /root/skinny/install/logic/share/logic/package.xml
+[0.316s] Invoked command in '/root/skinny/build/logic' returned '0': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/skinny/build/logic

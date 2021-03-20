@@ -1,0 +1,16 @@
+/root/skinny/install/logic/lib/logic/logic_node
+/root/skinny/install/logic/share/ament_index/resource_index/package_run_dependencies/logic
+/root/skinny/install/logic/share/ament_index/resource_index/parent_prefix_path/logic
+/root/skinny/install/logic/share/logic/environment/ament_prefix_path.sh
+/root/skinny/install/logic/share/logic/environment/ament_prefix_path.dsv
+/root/skinny/install/logic/share/logic/environment/path.sh
+/root/skinny/install/logic/share/logic/environment/path.dsv
+/root/skinny/install/logic/share/logic/local_setup.bash
+/root/skinny/install/logic/share/logic/local_setup.sh
+/root/skinny/install/logic/share/logic/local_setup.zsh
+/root/skinny/install/logic/share/logic/local_setup.dsv
+/root/skinny/install/logic/share/logic/package.dsv
+/root/skinny/install/logic/share/ament_index/resource_index/packages/logic
+/root/skinny/install/logic/share/logic/cmake/logicConfig.cmake
+/root/skinny/install/logic/share/logic/cmake/logicConfig-version.cmake
+/root/skinny/install/logic/share/logic/package.xml

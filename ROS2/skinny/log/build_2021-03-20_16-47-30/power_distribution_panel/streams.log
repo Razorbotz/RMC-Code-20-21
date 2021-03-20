@@ -1,0 +1,23 @@
+[0.045s] Invoking command in '/root/skinny/build/power_distribution_panel': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/skinny/build/power_distribution_panel -- -j4 -l4
+[0.181s] [100%] Built target power_distribution_panel_node
+[0.204s] Invoked command in '/root/skinny/build/power_distribution_panel' returned '0': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/skinny/build/power_distribution_panel -- -j4 -l4
+[0.249s] Invoking command in '/root/skinny/build/power_distribution_panel': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/skinny/build/power_distribution_panel
+[0.285s] -- Install configuration: ""
+[0.286s] -- Installing: /root/skinny/install/power_distribution_panel/lib/power_distribution_panel/power_distribution_panel_node
+[0.286s] -- Set runtime path of "/root/skinny/install/power_distribution_panel/lib/power_distribution_panel/power_distribution_panel_node" to ""
+[0.287s] -- Installing: /root/skinny/install/power_distribution_panel/share/ament_index/resource_index/package_run_dependencies/power_distribution_panel
+[0.287s] -- Installing: /root/skinny/install/power_distribution_panel/share/ament_index/resource_index/parent_prefix_path/power_distribution_panel
+[0.288s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/ament_prefix_path.sh
+[0.288s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/ament_prefix_path.dsv
+[0.288s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/path.sh
+[0.289s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/environment/path.dsv
+[0.289s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.bash
+[0.291s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.sh
+[0.291s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.zsh
+[0.291s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/local_setup.dsv
+[0.292s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/package.dsv
+[0.292s] -- Installing: /root/skinny/install/power_distribution_panel/share/ament_index/resource_index/packages/power_distribution_panel
+[0.293s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/cmake/power_distribution_panelConfig.cmake
+[0.293s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/cmake/power_distribution_panelConfig-version.cmake
+[0.294s] -- Installing: /root/skinny/install/power_distribution_panel/share/power_distribution_panel/package.xml
+[0.322s] Invoked command in '/root/skinny/build/power_distribution_panel' returned '0': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /root/skinny/build/power_distribution_panel

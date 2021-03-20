@@ -1,0 +1,45 @@
+[0.070s] Invoking command in '/root/skinny/build/logic': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /root/skinny/src/logic -DCMAKE_INSTALL_PREFIX=/root/skinny/install/logic
+[0.302s] -- The C compiler identification is GNU 9.3.0
+[0.521s] -- The CXX compiler identification is GNU 9.3.0
+[0.540s] -- Check for working C compiler: /usr/bin/cc
+[0.752s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.755s] -- Detecting C compiler ABI info
+[1.078s] -- Detecting C compiler ABI info - done
+[1.145s] -- Detecting C compile features
+[1.146s] -- Detecting C compile features - done
+[1.152s] -- Check for working CXX compiler: /usr/bin/c++
+[1.389s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.392s] -- Detecting CXX compiler ABI info
+[1.619s] -- Detecting CXX compiler ABI info - done
+[1.658s] -- Detecting CXX compile features
+[1.660s] -- Detecting CXX compile features - done
+[1.668s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.729s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[1.730s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.173s] -- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.293s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.315s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.494s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.568s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.785s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.945s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.947s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.949s] -- Looking for pthread.h
+[3.095s] -- Looking for pthread.h - found
+[3.096s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.241s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.241s] -- Looking for pthread_create in pthreads
+[3.534s] -- Looking for pthread_create in pthreads - not found
+[3.534s] -- Looking for pthread_create in pthread
+[3.741s] -- Looking for pthread_create in pthread - found
+[3.744s] -- Found Threads: TRUE  
+[4.311s] -- Found messages: 0.0.0 (/root/skinny/install/messages/share/messages/cmake)
+[4.523s] -- Configuring done
+[4.547s] -- Generating done
+[4.551s] -- Build files have been written to: /root/skinny/build/logic
+[4.570s] Invoked command in '/root/skinny/build/logic' returned '0': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /root/skinny/src/logic -DCMAKE_INSTALL_PREFIX=/root/skinny/install/logic
+[4.571s] Invoking command in '/root/skinny/build/logic': AMENT_PREFIX_PATH=/root/skinny/install/messages:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/skinny/install/messages:/opt/ros/foxy LD_LIBRARY_PATH=/root/skinny/install/messages/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/skinny/install/messages/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /root/skinny/build/logic -- -j4 -l4
+[4.703s] [35m[1mScanning dependencies of target logic_node[0m
+[4.823s] [ 50%] [32mBuilding CXX object CMakeFiles/logic_node.dir/src/logic_node.cpp.o[0m
+[18.819s] [100%] [32m[1mLinking CXX executable logic_node[0m
+[19.511s] [100%] Built target logic_node

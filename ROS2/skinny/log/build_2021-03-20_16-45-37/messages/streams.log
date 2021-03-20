@@ -1,0 +1,441 @@
+[0.037s] Invoking command in '/root/skinny/build/messages': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/skinny/src/messages -DCMAKE_INSTALL_PREFIX=/root/skinny/install/messages
+[0.396s] -- The C compiler identification is GNU 9.3.0
+[0.396s] -- The CXX compiler identification is GNU 9.3.0
+[0.397s] -- Check for working C compiler: /usr/bin/cc
+[0.503s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.506s] -- Detecting C compiler ABI info
+[0.602s] -- Detecting C compiler ABI info - done
+[0.625s] -- Detecting C compile features
+[0.626s] -- Detecting C compile features - done
+[0.630s] -- Check for working CXX compiler: /usr/bin/c++
+[0.751s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.754s] -- Detecting CXX compiler ABI info
+[0.895s] -- Detecting CXX compiler ABI info - done
+[0.927s] -- Detecting CXX compile features
+[0.929s] -- Detecting CXX compile features - done
+[0.939s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.982s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.982s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.302s] -- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.409s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.424s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.554s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.605s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.751s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.876s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.879s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.881s] -- Looking for pthread.h
+[1.994s] -- Looking for pthread.h - found
+[1.994s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.112s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.113s] -- Looking for pthread_create in pthreads
+[2.198s] -- Looking for pthread_create in pthreads - not found
+[2.198s] -- Looking for pthread_create in pthread
+[2.306s] -- Looking for pthread_create in pthread - found
+[2.308s] -- Found Threads: TRUE  
+[2.691s] -- Found rosidl_default_generators: 1.0.0 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.724s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.913s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.5") 
+[3.255s] -- Found ament_cmake_ros: 0.9.1 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[3.462s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.523s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3.5") 
+[3.527s] -- Found python_cmake_module: 0.8.0 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[3.566s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.5", minimum required is "3.5") 
+[3.566s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.566s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[3.566s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[3.597s] -- Found PythonExtra: .so  
+[3.670s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.674s] -- Added test 'lint_cmake' to check CMake code style
+[3.676s] -- Added test 'xmllint' to check XML markup files
+[3.691s] -- Configuring done
+[3.783s] -- Generating done
+[3.788s] -- Build files have been written to: /root/skinny/build/messages
+[3.803s] Invoked command in '/root/skinny/build/messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/skinny/src/messages -DCMAKE_INSTALL_PREFIX=/root/skinny/install/messages
+[3.808s] Invoking command in '/root/skinny/build/messages': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/messages -- -j4 -l4
+[3.871s] [35m[1mScanning dependencies of target messages__cpp[0m
+[3.873s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.887s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.417s] [  2%] Built target messages__cpp
+[5.438s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.522s] [  4%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.540s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.786s] [35m[1mScanning dependencies of target messages__rosidl_generator_c[0m
+[5.866s] [  6%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/axis_state__functions.c.o[0m
+[6.020s] [  7%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/camera__functions.c.o[0m
+[6.120s] [  8%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/joystick_command__functions.c.o[0m
+[6.227s] [  9%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/power__functions.c.o[0m
+[6.321s] [ 10%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/victor_out__functions.c.o[0m
+[6.498s] [ 11%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/button_state__functions.c.o[0m
+[6.625s] [ 12%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/hat_state__functions.c.o[0m
+[6.754s] [ 13%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/key_state__functions.c.o[0m
+[6.790s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_cpp[0m
+[6.854s] [ 15%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/axis_state__type_support.cpp.o[0m
+[6.856s] [ 15%] [32mBuilding C object CMakeFiles/messages__rosidl_generator_c.dir/rosidl_generator_c/messages/msg/detail/talon_out__functions.c.o[0m
+[6.987s] [ 16%] [32m[1mLinking C shared library libmessages__rosidl_generator_c.so[0m
+[7.139s] [ 16%] Built target messages__rosidl_generator_c
+[7.170s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.174s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_introspection_cpp[0m
+[7.222s] [ 18%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/axis_state__type_support.cpp.o[0m
+[7.606s] [ 20%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/camera__type_support.cpp.o[0m
+[7.695s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_fastrtps_cpp[0m
+[7.762s] [ 21%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/axis_state__type_support.cpp.o[0m
+[7.836s] [ 22%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/camera__type_support.cpp.o[0m
+[8.195s] [ 23%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/joystick_command__type_support.cpp.o[0m
+[8.730s] [ 24%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/joystick_command__type_support.cpp.o[0m
+[9.030s] [ 25%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/power__type_support.cpp.o[0m
+[9.220s] [ 26%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/camera__type_support.cpp.o[0m
+[9.459s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_introspection_c[0m
+[9.509s] [ 27%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/axis_state__type_support.c.o[0m
+[9.644s] [ 28%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/camera__type_support.c.o[0m
+[9.768s] [ 29%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/joystick_command__type_support.c.o[0m
+[10.009s] [ 30%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/victor_out__type_support.cpp.o[0m
+[10.016s] [ 31%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/power__type_support.c.o[0m
+[10.090s] [ 32%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/power__type_support.cpp.o[0m
+[10.191s] [ 33%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/victor_out__type_support.c.o[0m
+[10.368s] [ 34%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/button_state__type_support.c.o[0m
+[10.530s] [ 35%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/hat_state__type_support.c.o[0m
+[10.687s] [ 36%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/key_state__type_support.c.o[0m
+[10.842s] [ 37%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/messages/msg/detail/talon_out__type_support.c.o[0m
+[10.883s] [ 38%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/victor_out__type_support.cpp.o[0m
+[10.952s] [ 40%] [32m[1mLinking C shared library libmessages__rosidl_typesupport_introspection_c.so[0m
+[11.060s] [ 41%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/joystick_command__type_support.cpp.o[0m
+[11.133s] [ 41%] Built target messages__rosidl_typesupport_introspection_c
+[11.210s] [ 42%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.347s] [ 43%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/button_state__type_support.cpp.o[0m
+[12.072s] [ 44%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/button_state__type_support.cpp.o[0m
+[12.330s] [ 45%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/power__type_support.cpp.o[0m
+[12.737s] [ 46%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/hat_state__type_support.cpp.o[0m
+[13.161s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_c[0m
+[13.235s] [ 47%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/axis_state__type_support.cpp.o[0m
+[13.340s] [ 48%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/hat_state__type_support.cpp.o[0m
+[13.418s] [ 49%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/camera__type_support.cpp.o[0m
+[13.630s] [ 50%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/key_state__type_support.cpp.o[0m
+[13.677s] [ 51%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/joystick_command__type_support.cpp.o[0m
+[13.891s] [ 52%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/power__type_support.cpp.o[0m
+[14.028s] [ 53%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/victor_out__type_support.cpp.o[0m
+[14.086s] [ 54%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/victor_out__type_support.cpp.o[0m
+[14.318s] [ 55%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/button_state__type_support.cpp.o[0m
+[14.521s] [ 56%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/hat_state__type_support.cpp.o[0m
+[14.657s] [ 57%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/key_state__type_support.cpp.o[0m
+[14.664s] [ 58%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/key_state__type_support.cpp.o[0m
+[14.843s] [ 60%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/messages/msg/talon_out__type_support.cpp.o[0m
+[14.859s] [ 61%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/messages/msg/talon_out__type_support.cpp.o[0m
+[15.053s] [ 62%] [32m[1mLinking CXX shared library libmessages__rosidl_typesupport_c.so[0m
+[15.312s] [ 62%] Built target messages__rosidl_typesupport_c
+[15.360s] [ 63%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/messages/msg/detail/talon_out__type_support.cpp.o[0m
+[15.692s] [ 64%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/button_state__type_support.cpp.o[0m
+[15.760s] [ 65%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/hat_state__type_support.cpp.o[0m
+[16.010s] [ 66%] [32m[1mLinking CXX shared library libmessages__rosidl_typesupport_cpp.so[0m
+[16.274s] [ 66%] Built target messages__rosidl_typesupport_cpp
+[16.337s] [ 67%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/key_state__type_support.cpp.o[0m
+[16.583s] [ 68%] [32m[1mLinking CXX shared library libmessages__rosidl_typesupport_introspection_cpp.so[0m
+[17.029s] [ 68%] Built target messages__rosidl_typesupport_introspection_cpp
+[17.099s] [ 69%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/messages/msg/detail/dds_fastrtps/talon_out__type_support.cpp.o[0m
+[18.422s] [ 70%] [32m[1mLinking CXX shared library libmessages__rosidl_typesupport_fastrtps_cpp.so[0m
+[18.708s] [ 70%] Built target messages__rosidl_typesupport_fastrtps_cpp
+[18.729s] [ 71%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.812s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_fastrtps_c[0m
+[20.928s] [ 72%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/axis_state__type_support_c.cpp.o[0m
+[20.936s] [ 73%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/camera__type_support_c.cpp.o[0m
+[20.961s] [ 75%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/joystick_command__type_support_c.cpp.o[0m
+[20.973s] [ 75%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/power__type_support_c.cpp.o[0m
+[22.706s] [ 76%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/victor_out__type_support_c.cpp.o[0m
+[22.747s] [ 77%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/button_state__type_support_c.cpp.o[0m
+[22.853s] [ 78%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/hat_state__type_support_c.cpp.o[0m
+[23.047s] [ 80%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/key_state__type_support_c.cpp.o[0m
+[24.018s] [ 81%] [32mBuilding CXX object CMakeFiles/messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/messages/msg/detail/talon_out__type_support_c.cpp.o[0m
+[25.103s] [ 82%] [32m[1mLinking CXX shared library libmessages__rosidl_typesupport_fastrtps_c.so[0m
+[25.407s] [ 82%] Built target messages__rosidl_typesupport_fastrtps_c
+[25.484s] [35m[1mScanning dependencies of target messages[0m
+[25.502s] [ 82%] Built target messages
+[25.521s] [35m[1mScanning dependencies of target messages__py[0m
+[25.540s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[29.575s] [ 83%] Built target messages__py
+[29.627s] [35m[1mScanning dependencies of target messages__python[0m
+[29.799s] [ 84%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_axis_state_s.c.o[0m
+[29.803s] [ 85%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_camera_s.c.o[0m
+[29.809s] [ 86%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_joystick_command_s.c.o[0m
+[29.842s] [ 87%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_power_s.c.o[0m
+[30.228s] [ 88%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_victor_out_s.c.o[0m
+[30.260s] [ 89%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_hat_state_s.c.o[0m
+[30.267s] [ 90%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_button_state_s.c.o[0m
+[30.329s] [ 91%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_key_state_s.c.o[0m
+[30.539s] [ 92%] [32mBuilding C object CMakeFiles/messages__python.dir/rosidl_generator_py/messages/msg/_talon_out_s.c.o[0m
+[30.797s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/messages/libmessages__python.so[0m
+[30.910s] [ 93%] Built target messages__python
+[30.989s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_introspection_c__pyext[0m
+[30.996s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_c__pyext[0m
+[31.007s] [35m[1mScanning dependencies of target messages__rosidl_typesupport_fastrtps_c__pyext[0m
+[31.075s] [ 94%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[31.104s] [ 95%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_c.c.o[0m
+[31.110s] [ 96%] [32mBuilding C object CMakeFiles/messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/messages/_messages_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[31.453s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/messages/messages_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[31.510s] [ 98%] [32m[1mLinking CXX shared library rosidl_generator_py/messages/messages_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[31.586s] [100%] [32m[1mLinking C shared library rosidl_generator_py/messages/messages_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[31.661s] [100%] Built target messages__rosidl_typesupport_introspection_c__pyext
+[31.704s] [100%] Built target messages__rosidl_typesupport_c__pyext
+[31.752s] [100%] Built target messages__rosidl_typesupport_fastrtps_c__pyext
+[31.779s] Invoked command in '/root/skinny/build/messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/messages -- -j4 -l4
+[32.965s] Invoking command in '/root/skinny/build/messages': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/messages
+[32.985s] -- Install configuration: ""
+[32.987s] -- Installing: /root/skinny/install/messages/share/ament_index/resource_index/rosidl_interfaces/messages
+[32.988s] -- Installing: /root/skinny/install/messages/include/messages
+[32.988s] -- Installing: /root/skinny/install/messages/include/messages/msg
+[32.988s] -- Installing: /root/skinny/install/messages/include/messages/msg/joystick_command.h
+[32.989s] -- Installing: /root/skinny/install/messages/include/messages/msg/rosidl_generator_c__visibility_control.h
+[32.990s] -- Installing: /root/skinny/install/messages/include/messages/msg/key_state.h
+[32.990s] -- Installing: /root/skinny/install/messages/include/messages/msg/button_state.h
+[32.991s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail
+[32.991s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__functions.c
+[32.992s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__struct.h
+[32.992s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__functions.h
+[32.993s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__struct.h
+[32.994s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__struct.h
+[32.994s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__type_support.h
+[32.995s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__type_support.h
+[32.995s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__type_support.h
+[32.996s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__functions.h
+[32.997s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__type_support.h
+[32.997s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__functions.h
+[32.998s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__struct.h
+[32.998s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__functions.h
+[32.999s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__functions.h
+[32.999s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__functions.c
+[33.000s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__functions.h
+[33.000s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__functions.c
+[33.001s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__type_support.h
+[33.001s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__struct.h
+[33.001s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__struct.h
+[33.002s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__struct.h
+[33.002s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__functions.h
+[33.002s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__functions.c
+[33.003s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__struct.h
+[33.003s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__type_support.h
+[33.004s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__struct.h
+[33.004s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__functions.c
+[33.004s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__functions.h
+[33.005s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__type_support.h
+[33.005s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__functions.c
+[33.005s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__type_support.h
+[33.006s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__functions.c
+[33.006s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__functions.c
+[33.007s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__type_support.h
+[33.007s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__functions.h
+[33.007s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__functions.c
+[33.008s] -- Installing: /root/skinny/install/messages/include/messages/msg/victor_out.h
+[33.008s] -- Installing: /root/skinny/install/messages/include/messages/msg/hat_state.h
+[33.008s] -- Installing: /root/skinny/install/messages/include/messages/msg/talon_out.h
+[33.008s] -- Installing: /root/skinny/install/messages/include/messages/msg/power.h
+[33.009s] -- Installing: /root/skinny/install/messages/include/messages/msg/axis_state.h
+[33.009s] -- Installing: /root/skinny/install/messages/include/messages/msg/camera.h
+[33.010s] -- Installing: /root/skinny/install/messages/share/messages/environment/library_path.sh
+[33.010s] -- Installing: /root/skinny/install/messages/share/messages/environment/library_path.dsv
+[33.011s] -- Installing: /root/skinny/install/messages/lib/libmessages__rosidl_generator_c.so
+[33.012s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__rosidl_generator_c.so" to ""
+[33.012s] -- Up-to-date: /root/skinny/install/messages/include/messages
+[33.013s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg
+[33.013s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg/detail
+[33.013s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__rosidl_typesupport_fastrtps_c.h
+[33.014s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__rosidl_typesupport_fastrtps_c.h
+[33.014s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__rosidl_typesupport_fastrtps_c.h
+[33.014s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__rosidl_typesupport_fastrtps_c.h
+[33.014s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__rosidl_typesupport_fastrtps_c.h
+[33.015s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__rosidl_typesupport_fastrtps_c.h
+[33.015s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__rosidl_typesupport_fastrtps_c.h
+[33.020s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__rosidl_typesupport_fastrtps_c.h
+[33.020s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__rosidl_typesupport_fastrtps_c.h
+[33.020s] -- Installing: /root/skinny/install/messages/include/messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[33.020s] -- Installing: /root/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_c.so
+[33.020s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_c.so" to ""
+[33.021s] -- Up-to-date: /root/skinny/install/messages/include/messages
+[33.021s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg
+[33.021s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg/detail
+[33.022s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__rosidl_typesupport_fastrtps_cpp.hpp
+[33.022s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__rosidl_typesupport_fastrtps_cpp.hpp
+[33.022s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__rosidl_typesupport_fastrtps_cpp.hpp
+[33.022s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__rosidl_typesupport_fastrtps_cpp.hpp
+[33.022s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__rosidl_typesupport_fastrtps_cpp.hpp
+[33.023s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__rosidl_typesupport_fastrtps_cpp.hpp
+[33.023s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/dds_fastrtps
+[33.023s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__rosidl_typesupport_fastrtps_cpp.hpp
+[33.023s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__rosidl_typesupport_fastrtps_cpp.hpp
+[33.023s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__rosidl_typesupport_fastrtps_cpp.hpp
+[33.024s] -- Installing: /root/skinny/install/messages/include/messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[33.024s] -- Installing: /root/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_cpp.so
+[33.024s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_cpp.so" to ""
+[33.026s] -- Up-to-date: /root/skinny/install/messages/include/messages
+[33.026s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg
+[33.027s] -- Installing: /root/skinny/install/messages/include/messages/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[33.027s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg/detail
+[33.027s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__rosidl_typesupport_introspection_c.h
+[33.027s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__rosidl_typesupport_introspection_c.h
+[33.028s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__rosidl_typesupport_introspection_c.h
+[33.028s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__type_support.c
+[33.030s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__type_support.c
+[33.034s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__rosidl_typesupport_introspection_c.h
+[33.034s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__type_support.c
+[33.035s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__type_support.c
+[33.035s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__rosidl_typesupport_introspection_c.h
+[33.035s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__rosidl_typesupport_introspection_c.h
+[33.035s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__type_support.c
+[33.036s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__type_support.c
+[33.036s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__type_support.c
+[33.036s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__rosidl_typesupport_introspection_c.h
+[33.036s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__type_support.c
+[33.036s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__type_support.c
+[33.037s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__rosidl_typesupport_introspection_c.h
+[33.037s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__rosidl_typesupport_introspection_c.h
+[33.039s] -- Installing: /root/skinny/install/messages/lib/libmessages__rosidl_typesupport_introspection_c.so
+[33.040s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__rosidl_typesupport_introspection_c.so" to ""
+[33.040s] -- Installing: /root/skinny/install/messages/lib/libmessages__rosidl_typesupport_c.so
+[33.040s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__rosidl_typesupport_c.so" to ""
+[33.041s] -- Up-to-date: /root/skinny/install/messages/include/messages
+[33.041s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg
+[33.041s] -- Installing: /root/skinny/install/messages/include/messages/msg/victor_out.hpp
+[33.041s] -- Installing: /root/skinny/install/messages/include/messages/msg/hat_state.hpp
+[33.041s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg/detail
+[33.042s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__struct.hpp
+[33.046s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__builder.hpp
+[33.046s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__builder.hpp
+[33.047s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__builder.hpp
+[33.047s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__traits.hpp
+[33.047s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__struct.hpp
+[33.048s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__struct.hpp
+[33.048s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__struct.hpp
+[33.048s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__struct.hpp
+[33.048s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__struct.hpp
+[33.049s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__traits.hpp
+[33.049s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__builder.hpp
+[33.049s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__traits.hpp
+[33.049s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__builder.hpp
+[33.050s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__traits.hpp
+[33.050s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__builder.hpp
+[33.050s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__traits.hpp
+[33.050s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__builder.hpp
+[33.053s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__struct.hpp
+[33.053s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__traits.hpp
+[33.053s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__traits.hpp
+[33.053s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__builder.hpp
+[33.054s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__traits.hpp
+[33.054s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__builder.hpp
+[33.054s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__traits.hpp
+[33.054s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__struct.hpp
+[33.055s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__struct.hpp
+[33.055s] -- Installing: /root/skinny/install/messages/include/messages/msg/key_state.hpp
+[33.055s] -- Installing: /root/skinny/install/messages/include/messages/msg/talon_out.hpp
+[33.059s] -- Installing: /root/skinny/install/messages/include/messages/msg/power.hpp
+[33.059s] -- Installing: /root/skinny/install/messages/include/messages/msg/camera.hpp
+[33.060s] -- Installing: /root/skinny/install/messages/include/messages/msg/axis_state.hpp
+[33.060s] -- Installing: /root/skinny/install/messages/include/messages/msg/button_state.hpp
+[33.060s] -- Installing: /root/skinny/install/messages/include/messages/msg/joystick_command.hpp
+[33.060s] -- Up-to-date: /root/skinny/install/messages/include/messages
+[33.061s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg
+[33.061s] -- Up-to-date: /root/skinny/install/messages/include/messages/msg/detail
+[33.061s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__rosidl_typesupport_introspection_cpp.hpp
+[33.061s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__type_support.cpp
+[33.061s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__rosidl_typesupport_introspection_cpp.hpp
+[33.061s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__rosidl_typesupport_introspection_cpp.hpp
+[33.062s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__type_support.cpp
+[33.062s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__rosidl_typesupport_introspection_cpp.hpp
+[33.062s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__rosidl_typesupport_introspection_cpp.hpp
+[33.062s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/button_state__rosidl_typesupport_introspection_cpp.hpp
+[33.062s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__rosidl_typesupport_introspection_cpp.hpp
+[33.063s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__rosidl_typesupport_introspection_cpp.hpp
+[33.063s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/victor_out__rosidl_typesupport_introspection_cpp.hpp
+[33.063s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/axis_state__type_support.cpp
+[33.063s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/key_state__type_support.cpp
+[33.063s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/joystick_command__type_support.cpp
+[33.064s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/camera__type_support.cpp
+[33.064s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/talon_out__type_support.cpp
+[33.064s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/power__type_support.cpp
+[33.064s] -- Installing: /root/skinny/install/messages/include/messages/msg/detail/hat_state__type_support.cpp
+[33.064s] -- Installing: /root/skinny/install/messages/lib/libmessages__rosidl_typesupport_introspection_cpp.so
+[33.065s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__rosidl_typesupport_introspection_cpp.so" to ""
+[33.065s] -- Installing: /root/skinny/install/messages/lib/libmessages__rosidl_typesupport_cpp.so
+[33.065s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__rosidl_typesupport_cpp.so" to ""
+[33.065s] -- Installing: /root/skinny/install/messages/share/messages/environment/pythonpath.sh
+[33.065s] -- Installing: /root/skinny/install/messages/share/messages/environment/pythonpath.dsv
+[33.065s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/__init__.py
+[33.132s] Compiling '/root/skinny/install/messages/lib/python3.8/site-packages/messages/__init__.py'...
+[33.144s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg
+[33.145s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_key_state.py
+[33.145s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_axis_state.py
+[33.146s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_hat_state.py
+[33.146s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_camera.py
+[33.146s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_talon_out_s.c
+[33.146s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_button_state_s.c
+[33.147s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_power_s.c
+[33.147s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_button_state.py
+[33.147s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/__init__.py
+[33.147s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_joystick_command.py
+[33.148s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_joystick_command_s.c
+[33.148s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_key_state_s.c
+[33.148s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_hat_state_s.c
+[33.148s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_power.py
+[33.149s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_talon_out.py
+[33.149s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_camera_s.c
+[33.149s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_axis_state_s.c
+[33.150s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_victor_out.py
+[33.150s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/msg/_victor_out_s.c
+[33.150s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/messages_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[33.151s] -- Set runtime path of "/root/skinny/install/messages/lib/python3.8/site-packages/messages/messages_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[33.152s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/messages_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[33.153s] -- Set runtime path of "/root/skinny/install/messages/lib/python3.8/site-packages/messages/messages_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[33.153s] -- Installing: /root/skinny/install/messages/lib/python3.8/site-packages/messages/messages_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[33.155s] -- Set runtime path of "/root/skinny/install/messages/lib/python3.8/site-packages/messages/messages_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[33.155s] -- Installing: /root/skinny/install/messages/lib/libmessages__python.so
+[33.156s] -- Set runtime path of "/root/skinny/install/messages/lib/libmessages__python.so" to ""
+[33.157s] -- Installing: /root/skinny/install/messages/share/messages/msg/AxisState.idl
+[33.157s] -- Installing: /root/skinny/install/messages/share/messages/msg/Camera.idl
+[33.157s] -- Installing: /root/skinny/install/messages/share/messages/msg/JoystickCommand.idl
+[33.158s] -- Installing: /root/skinny/install/messages/share/messages/msg/Power.idl
+[33.158s] -- Installing: /root/skinny/install/messages/share/messages/msg/VictorOut.idl
+[33.158s] -- Installing: /root/skinny/install/messages/share/messages/msg/ButtonState.idl
+[33.159s] -- Installing: /root/skinny/install/messages/share/messages/msg/HatState.idl
+[33.159s] -- Installing: /root/skinny/install/messages/share/messages/msg/KeyState.idl
+[33.159s] -- Installing: /root/skinny/install/messages/share/messages/msg/TalonOut.idl
+[33.160s] -- Installing: /root/skinny/install/messages/share/messages/msg/AxisState.msg
+[33.160s] -- Installing: /root/skinny/install/messages/share/messages/msg/Camera.msg
+[33.161s] -- Installing: /root/skinny/install/messages/share/messages/msg/JoystickCommand.msg
+[33.161s] -- Installing: /root/skinny/install/messages/share/messages/msg/Power.msg
+[33.161s] -- Installing: /root/skinny/install/messages/share/messages/msg/VictorOut.msg
+[33.161s] -- Installing: /root/skinny/install/messages/share/messages/msg/ButtonState.msg
+[33.162s] -- Installing: /root/skinny/install/messages/share/messages/msg/HatState.msg
+[33.162s] -- Installing: /root/skinny/install/messages/share/messages/msg/KeyState.msg
+[33.163s] -- Installing: /root/skinny/install/messages/share/messages/msg/TalonOut.msg
+[33.163s] -- Installing: /root/skinny/install/messages/share/ament_index/resource_index/package_run_dependencies/messages
+[33.163s] -- Installing: /root/skinny/install/messages/share/ament_index/resource_index/parent_prefix_path/messages
+[33.164s] -- Installing: /root/skinny/install/messages/share/messages/environment/ament_prefix_path.sh
+[33.164s] -- Installing: /root/skinny/install/messages/share/messages/environment/ament_prefix_path.dsv
+[33.164s] -- Installing: /root/skinny/install/messages/share/messages/environment/path.sh
+[33.165s] -- Installing: /root/skinny/install/messages/share/messages/environment/path.dsv
+[33.165s] -- Installing: /root/skinny/install/messages/share/messages/local_setup.bash
+[33.165s] -- Installing: /root/skinny/install/messages/share/messages/local_setup.sh
+[33.166s] -- Installing: /root/skinny/install/messages/share/messages/local_setup.zsh
+[33.166s] -- Installing: /root/skinny/install/messages/share/messages/local_setup.dsv
+[33.167s] -- Installing: /root/skinny/install/messages/share/messages/package.dsv
+[33.167s] -- Installing: /root/skinny/install/messages/share/ament_index/resource_index/packages/messages
+[33.168s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_generator_cExport.cmake
+[33.168s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_generator_cExport-noconfig.cmake
+[33.168s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_introspection_cExport.cmake
+[33.169s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[33.169s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_cExport.cmake
+[33.170s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_cExport-noconfig.cmake
+[33.171s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_generator_cppExport.cmake
+[33.171s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_introspection_cppExport.cmake
+[33.172s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[33.172s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_cppExport.cmake
+[33.173s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messages__rosidl_typesupport_cppExport-noconfig.cmake
+[33.173s] -- Installing: /root/skinny/install/messages/share/messages/cmake/rosidl_cmake-extras.cmake
+[33.173s] -- Installing: /root/skinny/install/messages/share/messages/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.174s] -- Installing: /root/skinny/install/messages/share/messages/cmake/ament_cmake_export_libraries-extras.cmake
+[33.174s] -- Installing: /root/skinny/install/messages/share/messages/cmake/ament_cmake_export_targets-extras.cmake
+[33.174s] -- Installing: /root/skinny/install/messages/share/messages/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.175s] -- Installing: /root/skinny/install/messages/share/messages/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[33.175s] -- Installing: /root/skinny/install/messages/share/messages/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[33.175s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messagesConfig.cmake
+[33.175s] -- Installing: /root/skinny/install/messages/share/messages/cmake/messagesConfig-version.cmake
+[33.176s] -- Installing: /root/skinny/install/messages/share/messages/package.xml
+[33.191s] Invoked command in '/root/skinny/build/messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/messages

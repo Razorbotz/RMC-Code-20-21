@@ -1,0 +1,14 @@
+# Target labels
+ darknet-download-populate
+# Source files and their labels
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/CMakeFiles/darknet-download-populate
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/CMakeFiles/darknet-download-populate.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/CMakeFiles/darknet-download-populate-complete.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-install.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-mkdir.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-download.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-update.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-patch.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-configure.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-build.rule
+/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/darknet-download-populate-prefix/src/darknet-download-populate-stamp/darknet-download-populate-test.rule

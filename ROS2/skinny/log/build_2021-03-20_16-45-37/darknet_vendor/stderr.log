@@ -1,0 +1,11 @@
+[01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/gemm.c:[m[K In function ‘[01m[Ktime_gpu[m[K’:
+[01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/gemm.c:232:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KcudaThreadSynchronize[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  232 |         [01;35m[KcudaThreadSynchronize[m[K();
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/cuda_runtime.h:96[m[K,
+                 from [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/include/darknet.h:11[m[K,
+                 from [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/utils.h:5[m[K,
+                 from [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/gemm.c:2[m[K:
+[01m[K/usr/include/cuda_runtime_api.h:957:57:[m[K [01;36m[Knote: [m[Kdeclared here
+  957 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI [01;36m[KcudaThreadSynchronize[m[K(void);
+      |                                                         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K

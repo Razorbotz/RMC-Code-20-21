@@ -1,0 +1,10 @@
+/root/skinny/build/communication/CMakeFiles/install/strip.dir
+/root/skinny/build/communication/CMakeFiles/install/local.dir
+/root/skinny/build/communication/CMakeFiles/install.dir
+/root/skinny/build/communication/CMakeFiles/list_install_components.dir
+/root/skinny/build/communication/CMakeFiles/rebuild_cache.dir
+/root/skinny/build/communication/CMakeFiles/edit_cache.dir
+/root/skinny/build/communication/CMakeFiles/test.dir
+/root/skinny/build/communication/CMakeFiles/communication_node.dir
+/root/skinny/build/communication/CMakeFiles/communication_uninstall.dir
+/root/skinny/build/communication/CMakeFiles/uninstall.dir

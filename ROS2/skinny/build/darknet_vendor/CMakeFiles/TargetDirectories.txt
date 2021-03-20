@@ -1,0 +1,8 @@
+/root/skinny/build/darknet_vendor/CMakeFiles/install.dir
+/root/skinny/build/darknet_vendor/CMakeFiles/list_install_components.dir
+/root/skinny/build/darknet_vendor/CMakeFiles/rebuild_cache.dir
+/root/skinny/build/darknet_vendor/CMakeFiles/install/strip.dir
+/root/skinny/build/darknet_vendor/CMakeFiles/darknet_exec.dir
+/root/skinny/build/darknet_vendor/CMakeFiles/edit_cache.dir
+/root/skinny/build/darknet_vendor/CMakeFiles/install/local.dir
+/root/skinny/build/darknet_vendor/CMakeFiles/darknet.dir

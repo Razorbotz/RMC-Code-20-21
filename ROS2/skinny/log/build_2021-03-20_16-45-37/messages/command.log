@@ -1,0 +1,6 @@
+Invoking command in '/root/skinny/build/messages': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/skinny/src/messages -DCMAKE_INSTALL_PREFIX=/root/skinny/install/messages
+Invoked command in '/root/skinny/build/messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/skinny/src/messages -DCMAKE_INSTALL_PREFIX=/root/skinny/install/messages
+Invoking command in '/root/skinny/build/messages': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/messages -- -j4 -l4
+Invoked command in '/root/skinny/build/messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/messages -- -j4 -l4
+Invoking command in '/root/skinny/build/messages': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/messages
+Invoked command in '/root/skinny/build/messages' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/messages

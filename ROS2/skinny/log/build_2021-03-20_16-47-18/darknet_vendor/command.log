@@ -1,0 +1,4 @@
+Invoking command in '/root/skinny/build/darknet_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/darknet_vendor -- -j4 -l4
+Invoked command in '/root/skinny/build/darknet_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/darknet_vendor -- -j4 -l4
+Invoking command in '/root/skinny/build/darknet_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/darknet_vendor
+Invoked command in '/root/skinny/build/darknet_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/darknet_vendor

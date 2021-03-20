@@ -1,0 +1,994 @@
+[0.033s] Invoking command in '/root/skinny/build/darknet_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/skinny/src/darknet_vendor -DCMAKE_INSTALL_PREFIX=/root/skinny/install/darknet_vendor
+[0.384s] -- The C compiler identification is GNU 9.3.0
+[0.385s] -- The CXX compiler identification is GNU 9.3.0
+[0.385s] -- Check for working C compiler: /usr/bin/cc
+[0.486s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.488s] -- Detecting C compiler ABI info
+[0.611s] -- Detecting C compiler ABI info - done
+[0.645s] -- Detecting C compile features
+[0.646s] -- Detecting C compile features - done
+[0.652s] -- Check for working CXX compiler: /usr/bin/c++
+[0.793s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.796s] -- Detecting CXX compiler ABI info
+[0.944s] -- Detecting CXX compiler ABI info - done
+[0.964s] -- Detecting CXX compile features
+[0.965s] -- Detecting CXX compile features - done
+[3.476s] -- Looking for pthread.h
+[3.569s] -- Looking for pthread.h - found
+[3.570s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.664s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.664s] -- Looking for pthread_create in pthreads
+[3.738s] -- Looking for pthread_create in pthreads - not found
+[3.738s] -- Looking for pthread_create in pthread
+[3.831s] -- Looking for pthread_create in pthread - found
+[3.833s] -- Found Threads: TRUE  
+[5.012s] -- The CUDA compiler identification is NVIDIA 10.1.243
+[5.025s] -- Check for working CUDA compiler: /usr/bin/nvcc
+[6.186s] -- Check for working CUDA compiler: /usr/bin/nvcc -- works
+[6.189s] -- Detecting CUDA compiler ABI info
+[7.449s] -- Detecting CUDA compiler ABI info - done
+[7.668s] -- Found CUDA: /usr (found version "10.1") 
+[7.740s] -- Found OpenCV: /usr (found version "4.2.0") 
+[7.752s] -- Configuring done
+[7.817s] -- Generating done
+[7.819s] -- Build files have been written to: /root/skinny/build/darknet_vendor
+[7.834s] Invoked command in '/root/skinny/build/darknet_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/skinny/src/darknet_vendor -DCMAKE_INSTALL_PREFIX=/root/skinny/install/darknet_vendor
+[7.835s] Invoking command in '/root/skinny/build/darknet_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/darknet_vendor -- -j4 -l4
+[8.044s] [35m[1mScanning dependencies of target darknet[0m
+[8.347s] [  1%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/activation_layer.c.o[0m
+[8.354s] [  2%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/activations.c.o[0m
+[8.367s] [  4%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/avgpool_layer.c.o[0m
+[8.376s] [  5%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/batchnorm_layer.c.o[0m
+[8.647s] [  6%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/blas.c.o[0m
+[8.688s] [  8%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/box.c.o[0m
+[8.698s] [  9%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/col2im.c.o[0m
+[8.767s] [ 10%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/connected_layer.c.o[0m
+[8.876s] [ 12%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/convolutional_layer.c.o[0m
+[9.049s] [ 13%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/cost_layer.c.o[0m
+[9.125s] [ 14%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/crnn_layer.c.o[0m
+[9.134s] [ 16%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/crop_layer.c.o[0m
+[9.241s] [ 17%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/cuda.c.o[0m
+[9.365s] [ 18%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/data.c.o[0m
+[9.405s] [ 20%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/deconvolutional_layer.c.o[0m
+[9.509s] [ 21%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/demo.c.o[0m
+[9.547s] [ 22%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/detection_layer.c.o[0m
+[9.731s] [ 24%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/dropout_layer.c.o[0m
+[9.821s] [ 25%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/gemm.c.o[0m
+[9.927s] [ 26%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/gru_layer.c.o[0m
+[9.967s] [ 28%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/im2col.c.o[0m
+[9.969s] [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/gemm.c:[m[K In function ‘[01m[Ktime_gpu[m[K’:
+[9.969s] [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/gemm.c:232:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KcudaThreadSynchronize[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+[9.970s]   232 |         [01;35m[KcudaThreadSynchronize[m[K();
+[9.970s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.970s] In file included from [01m[K/usr/include/cuda_runtime.h:96[m[K,
+[9.971s]                  from [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/include/darknet.h:11[m[K,
+[9.971s]                  from [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/utils.h:5[m[K,
+[9.971s]                  from [01m[K/root/skinny/build/darknet_vendor/_deps/darknet-download-src/src/gemm.c:2[m[K:
+[9.971s] [01m[K/usr/include/cuda_runtime_api.h:957:57:[m[K [01;36m[Knote: [m[Kdeclared here
+[9.971s]   957 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI [01;36m[KcudaThreadSynchronize[m[K(void);
+[9.972s]       |                                                         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[10.125s] [ 29%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/image.c.o[0m
+[10.144s] [ 30%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/iseg_layer.c.o[0m
+[10.158s] [ 32%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/l2norm_layer.c.o[0m
+[10.218s] [ 33%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/layer.c.o[0m
+[10.355s] [ 34%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/list.c.o[0m
+[10.510s] [ 36%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/local_layer.c.o[0m
+[10.588s] [ 37%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/logistic_layer.c.o[0m
+[10.591s] [ 38%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/lstm_layer.c.o[0m
+[10.882s] [ 40%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/matrix.c.o[0m
+[10.949s] [ 41%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/maxpool_layer.c.o[0m
+[11.010s] [ 42%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/network.c.o[0m
+[11.066s] [ 44%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/normalization_layer.c.o[0m
+[11.281s] [ 45%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/option_list.c.o[0m
+[11.436s] [ 46%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/parser.c.o[0m
+[11.511s] [ 48%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/region_layer.c.o[0m
+[11.650s] [ 49%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/reorg_layer.c.o[0m
+[12.050s] [ 50%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/rnn_layer.c.o[0m
+[12.081s] [ 52%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/route_layer.c.o[0m
+[12.092s] [ 53%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/shortcut_layer.c.o[0m
+[12.427s] [ 54%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/softmax_layer.c.o[0m
+[12.444s] [ 56%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/tree.c.o[0m
+[12.467s] [ 57%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/upsample_layer.c.o[0m
+[12.754s] [ 58%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/utils.c.o[0m
+[12.757s] [ 60%] [32mBuilding C object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/yolo_layer.c.o[0m
+[12.838s] [ 61%] [32mBuilding CXX object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/image_opencv.cpp.o[0m
+[13.169s] [ 62%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/activation_kernels.cu.o[0m
+[13.194s] [ 64%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/avgpool_layer_kernels.cu.o[0m
+[13.255s] [ 65%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/blas_kernels.cu.o[0m
+[19.624s] [ 66%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/col2im_kernels.cu.o[0m
+[20.805s] [ 68%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/convolutional_kernels.cu.o[0m
+[21.872s] [ 69%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/crop_layer_kernels.cu.o[0m
+[27.059s] [ 70%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/deconvolutional_kernels.cu.o[0m
+[28.741s] [ 72%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/dropout_layer_kernels.cu.o[0m
+[29.471s] [ 73%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/im2col_kernels.cu.o[0m
+[30.787s] [ 74%] [32mBuilding CUDA object CMakeFiles/darknet.dir/_deps/darknet-download-src/src/maxpool_layer_kernels.cu.o[0m
+[36.334s] [ 76%] [32m[1mLinking C shared library libdarknet.so[0m
+[36.717s] [ 76%] Built target darknet
+[36.739s] [35m[1mScanning dependencies of target darknet_exec[0m
+[36.772s] [ 77%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/art.c.o[0m
+[36.780s] [ 78%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/captcha.c.o[0m
+[36.791s] [ 80%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/cifar.c.o[0m
+[36.912s] [ 81%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/classifier.c.o[0m
+[36.987s] [ 82%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/coco.c.o[0m
+[37.003s] [ 84%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/darknet.c.o[0m
+[37.236s] [ 85%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/go.c.o[0m
+[37.296s] [ 86%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/instance-segmenter.c.o[0m
+[37.450s] [ 88%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/lsd.c.o[0m
+[37.624s] [ 89%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/nightmare.c.o[0m
+[37.708s] [ 90%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/super.c.o[0m
+[37.778s] [ 92%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/rnn.c.o[0m
+[37.969s] [ 93%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/regressor.c.o[0m
+[37.994s] [ 94%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/segmenter.c.o[0m
+[38.186s] [ 96%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/tag.c.o[0m
+[38.195s] [ 97%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/yolo.c.o[0m
+[38.377s] [ 98%] [32mBuilding C object CMakeFiles/darknet_exec.dir/_deps/darknet-download-src/examples/detector.c.o[0m
+[38.620s] [100%] [32m[1mLinking C executable darknet[0m
+[39.703s] [100%] Built target darknet_exec
+[39.730s] Invoked command in '/root/skinny/build/darknet_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/skinny/build/darknet_vendor -- -j4 -l4
+[40.047s] Invoking command in '/root/skinny/build/darknet_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/darknet_vendor
+[40.067s] -- Install configuration: ""
+[40.068s] -- Installing: /root/skinny/install/darknet_vendor/include
+[40.069s] -- Installing: /root/skinny/install/darknet_vendor/include/darknet.h
+[40.069s] -- Up-to-date: /root/skinny/install/darknet_vendor/include
+[40.070s] -- Installing: /root/skinny/install/darknet_vendor/include/darknet_vendor
+[40.070s] -- Installing: /root/skinny/install/darknet_vendor/include/darknet_vendor/darknet_vendor.h
+[40.071s] -- Installing: /root/skinny/install/darknet_vendor/include/darknet_vendor/version.h
+[40.072s] -- Installing: /root/skinny/install/darknet_vendor/lib/libdarknet.so
+[40.078s] -- Installing: /root/skinny/install/darknet_vendor/bin/darknet
+[40.081s] -- Set runtime path of "/root/skinny/install/darknet_vendor/bin/darknet" to ""
+[40.082s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg
+[40.083s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/voc.data
+[40.083s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov3.cfg
+[40.084s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/darknet19.cfg
+[40.084s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/darknet9000.cfg
+[40.085s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov3-tiny.cfg
+[40.086s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/rnn.train.cfg
+[40.086s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnext50.cfg
+[40.087s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnet34.cfg
+[40.087s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnet101.cfg
+[40.088s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/vgg-16.cfg
+[40.089s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/writing.cfg
+[40.089s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/darknet19_448.cfg
+[40.090s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/rnn.cfg
+[40.090s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnet50.cfg
+[40.091s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolo9000.cfg
+[40.092s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/imagenet22k.dataset
+[40.092s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/imagenet9k.hierarchy.dataset
+[40.093s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/vgg-conv.cfg
+[40.093s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/darknet.cfg
+[40.094s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/alexnet.cfg
+[40.094s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnet152.cfg
+[40.095s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/gru.cfg
+[40.096s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/jnet-conv.cfg
+[40.097s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/cifar.test.cfg
+[40.098s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/darknet53.cfg
+[40.098s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov2-tiny.cfg
+[40.099s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnet18.cfg
+[40.100s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnext152-32x4d.cfg
+[40.100s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov1-tiny.cfg
+[40.101s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/tiny.cfg
+[40.101s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/combine9k.data
+[40.102s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/extraction.conv.cfg
+[40.103s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/extraction22k.cfg
+[40.103s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov2.cfg
+[40.104s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/resnext101-32x4d.cfg
+[40.104s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/go.test.cfg
+[40.105s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov3-spp.cfg
+[40.106s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/coco.data
+[40.106s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/cifar.cfg
+[40.107s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/darknet53_448.cfg
+[40.108s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/t1.test.cfg
+[40.108s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/imagenet1k.data
+[40.109s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/openimages.data
+[40.109s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov3-openimages.cfg
+[40.110s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/go.cfg
+[40.111s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/densenet201.cfg
+[40.111s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/extraction.cfg
+[40.112s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov3-voc.cfg
+[40.112s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov2-voc.cfg
+[40.114s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov2-tiny-voc.cfg
+[40.115s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/yolov1.cfg
+[40.115s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/cfg/strided.cfg
+[40.116s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data
+[40.116s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/9k.tree
+[40.118s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/giraffe.jpg
+[40.120s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/imagenet.shortnames.list
+[40.121s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/coco9k.map
+[40.122s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/imagenet.labels.list
+[40.123s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/9k.labels
+[40.124s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/coco.names
+[40.124s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/openimages.names
+[40.125s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/voc.names
+[40.125s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/kite.jpg
+[40.129s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/person.jpg
+[40.130s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/horses.jpg
+[40.131s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels
+[40.132s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_2.png
+[40.133s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_7.png
+[40.133s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_4.png
+[40.134s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_4.png
+[40.134s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_0.png
+[40.135s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_1.png
+[40.135s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_7.png
+[40.136s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_5.png
+[40.137s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_4.png
+[40.137s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_4.png
+[40.138s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_1.png
+[40.138s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_3.png
+[40.139s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_4.png
+[40.139s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_7.png
+[40.140s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_7.png
+[40.141s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_0.png
+[40.141s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_3.png
+[40.142s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_1.png
+[40.142s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_3.png
+[40.145s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_2.png
+[40.145s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_7.png
+[40.145s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_6.png
+[40.146s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_1.png
+[40.146s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_2.png
+[40.147s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_4.png
+[40.147s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_3.png
+[40.147s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_7.png
+[40.148s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_2.png
+[40.148s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_2.png
+[40.149s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_4.png
+[40.149s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_7.png
+[40.150s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_6.png
+[40.150s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_4.png
+[40.151s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_1.png
+[40.152s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_6.png
+[40.152s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_6.png
+[40.153s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_5.png
+[40.153s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_3.png
+[40.154s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_5.png
+[40.155s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_1.png
+[40.155s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_1.png
+[40.156s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_4.png
+[40.156s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_4.png
+[40.157s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_5.png
+[40.158s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_7.png
+[40.158s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_5.png
+[40.159s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_2.png
+[40.159s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_4.png
+[40.160s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_6.png
+[40.161s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_5.png
+[40.161s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_5.png
+[40.162s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_7.png
+[40.162s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_0.png
+[40.164s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_5.png
+[40.164s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_6.png
+[40.165s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_1.png
+[40.166s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_2.png
+[40.166s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_0.png
+[40.167s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_7.png
+[40.167s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_1.png
+[40.168s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_0.png
+[40.169s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_7.png
+[40.169s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_3.png
+[40.170s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_5.png
+[40.170s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_2.png
+[40.171s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_7.png
+[40.171s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_4.png
+[40.172s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_0.png
+[40.173s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_4.png
+[40.173s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_0.png
+[40.174s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_5.png
+[40.175s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_4.png
+[40.175s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_1.png
+[40.176s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_3.png
+[40.176s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_0.png
+[40.177s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_6.png
+[40.177s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_0.png
+[40.178s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_6.png
+[40.179s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_6.png
+[40.179s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_4.png
+[40.181s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_0.png
+[40.181s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_5.png
+[40.182s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_2.png
+[40.182s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_2.png
+[40.183s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_0.png
+[40.184s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_7.png
+[40.184s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_0.png
+[40.185s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_2.png
+[40.185s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_5.png
+[40.186s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_7.png
+[40.186s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_6.png
+[40.187s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_0.png
+[40.188s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_3.png
+[40.188s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_5.png
+[40.189s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_4.png
+[40.189s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_4.png
+[40.190s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_1.png
+[40.190s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_3.png
+[40.191s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_4.png
+[40.192s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_3.png
+[40.192s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_0.png
+[40.193s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_6.png
+[40.193s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_3.png
+[40.194s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_6.png
+[40.194s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_1.png
+[40.195s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_4.png
+[40.195s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_3.png
+[40.196s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_7.png
+[40.197s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_5.png
+[40.198s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_4.png
+[40.199s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_3.png
+[40.199s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_2.png
+[40.200s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_3.png
+[40.200s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_1.png
+[40.201s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_1.png
+[40.201s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_6.png
+[40.202s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_6.png
+[40.202s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_4.png
+[40.203s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_0.png
+[40.204s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_1.png
+[40.204s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_4.png
+[40.205s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_4.png
+[40.205s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_4.png
+[40.206s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_0.png
+[40.206s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_6.png
+[40.207s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_4.png
+[40.208s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_6.png
+[40.208s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_0.png
+[40.209s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_0.png
+[40.209s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_1.png
+[40.210s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_5.png
+[40.211s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_3.png
+[40.211s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_7.png
+[40.212s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_2.png
+[40.212s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_2.png
+[40.213s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_1.png
+[40.213s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_5.png
+[40.214s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_5.png
+[40.215s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_5.png
+[40.215s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_5.png
+[40.216s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_1.png
+[40.216s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_2.png
+[40.217s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_6.png
+[40.218s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_4.png
+[40.219s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_3.png
+[40.220s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_7.png
+[40.221s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_3.png
+[40.221s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_0.png
+[40.222s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_6.png
+[40.223s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_6.png
+[40.223s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_4.png
+[40.224s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_6.png
+[40.225s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_1.png
+[40.225s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_6.png
+[40.226s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_1.png
+[40.226s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_3.png
+[40.227s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_0.png
+[40.228s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_1.png
+[40.228s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_0.png
+[40.229s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_0.png
+[40.230s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_4.png
+[40.230s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_1.png
+[40.231s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_0.png
+[40.232s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_7.png
+[40.232s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_2.png
+[40.233s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_3.png
+[40.233s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_6.png
+[40.234s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_7.png
+[40.234s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_7.png
+[40.235s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_4.png
+[40.236s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_3.png
+[40.236s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_0.png
+[40.237s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_5.png
+[40.237s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_7.png
+[40.238s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_6.png
+[40.239s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_3.png
+[40.239s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_1.png
+[40.240s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_1.png
+[40.240s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_1.png
+[40.241s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_3.png
+[40.241s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_1.png
+[40.242s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_1.png
+[40.243s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_3.png
+[40.245s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_2.png
+[40.245s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_7.png
+[40.245s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_7.png
+[40.246s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_1.png
+[40.246s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_1.png
+[40.246s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_2.png
+[40.246s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_1.png
+[40.247s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_7.png
+[40.247s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_3.png
+[40.248s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_0.png
+[40.249s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_3.png
+[40.249s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_5.png
+[40.250s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_5.png
+[40.251s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_0.png
+[40.251s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_3.png
+[40.252s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_6.png
+[40.253s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_7.png
+[40.253s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_1.png
+[40.254s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_5.png
+[40.254s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_4.png
+[40.255s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_3.png
+[40.256s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_4.png
+[40.256s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_3.png
+[40.257s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_4.png
+[40.258s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_4.png
+[40.258s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_1.png
+[40.259s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_5.png
+[40.260s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_3.png
+[40.260s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_6.png
+[40.261s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_4.png
+[40.262s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_0.png
+[40.262s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_3.png
+[40.263s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_7.png
+[40.264s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_5.png
+[40.264s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_2.png
+[40.265s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_1.png
+[40.265s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_6.png
+[40.266s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_5.png
+[40.267s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_1.png
+[40.267s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_6.png
+[40.268s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_4.png
+[40.269s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_5.png
+[40.269s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_4.png
+[40.270s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_2.png
+[40.270s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_6.png
+[40.271s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_1.png
+[40.272s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_6.png
+[40.272s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_1.png
+[40.273s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_2.png
+[40.273s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_5.png
+[40.274s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_0.png
+[40.275s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_1.png
+[40.275s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_1.png
+[40.276s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_1.png
+[40.277s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_3.png
+[40.280s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_2.png
+[40.281s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_1.png
+[40.281s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_5.png
+[40.282s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_6.png
+[40.282s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_5.png
+[40.283s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_7.png
+[40.284s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_0.png
+[40.284s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_1.png
+[40.285s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_4.png
+[40.286s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_6.png
+[40.286s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_5.png
+[40.287s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_7.png
+[40.287s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_0.png
+[40.288s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_2.png
+[40.289s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_3.png
+[40.289s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_0.png
+[40.290s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_4.png
+[40.290s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_6.png
+[40.291s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_1.png
+[40.292s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_4.png
+[40.292s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_5.png
+[40.293s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_2.png
+[40.293s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_5.png
+[40.294s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_3.png
+[40.295s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_1.png
+[40.295s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_4.png
+[40.296s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_7.png
+[40.297s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_6.png
+[40.297s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_1.png
+[40.298s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_3.png
+[40.298s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_2.png
+[40.299s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_5.png
+[40.300s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_7.png
+[40.300s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_6.png
+[40.301s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_7.png
+[40.301s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_1.png
+[40.302s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_3.png
+[40.303s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_4.png
+[40.303s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_7.png
+[40.304s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_3.png
+[40.304s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_2.png
+[40.305s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_0.png
+[40.306s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_5.png
+[40.306s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_5.png
+[40.307s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_7.png
+[40.307s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_1.png
+[40.308s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_7.png
+[40.309s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_7.png
+[40.309s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_0.png
+[40.310s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_3.png
+[40.310s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_4.png
+[40.311s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_6.png
+[40.312s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_4.png
+[40.312s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_6.png
+[40.313s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_2.png
+[40.313s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_6.png
+[40.314s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_4.png
+[40.315s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_3.png
+[40.315s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_1.png
+[40.316s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_6.png
+[40.317s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_6.png
+[40.318s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_2.png
+[40.319s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_0.png
+[40.320s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_3.png
+[40.320s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_0.png
+[40.321s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_2.png
+[40.322s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_4.png
+[40.322s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_2.png
+[40.323s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_4.png
+[40.324s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_7.png
+[40.324s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_3.png
+[40.325s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_2.png
+[40.326s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_2.png
+[40.326s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_0.png
+[40.327s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_2.png
+[40.328s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_4.png
+[40.328s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_6.png
+[40.329s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_7.png
+[40.329s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_2.png
+[40.330s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_1.png
+[40.331s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_7.png
+[40.331s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_5.png
+[40.332s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_6.png
+[40.333s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_7.png
+[40.333s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_0.png
+[40.334s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_1.png
+[40.335s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_3.png
+[40.335s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_5.png
+[40.336s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_6.png
+[40.336s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_5.png
+[40.337s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_6.png
+[40.337s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_6.png
+[40.338s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_0.png
+[40.339s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_6.png
+[40.339s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_0.png
+[40.340s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_6.png
+[40.340s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_4.png
+[40.341s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_4.png
+[40.342s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_5.png
+[40.342s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_4.png
+[40.343s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_1.png
+[40.345s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_1.png
+[40.345s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_2.png
+[40.346s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_0.png
+[40.346s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_2.png
+[40.346s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_4.png
+[40.346s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_0.png
+[40.347s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_7.png
+[40.348s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_6.png
+[40.348s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_3.png
+[40.349s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_2.png
+[40.349s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_2.png
+[40.350s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_0.png
+[40.351s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_7.png
+[40.351s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_4.png
+[40.352s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_3.png
+[40.353s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_0.png
+[40.353s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_3.png
+[40.354s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_6.png
+[40.355s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_1.png
+[40.355s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_2.png
+[40.356s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_3.png
+[40.356s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_7.png
+[40.357s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_7.png
+[40.358s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_6.png
+[40.358s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_2.png
+[40.359s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_0.png
+[40.360s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_0.png
+[40.360s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_7.png
+[40.361s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_7.png
+[40.361s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_5.png
+[40.362s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_5.png
+[40.362s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_7.png
+[40.363s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_2.png
+[40.364s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_6.png
+[40.364s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_7.png
+[40.365s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_7.png
+[40.366s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_1.png
+[40.366s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_7.png
+[40.367s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_3.png
+[40.367s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_4.png
+[40.368s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_6.png
+[40.369s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_1.png
+[40.369s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_3.png
+[40.370s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_0.png
+[40.370s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_0.png
+[40.371s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_6.png
+[40.371s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_6.png
+[40.372s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_2.png
+[40.373s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_6.png
+[40.373s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/59_7.png
+[40.374s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_2.png
+[40.375s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_0.png
+[40.375s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_0.png
+[40.376s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_1.png
+[40.376s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_7.png
+[40.377s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_1.png
+[40.378s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_5.png
+[40.378s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_7.png
+[40.379s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_2.png
+[40.380s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_5.png
+[40.381s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_1.png
+[40.381s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_3.png
+[40.382s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_1.png
+[40.382s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_2.png
+[40.383s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_1.png
+[40.384s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_5.png
+[40.384s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_5.png
+[40.385s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_5.png
+[40.385s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_2.png
+[40.386s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_6.png
+[40.387s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_4.png
+[40.387s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_0.png
+[40.388s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_2.png
+[40.388s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_4.png
+[40.389s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_0.png
+[40.390s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_5.png
+[40.390s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_2.png
+[40.391s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_2.png
+[40.391s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_4.png
+[40.392s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_3.png
+[40.393s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_5.png
+[40.393s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_3.png
+[40.394s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_7.png
+[40.394s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/make_labels.py
+[40.395s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_4.png
+[40.396s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_5.png
+[40.396s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_0.png
+[40.397s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_6.png
+[40.397s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_4.png
+[40.398s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_6.png
+[40.399s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_2.png
+[40.399s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_2.png
+[40.400s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_6.png
+[40.401s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_4.png
+[40.401s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_5.png
+[40.402s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_3.png
+[40.402s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_4.png
+[40.403s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_4.png
+[40.404s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_7.png
+[40.404s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_2.png
+[40.405s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_5.png
+[40.406s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_3.png
+[40.406s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_6.png
+[40.407s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_6.png
+[40.407s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_3.png
+[40.408s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_1.png
+[40.409s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_2.png
+[40.409s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_2.png
+[40.410s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_2.png
+[40.411s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_7.png
+[40.411s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_7.png
+[40.412s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_5.png
+[40.412s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_4.png
+[40.413s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_3.png
+[40.414s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_4.png
+[40.414s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_2.png
+[40.415s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_2.png
+[40.416s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_4.png
+[40.416s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_3.png
+[40.417s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_1.png
+[40.418s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_4.png
+[40.419s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_2.png
+[40.420s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_0.png
+[40.421s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_4.png
+[40.422s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_6.png
+[40.422s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_2.png
+[40.423s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_2.png
+[40.424s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_5.png
+[40.424s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_0.png
+[40.425s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_3.png
+[40.425s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_3.png
+[40.426s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_4.png
+[40.427s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_7.png
+[40.427s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_4.png
+[40.428s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_1.png
+[40.428s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_7.png
+[40.429s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_6.png
+[40.430s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_3.png
+[40.430s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_3.png
+[40.431s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_4.png
+[40.432s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_2.png
+[40.432s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_0.png
+[40.433s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_5.png
+[40.434s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_0.png
+[40.434s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_4.png
+[40.435s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_6.png
+[40.435s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_1.png
+[40.436s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_6.png
+[40.436s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_3.png
+[40.437s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_7.png
+[40.437s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_2.png
+[40.438s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_0.png
+[40.439s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_6.png
+[40.439s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_1.png
+[40.440s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_4.png
+[40.440s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/52_2.png
+[40.441s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_2.png
+[40.441s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_0.png
+[40.442s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_5.png
+[40.443s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_2.png
+[40.444s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_0.png
+[40.444s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_3.png
+[40.444s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_7.png
+[40.445s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_1.png
+[40.446s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_3.png
+[40.446s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_1.png
+[40.447s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_7.png
+[40.448s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_4.png
+[40.448s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_6.png
+[40.449s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_1.png
+[40.450s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_3.png
+[40.450s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_1.png
+[40.451s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_7.png
+[40.451s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_2.png
+[40.452s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_5.png
+[40.453s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_0.png
+[40.453s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_6.png
+[40.454s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_0.png
+[40.455s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/117_6.png
+[40.455s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_6.png
+[40.456s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_5.png
+[40.456s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_6.png
+[40.457s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_5.png
+[40.458s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_0.png
+[40.458s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_1.png
+[40.459s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_6.png
+[40.459s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_5.png
+[40.460s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_2.png
+[40.461s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_5.png
+[40.461s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_2.png
+[40.462s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/100_2.png
+[40.463s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_6.png
+[40.463s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_3.png
+[40.464s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_1.png
+[40.465s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_0.png
+[40.465s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_3.png
+[40.466s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/119_3.png
+[40.466s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_5.png
+[40.467s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/105_7.png
+[40.472s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_0.png
+[40.472s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_1.png
+[40.473s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/33_0.png
+[40.474s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_3.png
+[40.474s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_4.png
+[40.475s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_2.png
+[40.476s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_1.png
+[40.476s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_0.png
+[40.477s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_4.png
+[40.477s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_6.png
+[40.478s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_1.png
+[40.479s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_5.png
+[40.479s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_2.png
+[40.480s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_7.png
+[40.481s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_6.png
+[40.481s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_7.png
+[40.482s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_3.png
+[40.483s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_2.png
+[40.483s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_2.png
+[40.484s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_1.png
+[40.485s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/34_5.png
+[40.485s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/35_6.png
+[40.486s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_4.png
+[40.487s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_4.png
+[40.487s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_6.png
+[40.488s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_1.png
+[40.489s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_0.png
+[40.489s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_7.png
+[40.490s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_7.png
+[40.491s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_0.png
+[40.491s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_6.png
+[40.492s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_2.png
+[40.492s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_2.png
+[40.493s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_6.png
+[40.494s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_0.png
+[40.494s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_1.png
+[40.495s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_3.png
+[40.495s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_4.png
+[40.496s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_1.png
+[40.497s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_7.png
+[40.497s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_3.png
+[40.498s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/81_3.png
+[40.499s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_6.png
+[40.499s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_6.png
+[40.500s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_2.png
+[40.500s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_4.png
+[40.501s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_1.png
+[40.502s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_1.png
+[40.502s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_2.png
+[40.503s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_2.png
+[40.504s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_7.png
+[40.504s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_7.png
+[40.505s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_0.png
+[40.505s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_3.png
+[40.506s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_6.png
+[40.507s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/83_1.png
+[40.507s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_4.png
+[40.508s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_0.png
+[40.509s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_4.png
+[40.509s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/44_1.png
+[40.510s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_7.png
+[40.511s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_5.png
+[40.511s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_7.png
+[40.512s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_5.png
+[40.512s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_6.png
+[40.513s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_2.png
+[40.514s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/103_3.png
+[40.514s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_0.png
+[40.515s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/64_0.png
+[40.515s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_1.png
+[40.516s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_3.png
+[40.517s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_5.png
+[40.518s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_6.png
+[40.519s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_2.png
+[40.519s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/70_3.png
+[40.520s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_2.png
+[40.521s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_6.png
+[40.522s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_7.png
+[40.522s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/91_7.png
+[40.523s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_5.png
+[40.524s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_3.png
+[40.524s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_4.png
+[40.525s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/37_6.png
+[40.526s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_1.png
+[40.526s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_7.png
+[40.527s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_7.png
+[40.527s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_1.png
+[40.528s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/108_7.png
+[40.529s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_1.png
+[40.529s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/77_0.png
+[40.530s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_5.png
+[40.530s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_5.png
+[40.531s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/63_5.png
+[40.531s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_7.png
+[40.532s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_3.png
+[40.533s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_2.png
+[40.533s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_5.png
+[40.534s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/39_4.png
+[40.535s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_0.png
+[40.535s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/126_4.png
+[40.536s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/53_5.png
+[40.536s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_6.png
+[40.537s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_7.png
+[40.537s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_1.png
+[40.538s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/79_4.png
+[40.539s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_0.png
+[40.539s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_1.png
+[40.540s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_3.png
+[40.540s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_5.png
+[40.541s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_1.png
+[40.541s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/45_7.png
+[40.542s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_5.png
+[40.542s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_5.png
+[40.543s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_1.png
+[40.545s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/116_4.png
+[40.546s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_0.png
+[40.546s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_4.png
+[40.546s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/56_7.png
+[40.546s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_7.png
+[40.546s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_2.png
+[40.547s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/104_5.png
+[40.547s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_2.png
+[40.548s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/61_5.png
+[40.548s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/87_3.png
+[40.549s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_1.png
+[40.549s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/96_0.png
+[40.550s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_7.png
+[40.550s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/124_5.png
+[40.551s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/118_4.png
+[40.551s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/32_4.png
+[40.552s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_5.png
+[40.552s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_7.png
+[40.553s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/92_3.png
+[40.554s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_7.png
+[40.554s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_3.png
+[40.555s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/122_3.png
+[40.555s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_0.png
+[40.556s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/65_4.png
+[40.556s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_4.png
+[40.557s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_6.png
+[40.558s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/71_0.png
+[40.558s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_3.png
+[40.559s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/112_5.png
+[40.559s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_2.png
+[40.560s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_2.png
+[40.561s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_0.png
+[40.561s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/54_2.png
+[40.562s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_7.png
+[40.562s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_3.png
+[40.563s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/57_0.png
+[40.564s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/76_0.png
+[40.564s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/51_2.png
+[40.565s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/47_6.png
+[40.565s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/78_5.png
+[40.566s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_7.png
+[40.566s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_7.png
+[40.567s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_5.png
+[40.568s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/62_5.png
+[40.572s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_6.png
+[40.573s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/114_1.png
+[40.573s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/97_5.png
+[40.573s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/84_3.png
+[40.573s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_3.png
+[40.573s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/49_3.png
+[40.574s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/72_1.png
+[40.574s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/88_2.png
+[40.574s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_5.png
+[40.575s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_6.png
+[40.576s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_7.png
+[40.581s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_0.png
+[40.581s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/120_3.png
+[40.581s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/42_3.png
+[40.581s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_7.png
+[40.582s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_6.png
+[40.582s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/74_7.png
+[40.582s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/111_2.png
+[40.582s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/94_2.png
+[40.583s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/60_3.png
+[40.583s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/68_4.png
+[40.583s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/75_3.png
+[40.583s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/67_0.png
+[40.583s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/90_2.png
+[40.584s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/43_0.png
+[40.584s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_5.png
+[40.585s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_6.png
+[40.585s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/121_0.png
+[40.586s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/41_0.png
+[40.586s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_4.png
+[40.587s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_5.png
+[40.588s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/80_3.png
+[40.588s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/102_5.png
+[40.589s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/125_3.png
+[40.590s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/89_5.png
+[40.590s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/109_4.png
+[40.591s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/98_5.png
+[40.592s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/73_1.png
+[40.592s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_4.png
+[40.593s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/110_6.png
+[40.593s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/36_5.png
+[40.594s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/123_0.png
+[40.595s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/48_1.png
+[40.595s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_0.png
+[40.596s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/50_7.png
+[40.597s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/82_2.png
+[40.597s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/66_2.png
+[40.598s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/86_1.png
+[40.599s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/99_3.png
+[40.599s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_6.png
+[40.600s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/55_7.png
+[40.601s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/40_0.png
+[40.601s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/93_0.png
+[40.602s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/85_0.png
+[40.603s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/58_2.png
+[40.603s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/107_0.png
+[40.604s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/95_7.png
+[40.604s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/115_5.png
+[40.605s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/113_7.png
+[40.606s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_5.png
+[40.606s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/106_0.png
+[40.607s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/46_3.png
+[40.608s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/69_4.png
+[40.608s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/101_6.png
+[40.609s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/labels/38_5.png
+[40.610s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/dog.jpg
+[40.610s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/9k.names
+[40.611s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/eagle.jpg
+[40.612s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/scream.jpg
+[40.614s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/inet9k.map
+[40.614s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/data/goal.txt
+[40.615s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/scripts
+[40.615s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/scripts/gen_tactic.sh
+[40.616s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/scripts/get_coco_dataset.sh
+[40.616s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/scripts/dice_label.sh
+[40.617s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/scripts/voc_label.py
+[40.618s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/scripts/imagenet_label.sh
+[40.619s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/python
+[40.620s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/python/darknet.py
+[40.621s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/python/proverbot.py
+[40.622s] -- Installing: /root/skinny/install/darknet_vendor/share/ament_index/resource_index/packages/darknet_vendor
+[40.623s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/LICENSE
+[40.624s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/LICENSE.fuck
+[40.624s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/LICENSE.gen
+[40.625s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/LICENSE.gpl
+[40.625s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/LICENSE.meta
+[40.626s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/LICENSE.mit
+[40.626s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet/LICENSE.v1
+[40.627s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet_vendor/cmake/darknet_vendor-config.cmake
+[40.628s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet_vendor/cmake/darknet_vendor-version.cmake
+[40.629s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet_vendor/cmake/darknet_vendor-targets.cmake
+[40.631s] -- Installing: /root/skinny/install/darknet_vendor/share/darknet_vendor/cmake/darknet_vendor-targets-noconfig.cmake
+[40.637s] Invoked command in '/root/skinny/build/darknet_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/skinny/build/darknet_vendor
