@@ -1,3 +1,0 @@
-/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/CMakeFiles/rebuild_cache.dir
-/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/CMakeFiles/edit_cache.dir
-/root/skinny/build/darknet_vendor/_deps/darknet-download-subbuild/CMakeFiles/darknet-download-populate.dir

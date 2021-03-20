@@ -1,3 +1,0 @@
-repository='https://github.com/tiagoshibata/darknet'
-module=''
-tag='origin'

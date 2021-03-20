@@ -36,7 +36,7 @@ void updateSpeed(){
     speedLeft.data  = speedLeft.data * maxSpeed;
     speedRight.data = speedRight.data * maxSpeed;
     
-    RCLCPP_INFO(nodeHandle->get_logger(),"speed %f %f", speedLeft.data,  speedRight.data);
+    RCLCPP_INFO(nodeHandle->get_logger(),"speed left=%f right=%f  pitch=%f roll=%f", speedLeft.data,  speedRight.data, joystick1Pitch, joystick1Roll);
 
     driveLeftSpeedPublisher->publish(speedLeft);
     driveRightSpeedPublisher->publish(speedRight);
@@ -49,12 +49,14 @@ void joystickAxisCallback(const messages::msg::AxisState::SharedPtr axisState){
     if(axisState->axis==0){
         joystick1Roll = -axisState->state;
         joystick1Roll = (fabs(joystick1Roll)<deadZone)? 0.0 : joystick1Roll;
-	joystick1Roll = (joystick1Roll>0)?joystick1Roll-deadZone:joystick1Roll+deadZone;
+	joystick1Roll = (joystick1Roll>0)?joystick1Roll-deadZone:joystick1Roll;
+	joystick1Roll = (joystick1Roll<0)?joystick1Roll+deadZone:joystick1Roll;
         updateSpeed();
     }else if(axisState->axis==1){
         joystick1Pitch = axisState->state;
         joystick1Pitch = (fabs(joystick1Pitch)<deadZone)? 0.0 : joystick1Pitch;
-	joystick1Pitch = (joystick1Pitch>0)?joystick1Pitch-deadZone:joystick1Pitch+deadZone;
+	joystick1Pitch = (joystick1Pitch>0)?joystick1Pitch-deadZone:joystick1Pitch;
+	joystick1Pitch = (joystick1Pitch<0)?joystick1Pitch+deadZone:joystick1Pitch;
         updateSpeed();
     }else if(axisState->axis==2){
         joystick1Yaw = axisState->state;

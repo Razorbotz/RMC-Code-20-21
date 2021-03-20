@@ -1,9 +1,0 @@
-/root/skinny/build/messages/rosidl_adapter/messages:msg/AxisState.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/Camera.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/JoystickCommand.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/Power.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/VictorOut.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/ButtonState.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/HatState.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/KeyState.idl
-/root/skinny/build/messages/rosidl_adapter/messages:msg/TalonOut.idl

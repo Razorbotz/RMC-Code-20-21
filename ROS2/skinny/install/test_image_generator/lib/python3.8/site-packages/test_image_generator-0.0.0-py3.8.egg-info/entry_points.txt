@@ -1,3 +1,0 @@
-[console_scripts]
-image_generator = test_image_generator.image_generator:main
-
