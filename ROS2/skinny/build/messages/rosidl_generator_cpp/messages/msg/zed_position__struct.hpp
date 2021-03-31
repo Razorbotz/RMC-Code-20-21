@@ -40,9 +40,11 @@ struct ZedPosition_
       this->x = 0.0f;
       this->y = 0.0f;
       this->z = 0.0f;
-      this->ax = 0.0f;
-      this->ay = 0.0f;
-      this->az = 0.0f;
+      this->ox = 0.0f;
+      this->oy = 0.0f;
+      this->oz = 0.0f;
+      this->ow = 0.0f;
+      this->aruco_visible = false;
     }
   }
 
@@ -55,9 +57,11 @@ struct ZedPosition_
       this->x = 0.0f;
       this->y = 0.0f;
       this->z = 0.0f;
-      this->ax = 0.0f;
-      this->ay = 0.0f;
-      this->az = 0.0f;
+      this->ox = 0.0f;
+      this->oy = 0.0f;
+      this->oz = 0.0f;
+      this->ow = 0.0f;
+      this->aruco_visible = false;
     }
   }
 
@@ -71,15 +75,21 @@ struct ZedPosition_
   using _z_type =
     float;
   _z_type z;
-  using _ax_type =
+  using _ox_type =
     float;
-  _ax_type ax;
-  using _ay_type =
+  _ox_type ox;
+  using _oy_type =
     float;
-  _ay_type ay;
-  using _az_type =
+  _oy_type oy;
+  using _oz_type =
     float;
-  _az_type az;
+  _oz_type oz;
+  using _ow_type =
+    float;
+  _ow_type ow;
+  using _aruco_visible_type =
+    bool;
+  _aruco_visible_type aruco_visible;
 
   // setters for named parameter idiom
   Type & set__x(
@@ -100,22 +110,34 @@ struct ZedPosition_
     this->z = _arg;
     return *this;
   }
-  Type & set__ax(
+  Type & set__ox(
     const float & _arg)
   {
-    this->ax = _arg;
+    this->ox = _arg;
     return *this;
   }
-  Type & set__ay(
+  Type & set__oy(
     const float & _arg)
   {
-    this->ay = _arg;
+    this->oy = _arg;
     return *this;
   }
-  Type & set__az(
+  Type & set__oz(
     const float & _arg)
   {
-    this->az = _arg;
+    this->oz = _arg;
+    return *this;
+  }
+  Type & set__ow(
+    const float & _arg)
+  {
+    this->ow = _arg;
+    return *this;
+  }
+  Type & set__aruco_visible(
+    const bool & _arg)
+  {
+    this->aruco_visible = _arg;
     return *this;
   }
 
@@ -170,13 +192,19 @@ struct ZedPosition_
     if (this->z != other.z) {
       return false;
     }
-    if (this->ax != other.ax) {
+    if (this->ox != other.ox) {
       return false;
     }
-    if (this->ay != other.ay) {
+    if (this->oy != other.oy) {
       return false;
     }
-    if (this->az != other.az) {
+    if (this->oz != other.oz) {
+      return false;
+    }
+    if (this->ow != other.ow) {
+      return false;
+    }
+    if (this->aruco_visible != other.aruco_visible) {
       return false;
     }
     return true;

@@ -12,11 +12,15 @@ module messages {
 
       float z;
 
-      float ax;
+      float ox;
 
-      float ay;
+      float oy;
 
-      float az;
+      float oz;
+
+      float ow;
+
+      boolean aruco_visible;
     };
   };
 };

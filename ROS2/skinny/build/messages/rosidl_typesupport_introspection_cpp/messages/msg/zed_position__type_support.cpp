@@ -37,7 +37,7 @@ void ZedPosition_fini_function(void * message_memory)
   typed_message->~ZedPosition();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_message_member_array[6] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_message_member_array[8] = {
   {
     "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -84,14 +84,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_m
     nullptr  // resize(index) function pointer
   },
   {
-    "ax",  // name
+    "ox",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(messages::msg::ZedPosition, ax),  // bytes offset in struct
+    offsetof(messages::msg::ZedPosition, ox),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -99,14 +99,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_m
     nullptr  // resize(index) function pointer
   },
   {
-    "ay",  // name
+    "oy",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(messages::msg::ZedPosition, ay),  // bytes offset in struct
+    offsetof(messages::msg::ZedPosition, oy),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -114,14 +114,44 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_m
     nullptr  // resize(index) function pointer
   },
   {
-    "az",  // name
+    "oz",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(messages::msg::ZedPosition, az),  // bytes offset in struct
+    offsetof(messages::msg::ZedPosition, oz),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "ow",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages::msg::ZedPosition, ow),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "aruco_visible",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(messages::msg::ZedPosition, aruco_visible),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -133,7 +163,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ZedPosition_m
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ZedPosition_message_members = {
   "messages::msg",  // message namespace
   "ZedPosition",  // message name
-  6,  // number of fields
+  8,  // number of fields
   sizeof(messages::msg::ZedPosition),
   ZedPosition_message_member_array,  // message members
   ZedPosition_init_function,  // function to initialize message memory (memory has to be allocated)

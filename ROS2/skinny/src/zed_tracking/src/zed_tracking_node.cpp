@@ -16,26 +16,23 @@ int main(int argc, char **argv) {
 
     RCLCPP_INFO(nodeHandle->get_logger(),"Starting zed_tracking");
 
-    auto zedPositionPublisher=nodeHandle->create_publisher<messages::msg::ZedPosition>("zed_position",1);
     messages::msg::ZedPosition zedPosition;
+    auto zedPositionPublisher=nodeHandle->create_publisher<messages::msg::ZedPosition>("zed_position",1);
 
     // Create a ZED camera object
     sl::Camera zed;
 
     // Set configuration parameters
     sl::InitParameters init_params;
-//    init_params.camera_resolution = sl::RESOLUTION::HD720;
     init_params.camera_resolution = sl::RESOLUTION::VGA;
     init_params.coordinate_units = sl::UNIT::METER;
-    init_params.coordinate_system = sl::COORDINATE_SYSTEM::RIGHT_HANDED_Y_UP;
+    init_params.coordinate_system = sl::COORDINATE_SYSTEM::IMAGE;    
+//    init_params.coordinate_system = sl::COORDINATE_SYSTEM::RIGHT_HANDED_Y_UP;
+//    init_params.coordinate_system = sl::COORDINATE_SYSTEM::RIGHT_HANDED_Z_UP;
+//    init_params.coordinate_system = sl::COORDINATE_SYSTEM::LEFT_HANDED_Y_UP;
+//    init_params.coordinate_system = sl::COORDINATE_SYSTEM::LEFT_HANDED_Z_UP;
+//    init_params.coordinate_system = sl::COORDINATE_SYSTEM::RIGHT_HANDED_Z_UP_X_FWD;
     init_params.sensors_required = false;
-
-    float deltaX = 0;
-    float deltaY = 0;
-    float deltaZ = 0;
-    float zedX = 0;
-    float zedY = 0;
-    float zedZ = 0;
 
     // Open the camera
     sl::ERROR_CODE err = zed.open(init_params);
@@ -65,16 +62,14 @@ int main(int argc, char **argv) {
 
     std::cout << "Make sure the ArUco marker is a 6x6 (100), measuring " << actual_marker_size_meters * 1000 << " mm" << std::endl;
 
-    sl::Transform pose;
-    sl::Pose zed_pose;
+    sl::Transform arucoPose;
+    sl::Pose zedPose;
     std::vector<cv::Vec3d> rvecs, tvecs;
     std::vector<int> ids;
     std::vector<std::vector<cv::Point2f> > corners;
     std::string zed_position_txt;
     std::string zed_rotation_txt;
     std::string aruco_position_txt;
-
-    bool can_reset = false;
 
     sl::PositionalTrackingParameters tracking_params;
     tracking_params.enable_imu_fusion = false; // for this sample, IMU (of ZED-M) is disable, we use the gravity given by the marker.
@@ -84,71 +79,41 @@ int main(int argc, char **argv) {
         zed.close();
         return EXIT_FAILURE;
     }
-    sl::POSITIONAL_TRACKING_STATE tracking_state;
 
-    // Loop until 'q' is pressed
     while (rclcpp::ok()) {
         if (zed.grab() == sl::ERROR_CODE::SUCCESS) {
             // Retrieve the left image
             zed.retrieveImage(image_zed, sl::VIEW::LEFT, sl::MEM::CPU, image_size);
-
             // convert to RGB
             cv::cvtColor(image_ocv, image_ocv_rgb, cv::COLOR_RGBA2RGB);
             // detect marker
             cv::aruco::detectMarkers(image_ocv_rgb, dictionary, corners, ids);
-
-            // get actual ZED position
-            tracking_state = zed.getPosition(zed_pose, sl::REFERENCE_FRAME::WORLD);
-	    if (tracking_state == sl::POSITIONAL_TRACKING_STATE::OK) {
-	       zedX=zed_pose.pose_data.tx;
-               zedY=zed_pose.pose_data.ty;	       
-	       zedZ=zed_pose.pose_data.tz;
-            // display ZED position
-                zed_position_txt = "ZED  x: " + std::to_string(zed_pose.pose_data.tx) + "; y: " + std::to_string(zed_pose.pose_data.ty) + "; z: " + std::to_string(zed_pose.pose_data.tz);
-                zed_rotation_txt = "ZED  a: " + std::to_string(zed_pose.getOrientation().ox) + "; b: " + std::to_string(zed_pose.getOrientation().oy) + "; c: " + std::to_string(zed_pose.getOrientation().oz);
-	    }else{
-		 zed_position_txt = "";
-		 zed_rotation_txt = "";
-	    }
-
             // if at least one marker detected
             if (ids.size() > 0) {
                 cv::aruco::estimatePoseSingleMarkers(corners, actual_marker_size_meters, camera_matrix, dist_coeffs, rvecs, tvecs);
-                pose.setTranslation(sl::float3(tvecs[0](0), tvecs[0](1), tvecs[0](2)));
-                pose.setRotationVector(sl::float3(rvecs[0](0), rvecs[0](1), rvecs[0](2)));
-                pose.inverse();
-                can_reset = true;
+                arucoPose.setTranslation(sl::float3(tvecs[0](0), tvecs[0](1), tvecs[0](2)));
+                arucoPose.setRotationVector(sl::float3(rvecs[0](0), rvecs[0](1), rvecs[0](2)));
+                arucoPose.inverse();
 
-		deltaX = pose.tx - zedX;
-		deltaY = pose.ty - zedY;
-		deltaZ = pose.tz - zedZ;
-
-                aruco_position_txt = "Aruco x: " + std::to_string(pose.tx) + "; y: " + std::to_string(pose.ty) + "; z: " + std::to_string(pose.tz);
-
-		zedPosition.ax = pose.tx;
-		zedPosition.ay = pose.ty;
-		zedPosition.az = pose.tz;
-            } else{
-		aruco_position_txt = "";    
-                can_reset = false;
-		zedPosition.ax = -1;
-		zedPosition.ay = -1;
-		zedPosition.az = -1;
+                zed.resetPositionalTracking(arucoPose);
+		zedPosition.aruco_visible=true;
+	    }else{
+	        zedPosition.aruco_visible=false;
 	    }
 
-	    zedX += deltaX;
-	    zedY += deltaY;
-	    zedZ += deltaZ;
+            sl::POSITIONAL_TRACKING_STATE tracking_state = zed.getPosition(zedPose, sl::REFERENCE_FRAME::WORLD);
+	    if (tracking_state == sl::POSITIONAL_TRACKING_STATE::OK) {
+	        zedPosition.x=zedPose.getTranslation().x;
+    	        zedPosition.y=zedPose.getTranslation().y;
+	        zedPosition.z=zedPose.getTranslation().z;
+	        zedPosition.ox=zedPose.getOrientation().ox;
+	        zedPosition.oy=zedPose.getOrientation().oy;
+	        zedPosition.oz=zedPose.getOrientation().oz;
+	        zedPosition.ow=zedPose.getOrientation().ow;
 
-	    zedPosition.x=zedX;
-	    zedPosition.y=zedY;
-	    zedPosition.z=zedZ;
+	        zedPositionPublisher->publish(zedPosition);
+	    }
 
-	    zedPositionPublisher->publish(zedPosition);
-
-	    std::cout << "ZED: x:" << zedX << " y: " << zedY << " z:" << zedZ << "   " << aruco_position_txt << std::endl;
-
-            //zed.resetPositionalTracking(pose);
         }
     }
     zed.close();

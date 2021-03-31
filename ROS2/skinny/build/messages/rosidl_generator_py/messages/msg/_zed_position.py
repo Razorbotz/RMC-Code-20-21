@@ -56,18 +56,22 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
         '_x',
         '_y',
         '_z',
-        '_ax',
-        '_ay',
-        '_az',
+        '_ox',
+        '_oy',
+        '_oz',
+        '_ow',
+        '_aruco_visible',
     ]
 
     _fields_and_field_types = {
         'x': 'float',
         'y': 'float',
         'z': 'float',
-        'ax': 'float',
-        'ay': 'float',
-        'az': 'float',
+        'ox': 'float',
+        'oy': 'float',
+        'oz': 'float',
+        'ow': 'float',
+        'aruco_visible': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -77,6 +81,8 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -86,9 +92,11 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
         self.x = kwargs.get('x', float())
         self.y = kwargs.get('y', float())
         self.z = kwargs.get('z', float())
-        self.ax = kwargs.get('ax', float())
-        self.ay = kwargs.get('ay', float())
-        self.az = kwargs.get('az', float())
+        self.ox = kwargs.get('ox', float())
+        self.oy = kwargs.get('oy', float())
+        self.oz = kwargs.get('oz', float())
+        self.ow = kwargs.get('ow', float())
+        self.aruco_visible = kwargs.get('aruco_visible', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -125,11 +133,15 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
             return False
         if self.z != other.z:
             return False
-        if self.ax != other.ax:
+        if self.ox != other.ox:
             return False
-        if self.ay != other.ay:
+        if self.oy != other.oy:
             return False
-        if self.az != other.az:
+        if self.oz != other.oz:
+            return False
+        if self.ow != other.ow:
+            return False
+        if self.aruco_visible != other.aruco_visible:
             return False
         return True
 
@@ -178,40 +190,66 @@ class ZedPosition(metaclass=Metaclass_ZedPosition):
         self._z = value
 
     @property
-    def ax(self):
-        """Message field 'ax'."""
-        return self._ax
+    def ox(self):
+        """Message field 'ox'."""
+        return self._ox
 
-    @ax.setter
-    def ax(self, value):
+    @ox.setter
+    def ox(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'ax' field must be of type 'float'"
-        self._ax = value
+                "The 'ox' field must be of type 'float'"
+        self._ox = value
 
     @property
-    def ay(self):
-        """Message field 'ay'."""
-        return self._ay
+    def oy(self):
+        """Message field 'oy'."""
+        return self._oy
 
-    @ay.setter
-    def ay(self, value):
+    @oy.setter
+    def oy(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'ay' field must be of type 'float'"
-        self._ay = value
+                "The 'oy' field must be of type 'float'"
+        self._oy = value
 
     @property
-    def az(self):
-        """Message field 'az'."""
-        return self._az
+    def oz(self):
+        """Message field 'oz'."""
+        return self._oz
 
-    @az.setter
-    def az(self, value):
+    @oz.setter
+    def oz(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'az' field must be of type 'float'"
-        self._az = value
+                "The 'oz' field must be of type 'float'"
+        self._oz = value
+
+    @property
+    def ow(self):
+        """Message field 'ow'."""
+        return self._ow
+
+    @ow.setter
+    def ow(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ow' field must be of type 'float'"
+        self._ow = value
+
+    @property
+    def aruco_visible(self):
+        """Message field 'aruco_visible'."""
+        return self._aruco_visible
+
+    @aruco_visible.setter
+    def aruco_visible(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'aruco_visible' field must be of type 'bool'"
+        self._aruco_visible = value

@@ -79,31 +79,49 @@ bool messages__msg__zed_position__convert_from_py(PyObject * _pymsg, void * _ros
     ros_message->z = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // ax
-    PyObject * field = PyObject_GetAttrString(_pymsg, "ax");
+  {  // ox
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ox");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->ax = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->ox = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // ay
-    PyObject * field = PyObject_GetAttrString(_pymsg, "ay");
+  {  // oy
+    PyObject * field = PyObject_GetAttrString(_pymsg, "oy");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->ay = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->oy = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // az
-    PyObject * field = PyObject_GetAttrString(_pymsg, "az");
+  {  // oz
+    PyObject * field = PyObject_GetAttrString(_pymsg, "oz");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->az = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->oz = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // ow
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ow");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ow = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // aruco_visible
+    PyObject * field = PyObject_GetAttrString(_pymsg, "aruco_visible");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->aruco_visible = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -161,33 +179,55 @@ PyObject * messages__msg__zed_position__convert_to_py(void * raw_ros_message)
       }
     }
   }
-  {  // ax
+  {  // ox
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->ax);
+    field = PyFloat_FromDouble(ros_message->ox);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "ax", field);
+      int rc = PyObject_SetAttrString(_pymessage, "ox", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // ay
+  {  // oy
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->ay);
+    field = PyFloat_FromDouble(ros_message->oy);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "ay", field);
+      int rc = PyObject_SetAttrString(_pymessage, "oy", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // az
+  {  // oz
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->az);
+    field = PyFloat_FromDouble(ros_message->oz);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "az", field);
+      int rc = PyObject_SetAttrString(_pymessage, "oz", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ow
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ow);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ow", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // aruco_visible
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->aruco_visible ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "aruco_visible", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

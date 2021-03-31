@@ -18,9 +18,11 @@ messages__msg__ZedPosition__init(messages__msg__ZedPosition * msg)
   // x
   // y
   // z
-  // ax
-  // ay
-  // az
+  // ox
+  // oy
+  // oz
+  // ow
+  // aruco_visible
   return true;
 }
 
@@ -33,9 +35,11 @@ messages__msg__ZedPosition__fini(messages__msg__ZedPosition * msg)
   // x
   // y
   // z
-  // ax
-  // ay
-  // az
+  // ox
+  // oy
+  // oz
+  // ow
+  // aruco_visible
 }
 
 messages__msg__ZedPosition *

@@ -23,9 +23,11 @@ typedef struct messages__msg__ZedPosition
   float x;
   float y;
   float z;
-  float ax;
-  float ay;
-  float az;
+  float ox;
+  float oy;
+  float oz;
+  float ow;
+  bool aruco_visible;
 } messages__msg__ZedPosition;
 
 // Struct for a sequence of messages__msg__ZedPosition.
