@@ -70,7 +70,8 @@ class ZedImageNode(Node):
         msg.height = im_height
         msg.width  = im_width
 
-        msg.encoding = 'rgb8' # Taken from include/sensor_msgs/image_encodings.h
+        # msg.encoding = 'rgb8' # Taken from include/sensor_msgs/image_encodings.h
+        msg.encoding = sensor_msgs.image_encodings.RGB8 # Taken from include/sensor_msgs/image_encodings.h
 
         msg.is_bigendian = False        # Works with Darknet
         msg.step         = 3 * im_width # Full row length in bytes
