@@ -3,9 +3,10 @@ from rclpy.node import Node
 
 import numpy as np
 import cv2
+# from sensor_msgs.image_encodings import BGRA8, RGB8
 from sensor_msgs.msg import Image
 
-TIME_INTERVAL = 0.5 # 1/2 second
+TIME_INTERVAL = 0.05 # 20 fps
 
 class ZedImagePasser(Node):
     """A ZED camera node that publishes an image
@@ -27,13 +28,15 @@ class ZedImagePasser(Node):
         # Set up ZED camera subscriber (RGB rectified)
         self.subscription = self.create_subscription(
             Image,
-            'rgb/image_rect_color', # TODO is this correct? https://www.stereolabs.com/docs/ros2/
+            '/zed/zed_node/rgb/image_rect_color', # TODO is this correct? https://www.stereolabs.com/docs/ros2/
             self.listener_callback,
             10
         )
         self.subscription      # Prevent unused variable warning
         self.im_cache  = None  # Temporary cache for the image
         self.i          = 0    # Iterator to track image publication frame ID
+
+        self.get_logger().info('Zed Image Passer node running.')
 
 
 
@@ -53,7 +56,7 @@ class ZedImagePasser(Node):
         im_width    = self.im_cache.width
         im_encoding = self.im_cache.encoding
 
-        if(im_encoding != sensor_msgs.image_encodings.BGRA8):
+        if(im_encoding != 'bgra8'): #BGRA8):
             self.get_logger.info('Encoding {} is not allowed. Use "bgra8" instead.'.format(im_encoding))
             return
 
@@ -70,8 +73,8 @@ class ZedImagePasser(Node):
         msg.height = im_height
         msg.width  = im_width
 
-        # msg.encoding = 'rgb8' # Taken from include/sensor_msgs/image_encodings.h
-        msg.encoding = sensor_msgs.image_encodings.RGB8 # Taken from include/sensor_msgs/image_encodings.h
+        msg.encoding = 'rgb8' # Taken from include/sensor_msgs/image_encodings.h
+        #msg.encoding = RGB8 # Taken from include/sensor_msgs/image_encodings.h
 
         msg.is_bigendian = False        # Works with Darknet
         msg.step         = 3 * im_width # Full row length in bytes
@@ -107,10 +110,10 @@ def main(args=None):
     rclpy.init(args = args)
     zed_image_passer = ZedImagePasser()
 
-    rclpy.spin(zed_image_node)
+    rclpy.spin(zed_image_passer)
 
     # Destroy the node explicitly
-    zed_image_node.destroy_node()
+    zed_image_passer.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
