@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'image_generator = test_image_generator.image_generator:main'
+            'image_generator = test_image_generator.image_generator:main',
+            'image_listener = test_image_generator.image_listener:main'
         ],
     },
 )

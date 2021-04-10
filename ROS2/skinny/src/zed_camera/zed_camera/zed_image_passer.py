@@ -7,17 +7,17 @@ from sensor_msgs.msg import Image
 
 TIME_INTERVAL = 0.5 # 1/2 second
 
-class ZedImageNode(Node):
+class ZedImagePasser(Node):
     """A ZED camera node that publishes an image
     every TIME_INTERVAL seconds to the detector node
-    (in openrobotics_darknet_ros). Essentially,
-    when active, it sends images to be analyzed
-    through the object recognition detector.
+    (in openrobotics_darknet_ros) and caches images
+    from the ZED camera. When active, it sends images 
+    to be analyzed through the object recognition detector.
     """
 
 
     def __init__(self):
-        super().__init__('zed_image_node')
+        super().__init__('zed_image_passer')
 
         # Set up image publisher
         self.publisher_ = self.create_publisher(Image, '/detector_node/images', 10) # Publish to '~/images' topic (same as detector_node)
@@ -53,7 +53,7 @@ class ZedImageNode(Node):
         im_width    = self.im_cache.width
         im_encoding = self.im_cache.encoding
 
-        if(im_encoding != sensor_msgs.image_encodings.BGRA8)
+        if(im_encoding != sensor_msgs.image_encodings.BGRA8):
             self.get_logger.info('Encoding {} is not allowed. Use "bgra8" instead.'.format(im_encoding))
             return
 
@@ -105,7 +105,7 @@ class ZedImageNode(Node):
 
 def main(args=None):
     rclpy.init(args = args)
-    zed_image_node = ZedImageNode()
+    zed_image_passer = ZedImagePasser()
 
     rclpy.spin(zed_image_node)
 

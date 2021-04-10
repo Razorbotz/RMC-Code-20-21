@@ -10,3 +10,6 @@
 [submodule "orb_slam2/src/orb_slam_2_ros"]
 	path = orb_slam2/src/orb_slam_2_ros
 	url = https://github.com/appliedAI-Initiative/orb_slam_2_ros
+[submodule "ROS2/skinny/src/zed-ros2-wrapper"]
+	path = ROS2/skinny/src/zed-ros2-wrapper
+	url = https://github.com/stereolabs/zed-ros2-wrapper
