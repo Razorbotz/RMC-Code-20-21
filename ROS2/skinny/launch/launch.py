@@ -92,7 +92,8 @@ def generate_launch_description():
 #            namespace='',
             name='logic',
 #            executable='logic_node'
-            node_executable='logic_node'
+            node_executable='logic_node',
+            output={'stderr': 'screen', 'stdout': 'screen'}
         )
         ,
         Node(

@@ -10,6 +10,12 @@ CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/R
 CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state.hpp
 CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__struct.hpp
 CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/hat_state__traits.hpp
+CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state.hpp
+CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__struct.hpp
+CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/key_state__traits.hpp
+CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position.hpp
+CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__struct.hpp
+CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__traits.hpp
 CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp
 CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /opt/ros/eloquent/include/builtin_interfaces/msg/duration.hpp
 CMakeFiles/logic_node.dir/src/logic_node.cpp.o: /opt/ros/eloquent/include/builtin_interfaces/msg/duration__struct.hpp

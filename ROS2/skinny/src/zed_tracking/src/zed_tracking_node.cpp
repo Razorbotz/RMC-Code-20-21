@@ -6,7 +6,7 @@
 #include <opencv2/opencv.hpp>
 #include "messages/msg/zed_position.hpp"
 
-
+#define ROW_COUNT 10
 //using namespace sl;
 //using namespace std;
 
@@ -57,7 +57,8 @@ int main(int argc, char **argv) {
 
     cv::Matx<float, 4, 1> dist_coeffs = cv::Vec4f::zeros();
 
-    float actual_marker_size_meters = 0.16f; // real marker size in meters
+    float actual_marker_size_meters = 0.1305f; // real marker size in meters
+   // float actual_marker_size_meters = 0.16f; //fake marker size in meters
     auto dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_100);
 
     std::cout << "Make sure the ArUco marker is a 6x6 (100), measuring " << actual_marker_size_meters * 1000 << " mm" << std::endl;
@@ -71,6 +72,18 @@ int main(int argc, char **argv) {
     std::string zed_rotation_txt;
     std::string aruco_position_txt;
 
+    int currentRow=0;
+    float pastValues[ROW_COUNT][7];
+    float average[7];
+    for(int col=0;col<7;col++){
+	average[col]=0;
+        for(int row=0;row<ROW_COUNT;row++){
+	    pastValues[row][col]=0;
+	}
+    }
+
+
+
     sl::PositionalTrackingParameters tracking_params;
     tracking_params.enable_imu_fusion = false; // for this sample, IMU (of ZED-M) is disable, we use the gravity given by the marker.
     tracking_params.enable_area_memory = true;
@@ -80,6 +93,7 @@ int main(int argc, char **argv) {
         return EXIT_FAILURE;
     }
 
+    rclcpp::Rate rate(10);
     while (rclcpp::ok()) {
         if (zed.grab() == sl::ERROR_CODE::SUCCESS) {
             // Retrieve the left image
@@ -90,6 +104,7 @@ int main(int argc, char **argv) {
             cv::aruco::detectMarkers(image_ocv_rgb, dictionary, corners, ids);
             // if at least one marker detected
             if (ids.size() > 0) {
+	//	int id=ids[0];
                 cv::aruco::estimatePoseSingleMarkers(corners, actual_marker_size_meters, camera_matrix, dist_coeffs, rvecs, tvecs);
                 arucoPose.setTranslation(sl::float3(tvecs[0](0), tvecs[0](1), tvecs[0](2)));
                 arucoPose.setRotationVector(sl::float3(rvecs[0](0), rvecs[0](1), rvecs[0](2)));
@@ -103,18 +118,46 @@ int main(int argc, char **argv) {
 
             sl::POSITIONAL_TRACKING_STATE tracking_state = zed.getPosition(zedPose, sl::REFERENCE_FRAME::WORLD);
 	    if (tracking_state == sl::POSITIONAL_TRACKING_STATE::OK) {
-	        zedPosition.x=zedPose.getTranslation().x;
-    	        zedPosition.y=zedPose.getTranslation().y;
-	        zedPosition.z=zedPose.getTranslation().z;
-	        zedPosition.ox=zedPose.getOrientation().ox;
-	        zedPosition.oy=zedPose.getOrientation().oy;
-	        zedPosition.oz=zedPose.getOrientation().oz;
-	        zedPosition.ow=zedPose.getOrientation().ow;
+		for(int col=0;col<7;col++){    
+		    average[col]-=pastValues[currentRow][col]/ROW_COUNT;
+		}
+
+	        pastValues[currentRow][0]=zedPose.getTranslation().x;
+    	        pastValues[currentRow][1]=zedPose.getTranslation().y;
+	        pastValues[currentRow][2]=zedPose.getTranslation().z;
+	        pastValues[currentRow][3]=zedPose.getOrientation().ox;
+	        pastValues[currentRow][4]=zedPose.getOrientation().oy;
+	        pastValues[currentRow][5]=zedPose.getOrientation().oz;
+	        pastValues[currentRow][6]=zedPose.getOrientation().ow;
+
+		for(int col=0;col<7;col++){    
+		    average[col]+=pastValues[currentRow][col]/ROW_COUNT;
+		}
+		currentRow++;
+		if(currentRow==ROW_COUNT)currentRow=0;
+
+	        zedPosition.x=average[0];
+    	        zedPosition.y=average[1];
+	        zedPosition.z=average[2];
+	        zedPosition.ox=average[3];
+	        zedPosition.oy=average[4];
+	        zedPosition.oz=average[5];
+	        zedPosition.ow=average[6];
+
+
+//	        zedPosition.x=zedPose.getTranslation().x;
+//    	        zedPosition.y=zedPose.getTranslation().y;
+//	        zedPosition.z=zedPose.getTranslation().z;
+//	        zedPosition.ox=zedPose.getOrientation().ox;
+//	        zedPosition.oy=zedPose.getOrientation().oy;
+//	        zedPosition.oz=zedPose.getOrientation().oz;
+//	        zedPosition.ow=zedPose.getOrientation().ow;
 
 	        zedPositionPublisher->publish(zedPosition);
 	    }
 
         }
+	rate.sleep();
     }
     zed.close();
     return 0;
