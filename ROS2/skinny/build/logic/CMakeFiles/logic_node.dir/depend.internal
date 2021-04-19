@@ -17,6 +17,9 @@ CMakeFiles/logic_node.dir/src/logic_node.cpp.o
  /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position.hpp
  /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__struct.hpp
  /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/include/messages/msg/zed_position__traits.hpp
+ /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp
+ /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp
+ /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/AutomationTypes.hpp
  /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp
  /opt/ros/eloquent/include/builtin_interfaces/msg/duration.hpp
  /opt/ros/eloquent/include/builtin_interfaces/msg/duration__struct.hpp

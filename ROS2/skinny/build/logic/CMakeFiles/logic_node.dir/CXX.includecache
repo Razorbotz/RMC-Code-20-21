@@ -166,8 +166,24 @@ stdint.h
 type_traits
 -
 
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp
+rclcpp/rclcpp.hpp
+-
+std_msgs/msg/float32.hpp
+-
+AutomationTypes.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/AutomationTypes.hpp
+
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation1.hpp
+Automation.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/Automation.hpp
+
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/AutomationTypes.hpp
+
 /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp
 math.h
+-
+cmath
 -
 rclcpp/rclcpp.hpp
 -
@@ -191,8 +207,10 @@ messages/msg/key_state.hpp
 -
 messages/msg/zed_position.hpp
 -
-cmath
--
+logic/Automation1.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic/Automation1.hpp
+logic/AutomationTypes.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic/AutomationTypes.hpp
 
 /opt/ros/eloquent/include/builtin_interfaces/msg/duration.hpp
 builtin_interfaces/msg/duration__struct.hpp
