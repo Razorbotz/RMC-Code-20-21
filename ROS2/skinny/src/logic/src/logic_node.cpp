@@ -27,6 +27,7 @@ float joystick1Throttle=1;
 float excavationElevation = 0;
 float excavationAuger = 0;
 float excavationAngle = 0;
+bool reverseAuger = false;
 
 bool automationGo=false;
 
@@ -63,6 +64,7 @@ void updateSpeed(){
 void joystickAxisCallback(const messages::msg::AxisState::SharedPtr axisState){
     RCLCPP_INFO(nodeHandle->get_logger(),"Button %d %d %f", axisState->joystick, axisState->axis, axisState->state);
     float deadZone = 0.1;
+    std_msgs::msg::Float32 auger;
     if(axisState->axis==0){
         joystick1Roll = -axisState->state;
         joystick1Roll = (fabs(joystick1Roll)<deadZone)? 0.0 : joystick1Roll;
@@ -79,6 +81,10 @@ void joystickAxisCallback(const messages::msg::AxisState::SharedPtr axisState){
         joystick1Yaw = axisState->state;
     }else if(axisState->axis==3){
         joystick1Throttle = axisState->state/2+0.5;
+        float augerSpeed = (reverseAuger)? -joystick1Throttle : joystick1Throttle;
+        std::cout << "auger speed: " << augerSpeed << std::endl;
+        auger.data = augerSpeed;
+        excavationAugerPublisher->publish(auger);
     }
 }
 
@@ -89,7 +95,6 @@ void joystickButtonCallback(const messages::msg::ButtonState::SharedPtr buttonSt
     std_msgs::msg::Bool but8;
     std_msgs::msg::Bool driveState;
     std_msgs::msg::Float32 elevation;
-    std_msgs::msg::Float32 auger;
     std_msgs::msg::Float32 angle;
 
     switch (buttonState->button) {
@@ -117,16 +122,10 @@ void joystickButtonCallback(const messages::msg::ButtonState::SharedPtr buttonSt
             }
             break;
         case 6: 
-            excavationAuger += 1;
-            auger.data = excavationAuger;
-            std::cout << "excavationAuger: " << excavationAuger << std::endl;
-            excavationAugerPublisher->publish(auger);
+            reverseAuger = true;
             break;
         case 7:
-            excavationAuger -= 1;
-            auger.data = excavationAuger;
-            std::cout << "excavationAuger: " << excavationAuger << std::endl;
-            excavationAugerPublisher->publish(auger);
+            reverseAuger = false;
             break;
         case 8:
             excavationAngle += 1;

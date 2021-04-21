@@ -35,6 +35,7 @@ class ExcavationNode(Node):
 		#self.right_speed_subscription = self.create_subscription(Float32, 'drive_right_speed', self.right_listener_callback, 10)
 
 	def findODriveObjects(self):
+		print("findOdriveObjects start")
 		self.allDrives = odrive.find_any(path="usb", find_multiple=True)
 		if allDrives[0].serial_number == '206736A1424D':
 			self.odrv0 = self.allDrives[0]
@@ -49,9 +50,6 @@ class ExcavationNode(Node):
 				self.odrv1 = self.allDrives[0]
 				multipleDrives = True
 
-	def calibrate(self):
-		self.calibrate()
-
 	##################################################################################
 	#Note: This setup relies on the motors being in the following positions:         #
 	#The first three motors are position controlled.  The motors of odrv0 are assumed#
@@ -62,6 +60,7 @@ class ExcavationNode(Node):
 	#encoder needed to run it with sensors.						 #
 	##################################################################################
 	def setRequestedState(self):
+		print("setRequestedState start")
 		self.odrv0.axis0.requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
 		self.odrv0.axis0.controller.config.control_mode = CONTROl_MODE_POSITON__CONTROL
 		self.odrv0.axis0.controller.input_pos = 0
@@ -96,11 +95,15 @@ class ExcavationNode(Node):
 		self.get_logger.info("excavationAngleCallback: msg.data: " + str(msg.data))
 
 	def calibrate(self):
+		print("calibrate start")
 		self.odrv0.axis0.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE
 		while self.odrv0.axis0.current_state != AXIS_STATE_IDLE:
 			time.sleep(0.1)
 		self.odrv0.axis1.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE
 		while self.odrv0.axis1.current_state != AXIS_STATE_IDLE:
+			time.sleep(0.1)
+		self.odrv1.axis0.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE
+		while self.odrv1.axis0.current_state != AXIS_STATE_IDLE:
 			time.sleep(0.1)
 		print("Calibrated")
 
@@ -109,16 +112,16 @@ class ExcavationNode(Node):
 		self.excavationElevationSubscription = self.create_subscription(Float32, 'excavationElevation', self.excavationElevationCallback, 10)
 		self.excavationAugerSubscription = self.create_subscription(Float32, 'excavationAuger', self.excavationAugerCallback, 10)
 		self.excavationAngleSubscription = self.create_subscription(Float32, 'excavationAngle', self.excavationAngleCallback, 10)
-		findODriveObjects()
-		calibrate()
+		self.findODriveObjects()
+		self.calibrate()
 		print("ODrive Voltage: " + str(self.odrv0.allDrives[0]))
-		setRequestedState()
+		self.setRequestedState()
 
 def main(args=None):
 	rclpy.init(args=args)
 	print("Hello from exavation node")
 	excavation_node = ExcavationNode('excavation_node')
-
+	print("Created excavation node")
 	rclpy.spin(excavation_node)
 
 	excavation_node.destroy_node()
