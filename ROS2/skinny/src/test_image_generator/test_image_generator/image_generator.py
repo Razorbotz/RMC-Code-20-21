@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 
+import os, glob
 import numpy as np
 from PIL import Image as PILImage
 from sensor_msgs.msg import Image
@@ -14,11 +15,30 @@ class ImageGenerator(Node):
     def __init__(self):
         super().__init__('image_generator')
 
+        # Set up runtime parameters
+        # im_dir      : Where the images are expected to be sourced from
+        # timer_period: The time (seconds) between publishing images
+        self.declare_parameters(
+            namespace='',
+            parameters=[
+                ('im_dir', "/home/team/Vision/images/"),
+                ('timer_pd', 3)
+            ]
+        )
+
+        # Generate a list of .jpg images stored in im_path
+        im_dir        = str(self.get_parameter('im_dir').value)
+        self.im_paths = glob.glob(os.path.join(im_dir, '*.jpg'))
+        self.get_logger().info('Found {} images in {}'.format(len(self.im_paths), im_dir))
+
         # Set up image generation publisher
         self.publisher_ = self.create_publisher(Image, '/detector_node/images', 10) # Publish to '~/images' topic (same as detector_node)
-        timer_period    = 3  # seconds
-        self.timer      = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
+        timer_pd        = float(self.get_parameter('timer_pd').value)
+        self.timer      = self.create_timer(
+            timer_pd, 
+            self.timer_callback
+        )
+        self.i = 0 # Iterator to loop through each of the images in the im_paths list.
 
         # Set up detection listener
         self.subscription = self.create_subscription(
@@ -31,15 +51,22 @@ class ImageGenerator(Node):
 
 
     def timer_callback(self):
-        '''Called every (timer_period) seconds,
+        '''Called every (timer_pd) seconds,
         publishes an image from /root/images/ that the
         detector_node will take in and process.
         '''
-        im_path = '/home/team/Vision/images/{}.jpg'.format(self.i)
-        if os.path.exists(im_path): # Check for nonexistent image/path
-            im  = PILImage.open(im_path)
+        # Check for out of bounds indexes in im_paths list
+        # If we have reached the end of the set of images, stop publishing new images.
+        if self.i < 0 or self.i >= len(self.im_paths):
+            self.get_logger().info('All images have been processed.')
+            return
+
+        # Check for nonexistent image/path
+        if os.path.exists(self.im_paths[self.i]):
+            im  = PILImage.open(self.im_paths[self.i])
         else:
-            self.i = 0 # If we looked through all the images, restart the process
+            self.i = self.i + 1 # If this image does not exist, increment i and try again later with the next image.
+            self.get_logger().info('Image {} not found. Skipping...'.format(self.im_paths[i]))
             return
 
         im      = im.convert('RGB')
@@ -48,36 +75,36 @@ class ImageGenerator(Node):
 
         msg = Image()
         msg.header.stamp = self.get_clock().now().to_msg()
-        msg.header.frame_id = str(self.i) # TODO optical frame of the camera?
+        msg.header.frame_id = str(self.i)
 
         msg.height = im.height
         msg.width  = im.width
 
         msg.encoding = 'rgb8' # Taken from include/sensor_msgs/image_encodings.h
 
-        msg.is_bigendian = False # IDK if it is, let's try this LOL
-        msg.step         = 3 * im.width # Full row length in bytes
+        msg.is_bigendian = False
+        msg.step         = 3 * im.width           # Full row length in bytes
         msg.data         = np.array(im).tobytes() # Flattened image data, size is (step * rows)
 
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing image {}...'.format(self.i))
+        self.get_logger().info('Publishing image {}...'.format(self.im_paths[self.i]))
         self.get_logger().info('    Width : {} px'.format(im.width))
         self.get_logger().info('    Height: {} px'.format(im.height))
 
-        self.i = self.i + 1 # Increment i (until we run out of images, which will cause an error.)
+        self.i = self.i + 1 # Increment i (until we run out of images).
 
 
     def listener_callback(self, msg):
         '''Called whenever the detector_node
         finishes analyzing the image through YOLO.
         '''
-        self.get_logger().info('Received detection list')
+        self.get_logger().info('Received detection list...')
 
         for det in msg.detections:
             for res in det.results:
                 class_id   = res.id
                 confidence = res.score
-                self.get_logger().info('\n    Class:')
+                self.get_logger().info('    Class:')
                 self.get_logger().info('        ID        : {}'.format(class_id))
                 self.get_logger().info('        Confidence: {}'.format(confidence))
 
