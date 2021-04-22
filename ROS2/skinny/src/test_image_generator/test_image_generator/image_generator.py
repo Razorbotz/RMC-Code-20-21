@@ -17,7 +17,7 @@ class ImageGenerator(Node):
 
         # Set up runtime parameters
         # im_dir      : Where the images are expected to be sourced from
-        # timer_period: The time (seconds) between publishing images
+        # timer_period: Minimum time (seconds) between publishing images
         self.declare_parameters(
             namespace='',
             parameters=[
@@ -28,7 +28,7 @@ class ImageGenerator(Node):
 
         # Generate a list of .jpg images stored in im_path
         im_dir        = str(self.get_parameter('im_dir').value)
-        self.im_paths = glob.glob(os.path.join(im_dir, '*.jpg'))
+        self.im_paths = sorted(glob.glob(os.path.join(im_dir, '*.jpg')))
         self.get_logger().info('Found {} images in {}'.format(len(self.im_paths), im_dir))
 
         # Set up image generation publisher
@@ -38,7 +38,9 @@ class ImageGenerator(Node):
             timer_pd, 
             self.timer_callback
         )
-        self.i = 0 # Iterator to loop through each of the images in the im_paths list.
+        self.i        = 0 # Iterator to loop through each of the images in the im_paths list.
+        self.response = True # Flag that is set to True when the Darknet responds. This allows the
+                             # generator to wait to publish an image while the Darknet processes the last one.
 
         # Set up detection listener
         self.subscription = self.create_subscription(
@@ -59,6 +61,10 @@ class ImageGenerator(Node):
         # If we have reached the end of the set of images, stop publishing new images.
         if self.i < 0 or self.i >= len(self.im_paths):
             self.get_logger().info('All images have been processed.')
+            return
+
+        if self.response == False:
+            self.get_logger().info('Awaiting response for prior image from Darknet...')
             return
 
         # Check for nonexistent image/path
@@ -86,12 +92,16 @@ class ImageGenerator(Node):
         msg.step         = 3 * im.width           # Full row length in bytes
         msg.data         = np.array(im).tobytes() # Flattened image data, size is (step * rows)
 
-        self.publisher_.publish(msg)
+        self.get_logger().info('')
+        self.get_logger().info('')
         self.get_logger().info('Publishing image {}...'.format(self.im_paths[self.i]))
         self.get_logger().info('    Width : {} px'.format(im.width))
         self.get_logger().info('    Height: {} px'.format(im.height))
 
-        self.i = self.i + 1 # Increment i (until we run out of images).
+        self.publisher_.publish(msg)
+
+        self.i = self.i + 1   # Increment i (until we run out of images).
+        self.response = False # Set flag to False
 
 
     def listener_callback(self, msg):
@@ -116,6 +126,8 @@ class ImageGenerator(Node):
             self.get_logger().info('    Bounding box:')
             self.get_logger().info('        Center    : {}, {}'.format(bbox_center_x, bbox_center_y))
             self.get_logger().info('        Dimensions: {}, {}'.format(bbox_width, bbox_height))
+        
+        self.response = True # Set flag to True
 
 
 def main(args=None):
