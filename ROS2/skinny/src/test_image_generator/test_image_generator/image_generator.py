@@ -36,7 +36,12 @@ class ImageGenerator(Node):
         detector_node will take in and process.
         '''
         im_path = '/home/team/Vision/images/{}.jpg'.format(self.i)
-        im      = PILImage.open(im_path)
+        if os.path.exists(im_path): # Check for nonexistent image/path
+            im  = PILImage.open(im_path)
+        else:
+            self.i = 0 # If we looked through all the images, restart the process
+            return
+
         im      = im.convert('RGB')
         im_data = np.array(im)
 
