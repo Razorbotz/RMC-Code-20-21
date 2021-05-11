@@ -120,11 +120,11 @@ def generate_launch_description():
             name='zed_tracking',
             node_executable='zed_tracking_node'
         )
-        ,
-        Node(
-            package='excavation',
-            name='excavation',
-            node_executable='excavation_node'
-        )
+#        ,
+#        Node(
+#            package='excavation',
+#            name='excavation',
+#            node_executable='excavation_node'
+#        )
     ]
 )

@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles/logic_node.dir/src/Automation.cpp.o"
+  "/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation1.cpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles/logic_node.dir/src/Automation1.cpp.o"
   "/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp" "/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles/logic_node.dir/src/logic_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -81,14 +81,66 @@ CMakeFiles/logic_node.dir/src/logic_node.cpp.o.provides: CMakeFiles/logic_node.d
 CMakeFiles/logic_node.dir/src/logic_node.cpp.o.provides.build: CMakeFiles/logic_node.dir/src/logic_node.cpp.o
 
 
+CMakeFiles/logic_node.dir/src/Automation.cpp.o: CMakeFiles/logic_node.dir/flags.make
+CMakeFiles/logic_node.dir/src/Automation.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/logic_node.dir/src/Automation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic_node.dir/src/Automation.cpp.o -c /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp
+
+CMakeFiles/logic_node.dir/src/Automation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic_node.dir/src/Automation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp > CMakeFiles/logic_node.dir/src/Automation.cpp.i
+
+CMakeFiles/logic_node.dir/src/Automation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic_node.dir/src/Automation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp -o CMakeFiles/logic_node.dir/src/Automation.cpp.s
+
+CMakeFiles/logic_node.dir/src/Automation.cpp.o.requires:
+
+.PHONY : CMakeFiles/logic_node.dir/src/Automation.cpp.o.requires
+
+CMakeFiles/logic_node.dir/src/Automation.cpp.o.provides: CMakeFiles/logic_node.dir/src/Automation.cpp.o.requires
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation.cpp.o.provides.build
+.PHONY : CMakeFiles/logic_node.dir/src/Automation.cpp.o.provides
+
+CMakeFiles/logic_node.dir/src/Automation.cpp.o.provides.build: CMakeFiles/logic_node.dir/src/Automation.cpp.o
+
+
+CMakeFiles/logic_node.dir/src/Automation1.cpp.o: CMakeFiles/logic_node.dir/flags.make
+CMakeFiles/logic_node.dir/src/Automation1.cpp.o: /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/logic_node.dir/src/Automation1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic_node.dir/src/Automation1.cpp.o -c /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation1.cpp
+
+CMakeFiles/logic_node.dir/src/Automation1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic_node.dir/src/Automation1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation1.cpp > CMakeFiles/logic_node.dir/src/Automation1.cpp.i
+
+CMakeFiles/logic_node.dir/src/Automation1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic_node.dir/src/Automation1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation1.cpp -o CMakeFiles/logic_node.dir/src/Automation1.cpp.s
+
+CMakeFiles/logic_node.dir/src/Automation1.cpp.o.requires:
+
+.PHONY : CMakeFiles/logic_node.dir/src/Automation1.cpp.o.requires
+
+CMakeFiles/logic_node.dir/src/Automation1.cpp.o.provides: CMakeFiles/logic_node.dir/src/Automation1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation1.cpp.o.provides.build
+.PHONY : CMakeFiles/logic_node.dir/src/Automation1.cpp.o.provides
+
+CMakeFiles/logic_node.dir/src/Automation1.cpp.o.provides.build: CMakeFiles/logic_node.dir/src/Automation1.cpp.o
+
+
 # Object files for target logic_node
 logic_node_OBJECTS = \
-"CMakeFiles/logic_node.dir/src/logic_node.cpp.o"
+"CMakeFiles/logic_node.dir/src/logic_node.cpp.o" \
+"CMakeFiles/logic_node.dir/src/Automation.cpp.o" \
+"CMakeFiles/logic_node.dir/src/Automation1.cpp.o"
 
 # External object files for target logic_node
 logic_node_EXTERNAL_OBJECTS =
 
 logic_node: CMakeFiles/logic_node.dir/src/logic_node.cpp.o
+logic_node: CMakeFiles/logic_node.dir/src/Automation.cpp.o
+logic_node: CMakeFiles/logic_node.dir/src/Automation1.cpp.o
 logic_node: CMakeFiles/logic_node.dir/build.make
 logic_node: /opt/ros/eloquent/lib/librclcpp.so
 logic_node: /opt/ros/eloquent/lib/librcl.so
@@ -140,7 +192,7 @@ logic_node: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libm
 logic_node: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_c.so
 logic_node: /home/team/SoftwareDevelopment/ROS2/skinny/install/messages/lib/libmessages__rosidl_typesupport_fastrtps_cpp.so
 logic_node: CMakeFiles/logic_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable logic_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable logic_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/logic_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -149,6 +201,8 @@ CMakeFiles/logic_node.dir/build: logic_node
 .PHONY : CMakeFiles/logic_node.dir/build
 
 CMakeFiles/logic_node.dir/requires: CMakeFiles/logic_node.dir/src/logic_node.cpp.o.requires
+CMakeFiles/logic_node.dir/requires: CMakeFiles/logic_node.dir/src/Automation.cpp.o.requires
+CMakeFiles/logic_node.dir/requires: CMakeFiles/logic_node.dir/src/Automation1.cpp.o.requires
 
 .PHONY : CMakeFiles/logic_node.dir/requires
 

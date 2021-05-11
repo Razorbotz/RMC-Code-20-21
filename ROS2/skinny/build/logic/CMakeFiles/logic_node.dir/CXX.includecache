@@ -180,6 +180,26 @@ Automation.hpp
 
 /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/include/logic/AutomationTypes.hpp
 
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation.cpp
+cmath
+-
+rclcpp/rclcpp.hpp
+-
+std_msgs/msg/float32.hpp
+-
+logic/Automation.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic/Automation.hpp
+logic/AutomationTypes.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic/AutomationTypes.hpp
+
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/Automation1.cpp
+cmath
+-
+logic/Automation.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic/Automation.hpp
+logic/Automation1.hpp
+/home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic/Automation1.hpp
+
 /home/team/SoftwareDevelopment/ROS2/skinny/src/logic/src/logic_node.cpp
 math.h
 -

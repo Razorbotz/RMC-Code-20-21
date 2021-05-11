@@ -44,7 +44,7 @@ void updateSpeed(){
     
     std_msgs::msg::Float32 speedLeft;
     std_msgs::msg::Float32 speedRight;
-    float maxSpeed = 0.4;
+    float maxSpeed = 0.6;
     
     //Linear transformation of cordinate planes
     speedLeft.data  = (joystick1Pitch + joystick1Roll);
@@ -128,25 +128,25 @@ void joystickButtonCallback(const messages::msg::ButtonState::SharedPtr buttonSt
             reverseAuger = false;
             break;
         case 8:
-            excavationAngle += 1;
+            excavationAngle += 50;
             angle.data = excavationAngle;
             std::cout << "excavationAngle: " << excavationAngle << std::endl;
             excavationAnglePublisher->publish(angle);
             break;
         case 9:
-            excavationAngle -= 1;
+            excavationAngle -= 50;
             angle.data = excavationAngle;
             std::cout << "excavationAngle: " << excavationAngle << std::endl;
             excavationAnglePublisher->publish(angle);
             break;
         case 10:
-            excavationElevation += 1;
+            excavationElevation += 50;
             elevation.data = excavationElevation;
             std::cout << "excavationElevation: " << excavationElevation << std::endl;
             excavationElevationPublisher->publish(elevation);
             break;
         case 11:
-            excavationElevation -= 1;
+            excavationElevation -= 50;
             elevation.data = excavationElevation;
             std::cout << "excavationElevation: " << excavationElevation << std::endl;
             excavationElevationPublisher->publish(elevation);
@@ -167,10 +167,6 @@ void keyCallback(const messages::msg::KeyState::SharedPtr keyState){
     }
 }
 
-//struct Position{
-//    double x,y,z,ox,oy,oz,ow,arucoVisible;
-//};
-//Position position;
 void zedPositionCallback(const messages::msg::ZedPosition::SharedPtr zedPosition){
     Position position;
     position.x=zedPosition->x;	
@@ -183,109 +179,6 @@ void zedPositionCallback(const messages::msg::ZedPosition::SharedPtr zedPosition
     position.arucoVisible=zedPosition->aruco_visible;	
     automation->setPosition(position);
 }
-
-//float currentLeftSpeed=0;
-//float currentRightSpeed=0;
-//void changeSpeed(float left, float right){
-//    if(currentLeftSpeed==left && currentRightSpeed==right) return;
-//    currentLeftSpeed=left;
-//    currentRightSpeed=right;
-//    std_msgs::msg::Float32 speedLeft;
-//    std_msgs::msg::Float32 speedRight;
-//    speedLeft.data=left;
-//    speedRight.data=right;
-//    driveLeftSpeedPublisher->publish(speedLeft);
-//    driveRightSpeedPublisher->publish(speedRight);
-//}
-
-//struct Location{
-//    double x,z;
-//};
-
-//struct Quaternion {
-//    double w, x, y, z;
-//};
-
-//struct EulerAngles {
-//    double roll, pitch, yaw;
-//};
-
-
-//EulerAngles ToEulerAngles(Quaternion q) {
-//    EulerAngles angles;
-
-    // roll (x-axis rotation)
-//    double sinr_cosp = 2 * (q.w * q.x + q.y * q.z);
-//    double cosr_cosp = 1 - 2 * (q.x * q.x + q.y * q.y);
-//    angles.roll = std::atan2(sinr_cosp, cosr_cosp);
-
-    // pitch (y-axis rotation)
-//    double sinp = 2 * (q.w * q.y - q.z * q.x);
-//    if (std::abs(sinp) >= 1)
-//        angles.pitch = std::copysign(M_PI / 2, sinp); // use 90 degrees if out of range
-//    else
-//        angles.pitch = std::asin(sinp);
-
-    // yaw (z-axis rotation)
-//    double siny_cosp = 2 * (q.w * q.z + q.x * q.y);
-//    double cosy_cosp = 1 - 2 * (q.y * q.y + q.z * q.z);
-//    angles.yaw = std::atan2(siny_cosp, cosy_cosp);
-
-//    return angles;
-//}
-
-
-//enum RobotState{LOCATE,GO_TO_DIG_SITE,DIG,HOME,DOCK,DUMP};
-//RobotState robotState=GO_TO_DIG_SITE;
-//Location destination;
-//void automate(){
-//    if(automationGo){
-//        if(robotState==LOCATE){
-//            changeSpeed(0.15,-0.15);
-//	    if(position.arucoVisible==true){
-//	        robotState=GO_TO_DIG_SITE;
-//		destination.x=-5;
-//		destination.z=2;
-//	        changeSpeed(0,0);
-//	    }
-//        }
-//	if(robotState==GO_TO_DIG_SITE){
-//	    Quaternion quaternion;
-//            quaternion.x=position.ox;	    
-//            quaternion.y=position.oy;	    
-//            quaternion.z=position.oz;	    
-//            quaternion.w=position.ow;	    
-//            EulerAngles eulerAngles=ToEulerAngles(quaternion);
-//	    double yawRadians=eulerAngles.roll;
-//	    
-//	    double facingUnitX=-sin(yawRadians);
-//	    double facingUnitZ=cos(yawRadians);
-//           // RCLCPP_INFO(nodeHandle->get_logger(),"%f %f %f ",eulerAngles.roll,eulerAngles.pitch,eulerAngles.yaw);
-//            double directionX=destination.x-position.x;
-//            double directionZ=destination.z-position.z;
-//
-//	    double theta = acos((facingUnitX*directionX + facingUnitZ*directionZ)/(sqrt(directionX*directionX + directionZ*directionZ)))*180/M_PI;
-//            double yaw = yawRadians * 180/M_PI;
-//	    double deltaYaw= theta-yaw;
-//	    double yawTolerance=5;
-//	    if(deltaYaw > yawTolerance){
-//	        changeSpeed(-0.15,0.15);
-//	    }else if (deltaYaw < yawTolerance){
-//	        changeSpeed(0.15,-0.15);
-//          		 
-//            }else{
-//	        changeSpeed(0.15 - 0.1*deltaYaw/yawTolerance,0.15 + 0.1*deltaYaw/yawTolerance);
-//	    }
-//	    std::cout << eulerAngles.roll*180/M_PI << ", " << eulerAngles.pitch*180/M_PI << ", " << eulerAngles.yaw*180/M_PI << "   " 
-//		    << "   \t" << position.x << "  " << position.y << "  " << position.z 
-////		    << "   \t" << position.ox << "  " << position.oy << "  " << position.oz << "  " << position.ow 
-//		    << "   \t" << facingUnitX << " " << facingUnitZ << "   " << yaw << " " << deltaYaw << " " << theta
-//		    << "   \t" << position.arucoVisible << std::endl;
-//	}
-//    }else{
-//        changeSpeed(0,0);
-//    }	
-//}
 
 
 int main(int argc, char **argv){

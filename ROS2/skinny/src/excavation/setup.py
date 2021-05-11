@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'excavation_node = excavation.excavation_node:main'
+            'excavation_node = excavation.excavation_node:main',
         ],
     },
 )

@@ -206,6 +206,60 @@ logic_node/fast:
 	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/build
 .PHONY : logic_node/fast
 
+src/Automation.o: src/Automation.cpp.o
+
+.PHONY : src/Automation.o
+
+# target to build an object file
+src/Automation.cpp.o:
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation.cpp.o
+.PHONY : src/Automation.cpp.o
+
+src/Automation.i: src/Automation.cpp.i
+
+.PHONY : src/Automation.i
+
+# target to preprocess a source file
+src/Automation.cpp.i:
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation.cpp.i
+.PHONY : src/Automation.cpp.i
+
+src/Automation.s: src/Automation.cpp.s
+
+.PHONY : src/Automation.s
+
+# target to generate assembly for a file
+src/Automation.cpp.s:
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation.cpp.s
+.PHONY : src/Automation.cpp.s
+
+src/Automation1.o: src/Automation1.cpp.o
+
+.PHONY : src/Automation1.o
+
+# target to build an object file
+src/Automation1.cpp.o:
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation1.cpp.o
+.PHONY : src/Automation1.cpp.o
+
+src/Automation1.i: src/Automation1.cpp.i
+
+.PHONY : src/Automation1.i
+
+# target to preprocess a source file
+src/Automation1.cpp.i:
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation1.cpp.i
+.PHONY : src/Automation1.cpp.i
+
+src/Automation1.s: src/Automation1.cpp.s
+
+.PHONY : src/Automation1.s
+
+# target to generate assembly for a file
+src/Automation1.cpp.s:
+	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/src/Automation1.cpp.s
+.PHONY : src/Automation1.cpp.s
+
 src/logic_node.o: src/logic_node.cpp.o
 
 .PHONY : src/logic_node.o
@@ -249,6 +303,12 @@ help:
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... src/Automation.o"
+	@echo "... src/Automation.i"
+	@echo "... src/Automation.s"
+	@echo "... src/Automation1.o"
+	@echo "... src/Automation1.i"
+	@echo "... src/Automation1.s"
 	@echo "... src/logic_node.o"
 	@echo "... src/logic_node.i"
 	@echo "... src/logic_node.s"

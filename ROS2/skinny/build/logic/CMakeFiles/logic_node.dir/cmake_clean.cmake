@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/logic_node.dir/src/logic_node.cpp.o"
+  "CMakeFiles/logic_node.dir/src/Automation.cpp.o"
+  "CMakeFiles/logic_node.dir/src/Automation1.cpp.o"
   "logic_node.pdb"
   "logic_node"
 )

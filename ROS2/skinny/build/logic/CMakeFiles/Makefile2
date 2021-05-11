@@ -130,7 +130,7 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/logic_node.dir/all:
 	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/depend
 	$(MAKE) -f CMakeFiles/logic_node.dir/build.make CMakeFiles/logic_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles --progress-num=1,2 "Built target logic_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles --progress-num=1,2,3,4 "Built target logic_node"
 .PHONY : CMakeFiles/logic_node.dir/all
 
 # Include target in all.
@@ -140,7 +140,7 @@ all: CMakeFiles/logic_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/logic_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/logic_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/team/SoftwareDevelopment/ROS2/skinny/build/logic/CMakeFiles 0
 .PHONY : CMakeFiles/logic_node.dir/rule
