@@ -177,34 +177,18 @@ void connectToServer(){
         int result=dialog.run();
 
         setDisconnectedState();
-//        connectionStatusLabel->set_text("Connection Failed");
-//		  Gdk::RGBA red;
-//		  red.set_rgba(1.0,0,0,1.0);
-//		  connectionStatusLabel->override_background_color(red);
-//        ipAddressEntry->set_can_focus(true);
-//        ipAddressEntry->set_editable(true);
-//        connected=false;
 	}else{
 		send(sock , hello.c_str() , strlen(hello.c_str()) , 0 );
 		bytesRead = read( sock , buffer, 1024);
 		fcntl(sock,F_SETFL, O_NONBLOCK);
 
         setConnectedState();
-//        connectButton->set_label("Disconnect");
-//		  connectionStatusLabel->set_text("Connected");
-//		  Gdk::RGBA green;
-//		  green.set_rgba(0,1.0,0,1.0);
-//		  connectionStatusLabel->override_background_color(green);
-//        ipAddressEntry->set_can_focus(false);
-//        ipAddressEntry->set_editable(false);
-//        connected=true;
 	}
 }
 
 
 void disconnectFromServer(){
     Gtk::MessageDialog dialog(*window,"Disconnect now?",false,Gtk::MESSAGE_QUESTION,Gtk::BUTTONS_OK_CANCEL);
-    //dialog.set_secondary_text("Do you want to shutdown now?");
     int result=dialog.run();
 
     switch(result) {
@@ -215,14 +199,6 @@ void disconnectFromServer(){
             }
             if(close(sock)==0){
                 setDisconnectedState();
-//                connectionStatusLabel->set_text("Not Connected");
-//                connectButton->set_label("Connect");
-//                Gdk::RGBA red;
-//                red.set_rgba(1.0, 0, 0, 1.0);
-//                connectionStatusLabel->override_background_color(red);
-//                ipAddressEntry->set_can_focus(true);
-//                ipAddressEntry->set_editable(true);
-//                connected=false;
             }else{
                 Gtk::MessageDialog dialog(*window,"Failed Close",false,Gtk::MESSAGE_ERROR,Gtk::BUTTONS_OK);
                 int result=dialog.run();
@@ -239,7 +215,6 @@ void disconnectFromServer(){
 
 void connectOrDisconnect(){
     Glib::ustring string=connectButton->get_label();
-    //std::cout << "connect" << string << std::endl;
     if(string=="Connect"){
         connectToServer();
     }else{
@@ -281,11 +256,8 @@ void rowSelected(Gtk::ListBoxRow* listBoxRow){
 
 
 void rowActivated(Gtk::ListBoxRow* listBoxRow){
-	//std::cout << "rowActivated" << std::endl;
 	Gtk::Label* label=static_cast<Gtk::Label*>(listBoxRow->get_child());
-	//std::cout << label->get_text() << std::endl;
 	Glib::ustring connectionString(label->get_text());
-	//std::cout << connectionString << std::endl;
 	int index=connectionString.rfind('@');
     if(index==-1)return;
     ++index;
@@ -295,8 +267,6 @@ void rowActivated(Gtk::ListBoxRow* listBoxRow){
 
 
 void shutdownRobot(){
-    //std::cout << "shutdownRobot" << std::endl;
-
     int messageSize=2;
     uint8_t command=8;// shutdown
     uint8_t message[messageSize];
@@ -308,7 +278,6 @@ void shutdownRobot(){
 
 void shutdownDialog(Gtk::Window* parentWindow){
     Gtk::MessageDialog dialog(*parentWindow,"Shutdown now?",false,Gtk::MESSAGE_QUESTION,Gtk::BUTTONS_OK_CANCEL);
-    //dialog.set_secondary_text("Do you want to shutdown now?");
     int result=dialog.run();
 
     switch(result) {
@@ -324,9 +293,6 @@ void shutdownDialog(Gtk::Window* parentWindow){
 
 
 bool on_key_release_event(GdkEventKey* key_event){
-    //std::cout << "key released" << std::endl;
-    //std::cout << std::hex << key_event->keyval << "  " << key_event->state << std::dec << std::endl;
-
     int messageSize=5;
     uint8_t command=2;// keyboard
     uint8_t message[messageSize];
@@ -336,16 +302,12 @@ bool on_key_release_event(GdkEventKey* key_event){
     message[3]=(uint8_t)(((key_event->keyval)>>0)& 0xff);
     message[4]=0;
     send(sock, message, messageSize, 0);
-    //std::cout << std::hex << (uint)message[2] << "  " << (uint)message[3] << std::dec << std::endl;
 
     return false;
 }
 
 
 bool on_key_press_event(GdkEventKey* key_event){
-    //std::cout << "key pressed" << std::endl;
-    //std::cout << std::hex << key_event->keyval << "  " << key_event->state << std::dec << std::endl;
-
     int messageSize=5;
     uint8_t command=2;// keyboard
     uint8_t message[messageSize];
@@ -355,9 +317,31 @@ bool on_key_press_event(GdkEventKey* key_event){
     message[3]=(uint8_t)(((key_event->keyval)>>0)& 0xff);
     message[4]=1;
     send(sock, message, messageSize, 0);
-    //std::cout << std::hex << (uint)message[2] << "  " << (uint)message[3] << std::dec << std::endl;
-
     return false;
+}
+
+InfoFrame* createTalonInfoFrame(std::string name){
+	InfoFrame* talonInfoFrame=Gtk::manage(new InfoFrame(name));
+	talonInfoFrame->addItem("Device ID");	
+	talonInfoFrame->addItem("Bus Voltage");	
+	talonInfoFrame->addItem("Output Current");	
+	talonInfoFrame->addItem("Output Voltage");	
+	talonInfoFrame->addItem("Output Percent");	
+	talonInfoFrame->addItem("Temperature");	
+	talonInfoFrame->addItem("Sensor Velocity");	
+	talonInfoFrame->addItem("Closed Loop Error");	
+	talonInfoFrame->addItem("Integral Accumulator");	
+	talonInfoFrame->addItem("Error Drivative");
+	return talonInfoFrame;
+}
+
+InfoFrame* createVictorInfoFrame(std::string name){
+	InfoFrame* victorInfoFrame=Gtk::manage(new InfoFrame(name));
+	victorInfoFrame->addItem("Device ID");	
+	victorInfoFrame->addItem("Bus Voltage");	
+	victorInfoFrame->addItem("Output Voltage");	
+	victorInfoFrame->addItem("Output Percent");
+	return victorInfoFrame;
 }
 
 
@@ -377,7 +361,6 @@ void setupGUI(Glib::RefPtr<Gtk::Application> application){
 
 	Gtk::ScrolledWindow* scrolledList=Gtk::manage(new Gtk::ScrolledWindow());
 	addressListBox=Gtk::manage(new Gtk::ListBox());
-//	addressListBox->signal_row_selected().connect(sigc::ptr_fun(&rowSelected));
 	addressListBox->signal_row_activated().connect(sigc::ptr_fun(&rowActivated));
 
 	Gtk::Box* controlsRightBox=Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL,5));
@@ -387,7 +370,6 @@ void setupGUI(Glib::RefPtr<Gtk::Application> application){
 	ipAddressEntry=Gtk::manage(new Gtk::Entry());
     ipAddressEntry->set_can_focus(true);
     ipAddressEntry->set_editable(true);
-	//ipAddressEntry->set_text("192.168.1.2");
 	connectButton=Gtk::manage(new Gtk::Button("Connect"));
 	connectButton->signal_clicked().connect(sigc::ptr_fun(&connectOrDisconnect));
 	connectionStatusLabel=Gtk::manage(new Gtk::Label("Not Connected"));
@@ -557,50 +539,11 @@ void setupGUI(Glib::RefPtr<Gtk::Application> application){
 
 	powerDistributionPanelFrame->add(*powerDistributionPanelBox);
 
-	talon1InfoFrame=Gtk::manage(new InfoFrame("Talon 1"));
-	talon1InfoFrame->addItem("Device ID");	
-	talon1InfoFrame->addItem("Bus Voltage");	
-	talon1InfoFrame->addItem("Output Current");	
-	talon1InfoFrame->addItem("Output Voltage");	
-	talon1InfoFrame->addItem("Output Percent");	
-	talon1InfoFrame->addItem("Temperature");	
-//	talon1InfoFrame->addItem("Sensor Position");	
-	talon1InfoFrame->addItem("Sensor Velocity");	
-	talon1InfoFrame->addItem("Closed Loop Error");	
-	talon1InfoFrame->addItem("Integral Accumulator");	
-	talon1InfoFrame->addItem("Error Drivative");	
-
-	talon2InfoFrame=Gtk::manage(new InfoFrame("Talon 2"));
-	talon2InfoFrame->addItem("Device ID");	
-	talon2InfoFrame->addItem("Bus Voltage");	
-	talon2InfoFrame->addItem("Output Current");	
-	talon2InfoFrame->addItem("Output Voltage");	
-	talon2InfoFrame->addItem("Output Percent");	
-	talon2InfoFrame->addItem("Temperature");	
-//	talon2InfoFrame->addItem("Sensor Position");	
-	talon2InfoFrame->addItem("Sensor Velocity");	
-	talon2InfoFrame->addItem("Closed Loop Error");	
-	talon2InfoFrame->addItem("Integral Accumulator");	
-	talon2InfoFrame->addItem("Error Drivative");	
-
-	victor1InfoFrame=Gtk::manage(new InfoFrame("Victor 1"));
-	victor1InfoFrame->addItem("Device ID");	
-	victor1InfoFrame->addItem("Bus Voltage");	
-	victor1InfoFrame->addItem("Output Voltage");	
-	victor1InfoFrame->addItem("Output Percent");	
-
-	victor2InfoFrame=Gtk::manage(new InfoFrame("Victor 2"));
-	victor2InfoFrame->addItem("Device ID");	
-	victor2InfoFrame->addItem("Bus Voltage");	
-	victor2InfoFrame->addItem("Output Voltage");	
-	victor2InfoFrame->addItem("Output Percent");	
-
-	victor3InfoFrame=Gtk::manage(new InfoFrame("Victor 3"));
-	victor3InfoFrame->addItem("Device ID");	
-	victor3InfoFrame->addItem("Bus Voltage");	
-	victor3InfoFrame->addItem("Output Voltage");	
-	victor3InfoFrame->addItem("Output Percent");	
-
+	InfoFrame* talon1InfoFrame = createTalonInfoFrame("Talon 1");
+	InfoFrame* talon2InfoFrame = createTalonInfoFrame("Talon 2");
+	InfoFrame* victor1InfoFrame = createVictorInfoFrame("Victor 1");	
+	InfoFrame* victor2InfoFrame = createVictorInfoFrame("Victor 2");
+	InfoFrame* victor3InfoFrame = createVictorInfoFrame("Victor 3");
 
 	addressListBox->set_size_request(200,100);
 	scrolledList->set_size_request(200,100);
@@ -722,7 +665,6 @@ void broadcastListen(){
 
     std::vector<std::string> addressList=getAddressList(); 
     for(std::string addressString:addressList){
-//        std::cout << "got " << addressString << std::endl;
         struct ip_mreq group;
         group.imr_multiaddr.s_addr = inet_addr("226.1.1.1");
         group.imr_interface.s_addr = inet_addr(addressString.c_str());
@@ -853,18 +795,7 @@ int main(int argc, char** argv) {
         }
 
 		if(bytesRead==0){
-			//std::cout << "Lost Connection" << std::endl;
             setDisconnectedState();
-
-//            connectButton->set_label("Connect");
-//		      connectionStatusLabel->set_text("Lost Connection");
-//			  Gdk::RGBA red;
-//			  red.set_rgba(1.0,0,0,1.0);
-//			  connectionStatusLabel->override_background_color(red);
-//			  connected=false;
-//            ipAddressEntry->set_can_focus(true);
-//            ipAddressEntry->set_editable(true);
-
 			continue;
 		}
         while(messageBytesList.size()>0 && messageBytesList.front()<=messageBytesList.size()){
@@ -875,10 +806,7 @@ int main(int argc, char** argv) {
                 message[index]=messageBytesList.front();
                 messageBytesList.pop_front();
             }
-
-			//std::cout << "Got Message" << std::endl;
 			uint8_t command=message[0];
-			//std::cout << "command " << (int)command << std::endl;
 			if(command==1){
 				float voltage=parseFloat((uint8_t*)&message[1]);
 				float current0=parseFloat((uint8_t*)&message[5]);
@@ -995,7 +923,6 @@ int main(int argc, char** argv) {
 			}	
 			if(command==7){ //control mode
 				int mode=message[1];
-				//std::cout << mode << std::endl;
 				if(mode==1){
 					controlModeLabel->set_label("Drive");
 				}
@@ -1006,13 +933,7 @@ int main(int argc, char** argv) {
 		}
 
 		while(SDL_PollEvent(&event)){
-            //std::cout << "here" << std::endl;
             const Uint8 *state = SDL_GetKeyboardState(NULL);
-
-            //const Uint8 *length = SDL_GetKeyboardState(state);
-            //std::cout << "length " << *length << std::endl;
-            //std::cout << "scan code A " << (int)state[SDL_SCANCODE_A] << std::endl;
-
 			switch(event.type){
 
             case SDL_MOUSEMOTION:{
@@ -1036,11 +957,6 @@ int main(int argc, char** argv) {
             }
 
 			case SDL_JOYHATMOTION:{
-//				std::cout << "joystick " << event.jhat.which << " ";
-//				std::cout << "timestamp " << event.jhat.timestamp << " ";
-//              std::cout << "hat " << (uint32_t)event.jhat.hat << " ";
-//				std::cout << "value " << (uint32_t)event.jhat.value << std::endl;
-
                 uint8_t command=6;
                 int length=5;
 				uint8_t message[length];
@@ -1055,11 +971,6 @@ int main(int argc, char** argv) {
 				break;
 			}
 			case SDL_JOYBUTTONDOWN:{
-//				std::cout << "joystick " << event.jbutton.which << " ";
-//				std::cout << "timestamp " << event.jbutton.timestamp << " ";
-//				std::cout << "button " << (uint32_t)event.jbutton.button << " ";
-//				std::cout << "state " << (uint32_t)event.jbutton.state << std::endl;
-
                 uint8_t command=5;
                 int length=5;
 				uint8_t message[length];
@@ -1074,11 +985,6 @@ int main(int argc, char** argv) {
 				break;
 			}
 			case SDL_JOYBUTTONUP:{
-//				std::cout << "joystick " << event.jbutton.which << " ";
-//				std::cout << "timestamp " << event.jbutton.timestamp << " ";
-//				std::cout << "button " << (uint32_t)event.jbutton.button << " ";
-//				std::cout << "state " << (uint32_t)event.jbutton.state << std::endl;
-
                 uint8_t command=5;
                 int length=5;
 				uint8_t message[length];
@@ -1093,11 +999,6 @@ int main(int argc, char** argv) {
 				break;
 			}
 			case SDL_JOYAXISMOTION: {
-//                std::cout << "joystick " << event.jaxis.which << " ";
-//                std::cout << "timestamp " << event.jaxis.timestamp << " ";
-//                std::cout << "axis " << (int) event.jaxis.axis << " ";
-//                std::cout << "value " << event.jaxis.value << std::endl;
-
                 uint8_t command = 1;
                 float value = (float) event.jaxis.value / -32768.0;
 
@@ -1111,60 +1012,6 @@ int main(int argc, char** argv) {
 
                 send(sock, message, length, 0);
             }
-
-//				if(event.jaxis.axis == 0){
-//					uint8_t command=1;
-//					float value=(float) event.jaxis.value/-32768.0;
-//
-//					int length=8;
-//					uint8_t message[length];
-//					message[0]=length;
-//                    message[1]=command;
-//                    message[2]=event.jaxis.axis;//0-roll 1-pitch 2-throttle 3-yaw
-//                    message[3]=event.jaxis.which;
-//					insert(value,&message[4]);
-//
-//					send(sock, message, length, 0);
-//				}
-//				if(event.jaxis.axis == 1){
-//					uint8_t command=2;// pitch
-//					float value=(float) event.jaxis.value/-32768.0;
-//
-//                  int length=7;
-//					uint8_t message[length];
-//					message[0]=length;
-//					message[1]=command;
-//                  message[2]=event.jhat.which;
-//					insert(value,&message[3]);
-//
-//					send(sock, message, length, 0);
-//				}
-//				if(event.jaxis.axis == 2){
-//					uint8_t command=3;// throttle
-//					float value=(float) event.jaxis.value/-32768.0;
-//
-//                    int length=7;
-//					uint8_t message[length];
-//					message[0]=length;
-//					message[1]=command;
-//                    message[2]=event.jhat.which;
-//					insert(value,&message[3]);
-//
-//					send(sock, message, length, 0);
-//				}
-//				if(event.jaxis.axis == 3){
-//					uint8_t command=4;// yaw
-//					float value=(float) event.jaxis.value/-32768.0;
-//
-//                    int length=7;
-//					uint8_t message[length];
-//					message[0]=length;
-//					message[1]=command;
-//                    message[2]=event.jhat.which;
-//					insert(value,&message[3]);
-//
-//					send(sock, message, length, 0);
-//				}
 				break;
 			default:
 				break;
@@ -1173,4 +1020,3 @@ int main(int argc, char** argv) {
 	}
 	return 0; 
 }
-
